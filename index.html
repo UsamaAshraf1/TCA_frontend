@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCA</title>
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!------------------------header------------------------------->
+    <div>
+      <nav class="bg-[#1E1E1E] h-[27px]">
+        <div
+          class="flex justify-center md:justify-end items-center text-white md:pr-44 pt-1"
+        >
+          <p class="text-sm">info@the-change-agency.ca</p>
+          <p class="ms-14 text-sm">+1 (506) 588-7073</p>
+        </div>
+      </nav>
+      <nav class="bg-white py-2 md:py-4">
+        <div
+          class="container px-4 mx-auto md:flex md:justify-between md:items-center"
+        >
+          <div class="flex justify-between items-center">
+            <a href="/" class="flex justify-center items-center">
+              <img src="Assets/Logo.png" alt="" height="52px" width="59px" />
+              <span href="#" class="font-bold text-base ms-2 text-[#EC5C35]"
+                >THE CHANGE <br />
+                AGENCY</span
+              >
+            </a>
+            <button
+              class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+              id="navbar-toggle"
+            >
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="hidden md:flex flex-col md:flex-row mt-3 md:mt-0"
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded transition-colors duration-300"
+            >
+              Who We Are
+            </a>
+
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded transition-colors duration-300"
+              >What We Do
+            </a>
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded transition-colors duration-300"
+              >How We Do It
+            </a>
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Resources
+            </a>
+
+            <a
+              href="#"
+              class="px-2 h-[39px] lg:px-8 md:mx-2 text-white text-center rounded transition-colors duration-300 mt-1 md:mt-0 md:ml-1 bg-[#EC5C35] flex justify-center items-center md:hidden"
+              >BOOK A MEETING
+            </a>
+
+            <div class="flex justify-center items-center mt-3 md:hidden">
+              <a href="">
+                <img
+                  src="Assets/linkdln.svg"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                />
+              </a>
+              <a href="" class="ms-2">
+                <img
+                  src="Assets//instagram.svg"
+                  alt=""
+                  height="17px"
+                  width="17px"
+                />
+              </a>
+              <a href="" class="ms-2">
+                <img
+                  src="Assets/youtube.svg"
+                  alt=""
+                  height="16px"
+                  width="20px"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden md:flex flex-col md:flex-row mt-3 md:mt-0">
+            <a
+              href="#"
+              class="px-2 h-[39px] lg:px-8 md:mx-2 text-white text-center rounded transition-colors duration-300 mt-1 md:mt-0 md:ml-1 bg-[#EC5C35] flex justify-center items-center"
+              >BOOK A MEETING
+            </a>
+
+            <div class="flex justify-center items-center ms-16">
+              <a href="">
+                <img
+                  src="Assets/linkdln.svg"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                />
+              </a>
+              <a href="" class="ms-4">
+                <img
+                  src="Assets//instagram.svg"
+                  alt=""
+                  height="17px"
+                  width="17px"
+                />
+              </a>
+              <a href="" class="ms-4">
+                <img
+                  src="Assets/youtube.svg"
+                  alt=""
+                  height="16px"
+                  width="20px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-------------------------Hero Section------------------------->
+    <div
+      class="w-full max-h-[781px] bg-[url('Assets/heroBackgroubd.jpeg')] bg-cover bg-center"
+    >
+      <div class="container mx-auto flex py-[100px] px-16 justify-between">
+        <div class="w-[30vw]">
+          <p class="text-white text-[40px]" style="line-height: 44px">
+            Through human-centric change management, we bring together strategy,
+            relationships, and innovation for lasting impact!
+          </p>
+
+          <p class="text-3xl text-[#EC5C35] mt-[31px] font-semibold">
+            7X More Change Success Through TCA's Approach
+          </p>
+
+          <p class="text-xl text-white mt-[36px]">
+            Find out what it takes to make change happen for your
+            project—complete your assessment today!
+          </p>
+
+          <button
+            class="bg-[#EC5C35] text-white text-base font-bold px-6 h-[47px] mt-[27px]"
+          >
+            TAKE THE ASSESSMENT
+          </button>
+        </div>
+        <div class="w-[60vw] flex justify-end items-center">
+          <img src="Assets/heroRightSide.png" alt="" width="438" height="387" />
+        </div>
+      </div>
+    </div>
+    <!-- --------------People-Driven Change Management------------ -->
+    <!-- <div
+      class="text-white pb-[100px]"
+      style="
+        background: linear-gradient(270.2deg, #1f2328 0.17%, #1f2328 99.83%);
+      "
+    >
+      <h3 class="text-[48px] font-[300] text-center pt-[72px]">
+        People-Driven Change Management
+      </h3>
+      <p class="text-[26px] font-[300] text-center px-[20vw] mt-[68px]">
+        TCA is a people-driven organizational change management consultancy
+        specializing in people-centered strategies for successful
+        transformations.
+      </p>
+      <p class="text-[26px] font-[300] text-center px-[20vw] mt-[20px]">
+        We partner with businesses to ensure the adoption of new systems,
+        processes, and cultural shifts, addressing the fact that 70% of change
+        initiatives fail due to resistance or misalignment.
+      </p>
+    </div>
+
+    <div
+      class="h-[1300px] text-white bg-[url('Assets/bg-image.png')] bg-cover bg-center bg-no-repeat border-b border-black"
+    >
+      <div
+        class="grid grid-cols-12 px-[20vw]"
+        style="
+          background: linear-gradient(
+            1.41deg,
+            rgba(11, 29, 38, 0) 22.62%,
+            #252529 125.44%
+          );
+        "
+      >
+        <div class="col-span-4">
+          <p class="text-center text-[60px] font-semibold">500 +</p>
+          <p class="text-center text-[24px] font-[500]">
+            Expert change agents across multiple industries and regions
+          </p>
+        </div>
+
+        <div class="col-span-4">
+          <p class="text-center text-[60px] font-semibold">500 +</p>
+          <p class="text-center text-[24px] font-[500]">
+            Expert change agents across multiple industries and regions
+          </p>
+        </div>
+
+        <div class="col-span-4">
+          <p class="text-center text-[60px] font-semibold">500 +</p>
+          <p class="text-center text-[24px] font-[500]">
+            Expert change agents across multiple industries and regions
+          </p>
+        </div>
+      </div>
+
+      <p class="text-[36px] text-black px-[5vw] text-center mt-[800px]">
+        We embed experienced & Industry-Specific Change Agents within client
+        teams to drive change from within, ensuring smooth transitions and
+        cultivating a positive, engaged, and resilient workforce. 
+      </p>
+    </div> -->
+
+    <div
+      class="relative text-center pt-16 text-white"
+      style="
+        background: linear-gradient(270.2deg, #1f2328 0.17%, #1f2328 99.83%);
+      "
+    >
+      <div>
+        <h3 class="text-[48px] font-light">People-Driven Change Management</h3>
+        <p class="text-[26px] font-light px-[20vw] mt-8">
+          TCA is a people-driven organizational change management consultancy
+          specializing in people-centered strategies for successful
+          transformations.
+        </p>
+        <p class="text-[26px] font-light px-[20vw] mt-5">
+          We partner with businesses to ensure the adoption of new systems,
+          processes, and cultural shifts, addressing the fact that 70% of change
+          initiatives fail due to resistance or misalignment.
+        </p>
+      </div>
+
+      <div>
+        <div class="relative w-full h-[150vh]">
+          <img
+            src="Assets/cloud.png"
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            alt="Cloud Background"
+          />
+
+          <div
+            class="absolute top-0 left-0 w-full h-[50vh]"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(31, 35, 40, 1) 42%,
+                rgba(31, 35, 40, 0.6) 65%,
+                rgba(11, 29, 38, 0) 91%
+              );
+            "
+          ></div>
+          <!-- background: linear-gradient(1.41deg, rgba(11, 29, 38, 0) 22.62%, #252529 125.44%); -->
+
+          <div
+            class="grid grid-cols-3 gap-10 px-[10vw] pt-24 h-[50vh] z-[10] relative"
+          >
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">500+</p>
+              <p class="text-[24px] font-medium">
+                Expert change agents across multiple industries and regions
+              </p>
+            </div>
+
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">100+</p>
+              <p class="text-[24px] font-medium">
+                Years of combined experience in change leadership and strategic
+                transformation
+              </p>
+            </div>
+
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">5000+</p>
+              <p class="text-[24px] font-medium">
+                Employees guided through change initiatives
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-full h-[100vh]">
+          <img
+            src="Assets/back_mount.png"
+            class="absolute bottom-[90vh] left-0 w-full object-cover z-10"
+            alt="Back Mountain"
+          />
+
+          <div
+            id="scrollText"
+            class="absolute text-[96px] bottom-[70vh] left-[20vw] z-[15]"
+          >
+            <span class="font-[700]">TCA Approach </span> <br />
+            <span class="font-[900]">“People-Focused” </span>
+          </div>
+
+          <img
+            src="Assets/front_mount.png"
+            class="absolute bottom-0 left-0 w-full object-cover z-20"
+            alt="Front Mountain"
+          />
+        </div>
+
+        <p
+          class="absolute bottom-[10%] w-full text-center text-[36px] text-black px-[5vw] z-30"
+        >
+          We embed experienced & industry-specific change agents within client
+          teams to drive change from within, ensuring smooth transitions and
+          cultivating a positive, engaged, and resilient workforce.
+        </p>
+      </div>
+    </div>
+    <!-- The simple, easy-to-use tool to take control of change  -->
+    <div
+      class="text-black pt-[98px] pb-6"
+      style="
+        background: linear-gradient(
+          158.15deg,
+          #cecad5 6.85%,
+          #d2cdd6 27.68%,
+          #d2cdd6 50.97%,
+          #1f2328 86.14%
+        );
+      "
+    >
+      <h4 class="text-[48px] font-[300] px-[20vw] text-center">
+        The simple, easy-to-use tool to take control of change
+      </h4>
+      <p class="text-[30px] font-[400] text-center px-[20vw] mt-[24px]">
+        The TCA Change Portal emphasizes people-driven AI & Data Analytics that
+        provides leaders with actionable insights and analytics into
+        organizational change, oﬀering a real-time view of how their teams are
+        responding. It enables organizations to monitor progress, track employee
+        engagement, and identify potential resistance early. <br />
+        <br />
+        It also serves as a proprietary tool empowering our Change Agents to
+        drive the TCA Approach across organizations.
+      </p>
+
+      <div class="flex justify-center mt-[113px]">
+        <button
+          class="bg-white px-10 h-[60px] flex justify-center items-center rounded-lg"
+        >
+          <span
+            ><img
+              src="Assets/demo_icon.png"
+              alt=""
+              width="20px"
+              height="20px" /></span
+          ><span class="ms-2 mt-1">Done</span>
+        </button>
+        <button class="h-[60px] bg-[#EC5C35] px-10 text-white ms-4 rounded-lg">
+          Book a Meeting
+        </button>
+      </div>
+      <div class="mt-[112px] flex justify-center">
+        <div class="w-[1094] h-[639px]">
+          <img src="Assets/Macbook.png" alt="" class="w-full h-full" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------Change Success as a Service---------->
+    <div class="bg-[#1F2328] text-white py-[50px]">
+      <p class="text-[60px] text-center">Change Success as a Service</p>
+
+      <div class="grid grid-cols-12 gap-4 mt-[50px] px-16">
+        <div
+          class="flex flex-col justify-center items-center col-span-12 md:col-span-4"
+        >
+          <div>
+            <div
+              class="bg-white w-[48px] h-[48px] rounded-full flex justify-center items-center"
+            >
+              <img
+                src="Assets/email_icon.png"
+                alt=""
+                width="20px"
+                height="16px"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl text-semibold mt-[20px]">
+            Communication Management 
+          </h4>
+          <p class="text-lg text-center mt-[8px]">
+            We ensure clear, consistent stakeholder communication to keep all
+            stakeholders informed throughout the change process. 
+          </p>
+          <span class="flex text-base text-[#EC5C35] mt-[20px]"
+            >Learn more</span
+          >
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center col-span-12 md:col-span-4"
+        >
+          <div>
+            <div
+              class="bg-white w-[48px] h-[48px] rounded-full flex justify-center items-center"
+            >
+              <img
+                src="Assets/leadership_icon.png"
+                alt=""
+                width="20px"
+                height="16px"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl text-semibold mt-[20px]">
+            Leadership Empowerment
+          </h4>
+          <p class="text-lg text-center mt-[8px]">
+            We guide leaders to become effective change champions, inspiring
+            confidence and guiding teams through transitions.
+          </p>
+          <span class="flex text-base text-[#EC5C35] mt-[20px]"
+            >Learn more</span
+          >
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center col-span-12 md:col-span-4"
+        >
+          <div>
+            <div
+              class="bg-white w-[48px] h-[48px] rounded-full flex justify-center items-center"
+            >
+              <img
+                src="Assets/culture_icon.png"
+                alt=""
+                width="20px"
+                height="16px"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl text-semibold mt-[20px]">Cultural Alignment</h4>
+          <p class="text-lg text-center mt-[8px]">
+            We help organizations align culture with new strategies and
+            processes, ensuring consistency across leadership and employee
+            engagement.
+          </p>
+          <span class="flex text-base text-[#EC5C35] mt-[20px]"
+            >Learn more</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------TCA Core Values------------------->
+
+    <div class="bg-[#FFEBE6] pb-[100px] px-[5vw] overflow-x-hidden">
+      <div class="container mx-auto">
+        <div class="text-[48px] text-center font-[300] pt-[74px]">
+          TCA Core Values
+        </div>
+        <p class="text-center px-[17vw] text-2xl font-[500] mt-[35px]">
+          The Change Agents are skilled facilitators of successful change
+          initiatives within an organization. They implement changes, champion
+          communication, and ensure stakeholder alignment and support throughout
+          the transformation journey.
+        </p>
+
+        <div class="relative top-[245px]">
+          <div class="absolute w-[200px]">
+            <p class="text-[26px]">People-Centricity</p>
+            <p>
+              We prioritize the people impacted by change, ensuring their voices
+              are heard and their needs addressed.
+            </p>
+          </div>
+          <div class="w-[150px] absolute left-[12vw] top-[12vh]">
+            <img src="Assets/right-top.png" alt="" class="w-full h-full" />
+          </div>
+        </div>
+
+        <div class="relative top-[245px] left-[78vw]">
+          <div class="w-[150px] absolute left-[-12vw] top-[12vh]">
+            <img src="Assets/left-top.png" alt="" class="w-full h-full" />
+          </div>
+          <div class="absolute w-[200px]">
+            <p class="text-[26px]">Integrity </p>
+            <p>
+              We uphold transparency, honesty, and ethical principles in every
+              engagement. 
+            </p>
+          </div>
+        </div>
+
+        <div class="relative top-[490px]">
+          <div class="absolute w-[200px]">
+            <p class="text-[26px]">Teamwork </p>
+            <p>
+              We collaborate with stakeholders to foster shared accountability
+              during transitions. 
+            </p>
+          </div>
+          <div class="w-[150px] absolute left-[14vw] top-[-2vh]">
+            <img src="Assets/right-bottom.png" alt="" class="w-full h-full" />
+          </div>
+        </div>
+
+        <div class="relative top-[490px] left-[78vw]">
+          <div class="w-[150px] absolute left-[-12vw]">
+            <img src="Assets/left-bottom.png" alt="" class="w-full h-full" />
+          </div>
+          <div class="absolute w-[200px]">
+            <p class="text-[26px]">Creativity </p>
+            <p>
+              We develop innovative, tailored solutions to meet unique
+              organizational challenges. 
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-[74px]">
+          <div>
+            <div class="leaf-1 overflow-hidden">
+              <img
+                src="Assets/leaf_image_1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="leaf-2 overflow-hidden">
+              <img
+                src="Assets/heroBackgroubd.jpeg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="leaf-3 overflow-hidden">
+              <img
+                src="Assets/heroBackgroubd.jpeg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="leaf-4 overflow-hidden">
+              <img
+                src="Assets/heroBackgroubd.jpeg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------Case Study------------------->
+
+    <div class="bg-white px-[10vw] pb-[100px]">
+      <div class="text-[48px] text-center font-[300] pt-[84px]">Case Study</div>
+
+      <div class="slider pt-[100px]">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="w-[239px] h-[339px] flex justify-center items-center">
+            <img
+              src="Assets/carousel_image_one.png"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="text-left ps-6">
+            <p class="font-bold text-[28px]">Cavendish Farms</p>
+            <p class="w-[280px] text-base">
+              Industry: Agriculture & Food Processing <br />
+              The Change Agency led a comprehensive change management strategy
+              to transition the client's supply chain operations from a manual,
+              labor-intensive process to a fully automated system. This
+              transformation involved redefining workflows, integrating advanced
+              technology, and ensuring seamless employee adoption.
+            </p>
+          </div>
+        </div>
+        <!-- Sllide 2 -->
+        <div class="slide">
+          <div class="w-[239px] h-[339px] flex justify-center items-center">
+            <img
+              src="Assets/carousel_image_two.png"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="text-left ps-6">
+            <p class="font-bold text-[28px]">Irving Oil</p>
+            <p class="w-[280px] text-base">
+              Industry: Oil & Gas <br />
+              The Change Agency played a pivotal role in driving the successful
+              implementation of Irving Oil’s Renewable Gas Program, a key
+              component of their Energy Transition Program. Taking on a
+              comprehensive change management leadership role, The Change Agency
+              focused on ensuring the smooth introduction and integration of
+              renewable natural gas (RNG) into the company's operations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+
+        <div class="slide">
+          <div class="w-[239px] h-[339px] flex justify-center items-center">
+            <img src="Assets/bg-image.png" alt="" class="w-full h-auto" />
+          </div>
+          <div class="text-left ps-6">
+            <p class="font-bold text-[28px]">Irving Oil</p>
+            <p class="w-[280px] text-base">
+              Industry: Oil & Gas <br />
+              The Change Agency played a pivotal role in driving the successful
+              implementation of Irving Oil’s Renewable Gas Program, a key
+              component of their Energy Transition Program. Taking on a
+              comprehensive change management leadership role, The Change Agency
+              focused on ensuring the smooth introduction and integration of
+              renewable natural gas (RNG) into the company's operations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <div class="w-[239px] h-[339px] flex justify-center items-center">
+            <img
+              src="Assets/carousel_image_two.png"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="text-left ps-6">
+            <p class="font-bold text-[28px]">Irving Oil</p>
+            <p class="w-[280px] text-base">
+              Industry: Oil & Gas <br />
+              The Change Agency played a pivotal role in driving the successful
+              implementation of Irving Oil’s Renewable Gas Program, a key
+              component of their Energy Transition Program. Taking on a
+              comprehensive change management leadership role, The Change Agency
+              focused on ensuring the smooth introduction and integration of
+              renewable natural gas (RNG) into the company's operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------Footer---------------------->
+
+    <div class="px-16 bg-[#FAFAFA]">
+      <div class="container mx-auto flex justify-between py-[48px]">
+        <div>
+          <p class="text-[#181D27] font-semibold text-xl leading-loose">
+            Join our newsletter
+          </p>
+          <p class="text-base">
+            We’ll send you a nice letter once per week. No spam.
+          </p>
+        </div>
+        <div>
+          <form class="flex">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="border border-1 border-[#D5D7DA] px-4 rounded-lg"
+            />
+            <button
+              type="submit"
+              class="px-2 py-1 lg:px-4 md:mx-2 text-white text-center rounded mt-1 md:mt-0 md:ml-1 bg-[#EC5C35] font-semibold text-base"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto bg-white px-16">
+      <div class="grid grid-cols-12 gap-4 py-[64px] justify-center border-b-2">
+        <div class="col-span-12 md:col-span-3">
+          <div class="flex">
+            <img src="Assets/Logo.png" alt="" height="52px" width="59px" />
+            <span href="#" class="font-bold text-base ms-2 text-[#EC5C35]"
+              >THE CHANGE <br />
+              AGENCY</span
+            >
+          </div>
+          <p class="text-[#535862] text-base mt-[32px]">
+            TCA is a technology-enabled organizational change management
+            consultancy specializing in guiding organizations through successful
+            transformations with a focus on people-centered strategies. 
+          </p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-2 ps-10 text-[#535862] font-semibold"
+        >
+          <p class="text-sm">WHO WE ARE</p>
+          <ul class="text-base mt-[16px] leading-loose">
+            <li>About TCA</li>
+            <li>Core Values</li>
+            <li>TCA Team</li>
+            <li>News</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div
+          class="col-span-12 md:col-span-2 ps-10 text-[#535862] font-semibold"
+        >
+          <p class="text-sm">What We Do</p>
+          <ul class="text-base mt-[16px] leading-loose">
+            <li>TCA Approach</li>
+            <li>Capabilities</li>
+            <li>Industry</li>
+          </ul>
+        </div>
+
+        <div
+          class="col-span-12 md:col-span-2 ps-10 text-[#535862] font-semibold"
+        >
+          <p class="text-sm">How We Do It</p>
+          <ul class="text-base mt-[16px] leading-loose">
+            <li>TCA Change Portal</li>
+            <li>Features</li>
+            <li>Solutions</li>
+          </ul>
+        </div>
+
+        <div
+          class="col-span-12 md:col-span-2 ps-10 text-[#535862] font-semibold"
+        >
+          <p class="text-sm">RESOURCES</p>
+          <ul class="text-base mt-[16px] leading-loose">
+            <li>Blog</li>
+            <li>Newsletter</li>
+            <li>Events</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div
+          class="col-span-12 md:col-span-1 ps-10 text-[#535862] font-semibold"
+        >
+          <p class="text-sm">LEGAL</p>
+          <ul class="text-base mt-[16px] leading-loose">
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 py-[32px]">
+        <p class="col-span-12 md:col-span-11 text-[#717680] text-base">
+          © 2025 The Change Agency. All rights reserved.
+        </p>
+        <span class="col-span-12 md:col-span-1 flex md:justify-end">
+          <a href="">
+            <img
+              src="Assets/footer_linkdln.png"
+              alt=""
+              height="24px"
+              width="24px"
+            />
+          </a>
+          <a href="">
+            <img
+              src="Assets/footer_facebook.png"
+              alt=""
+              height="24px"
+              width="24px"
+              class="ms-[24px]"
+            />
+          </a>
+        </span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+
+    <!-- Slide js -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+        });
+      });
+    </script>
+  </body>
+</html>

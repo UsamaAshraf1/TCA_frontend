@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-white">
+    <!-- Top Section -->
+    <div class="relative text-center pt-16 pb-28">
+      <div
+        style="
+          background: linear-gradient(270.2deg, #1f2328 0.17%, #1f2328 99.83%);
+        "
+      >
+        <h3 class="text-[48px] font-light">People-Driven Change Management</h3>
+        <p class="text-[26px] font-light px-[20vw] mt-8">
+          TCA is a people-driven organizational change management consultancy
+          specializing in people-centered strategies for successful
+          transformations.
+        </p>
+        <p class="text-[26px] font-light px-[20vw] mt-5">
+          We partner with businesses to ensure the adoption of new systems,
+          processes, and cultural shifts, addressing the fact that 70% of change
+          initiatives fail due to resistance or misalignment.
+        </p>
+      </div>
+
+      <div>
+        <div class="relative w-full h-[150vh]">
+          <img
+            src="../cloud.png"
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            alt="Cloud Background"
+          />
+
+          <div
+            class="absolute top-0 left-0 w-full h-[50vh]"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(31, 35, 40, 1) 42%,
+                rgba(31, 35, 40, 0.6) 65%,
+                rgba(11, 29, 38, 0) 91%
+              );
+            "
+          ></div>
+          <!-- background: linear-gradient(1.41deg, rgba(11, 29, 38, 0) 22.62%, #252529 125.44%); -->
+
+          <div
+            class="grid grid-cols-3 gap-10 px-[10vw] pt-24 h-[50vh] z-[10] relative"
+          >
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">500+</p>
+              <p class="text-[24px] font-medium">
+                Expert change agents across multiple industries and regions
+              </p>
+            </div>
+
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">100+</p>
+              <p class="text-[24px] font-medium">
+                Years of combined experience in change leadership and strategic
+                transformation
+              </p>
+            </div>
+
+            <div class="text-center text-white">
+              <p class="text-[60px] font-semibold">5000+</p>
+              <p class="text-[24px] font-medium">
+                Employees guided through change initiatives
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-full h-[100vh]">
+          <img
+            src="../back_mount.png"
+            class="absolute bottom-[90vh] left-0 w-full object-cover z-10"
+            alt="Back Mountain"
+          />
+
+          <div
+            id="scrollText"
+            class="absolute text-[96px] bottom-[70vh] left-[20vw] z-[15]"
+          >
+            <span class="font-[700]">TCA Approach </span> <br />
+            <span class="font-[900]">“People-Focused” </span>
+          </div>
+
+          <img
+            src="../front_mount.png"
+            class="absolute bottom-0 left-0 w-full object-cover z-20"
+            alt="Front Mountain"
+          />
+        </div>
+
+        <p
+          class="absolute bottom-[10%] w-full text-center text-[36px] text-black px-[5vw] z-30"
+        >
+          We embed experienced & industry-specific change agents within client
+          teams to drive change from within, ensuring smooth transitions and
+          cultivating a positive, engaged, and resilient workforce.
+        </p>
+      </div>
+    </div>
+
+    <!-- Background Image Section -->
+
+    <script>
+      document.addEventListener("scroll", function () {
+        let scrollY = window.scrollY;
+        let textElement = document.getElementById("scrollText");
+
+        // Moves the text up as the user scrolls
+        textElement.style.transform = `translateY(-${scrollY * 0.7}px)`;
+      });
+    </script>
+  </body>
+</html>

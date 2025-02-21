@@ -55,7 +55,6 @@ body {
   width: 350px;
   height: 350px;
   border-radius: 0 70%;
-  background-color: #1f801f;
   transform: rotate(0deg);
 }
 
@@ -63,7 +62,6 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 0 70%;
-  background-color: #259925;
   transform: rotate(90deg);
   margin-left: 150px;
   margin-top: 20px;
@@ -73,7 +71,6 @@ body {
   width: 350px;
   height: 350px;
   border-radius: 0 70%;
-  background-color: #2bb32b;
   transform: rotate(90deg);
   margin-left: 20px;
 }
@@ -82,7 +79,6 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 0 70%;
-  background-color: #2bb32b;
   transform: rotate(0deg);
   margin-top: 20px;
   margin-left: 20px;

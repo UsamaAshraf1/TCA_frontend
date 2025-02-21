@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
-
 body {
   font-family: "Archivo", sans-serif;
-  /* width: 100vw;
-  overflow-x: hidden; */
 }
-
 .slider {
   width: 100%;
 }
-
 .slide {
   display: flex !important;
   justify-content: center;
@@ -24,7 +19,6 @@ body {
   gap: 10px;
   bottom: -50px !important;
 }
-
 .slick-dots li {
   width: 30px !important;
   height: 10px !important;
@@ -33,31 +27,19 @@ body {
   transition: background-color 0.3s ease;
   margin-top: 32px !important;
 }
-
 .slick-dots li button {
   display: none !important;
 }
-
 .slick-dots li.slick-active {
   background-color: black;
 }
-
 /* ---------------------------Leaf View------------------- */
-/* .container {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-} */
-
 .leaf-1 {
   width: 350px;
   height: 350px;
   border-radius: 0 70%;
   transform: rotate(0deg);
 }
-
 .leaf-2 {
   width: 200px;
   height: 200px;
@@ -66,7 +48,6 @@ body {
   margin-left: 150px;
   margin-top: 20px;
 }
-
 .leaf-3 {
   width: 350px;
   height: 350px;
@@ -74,7 +55,6 @@ body {
   transform: rotate(90deg);
   margin-left: 20px;
 }
-
 .leaf-4 {
   width: 200px;
   height: 200px;

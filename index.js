@@ -19,7 +19,7 @@ document.addEventListener("scroll", function () {
   let textElement = document.getElementById("scrollText");
 
   // Calculate translation but limit it to a max of -556px
-  let translateY = Math.min(scrollY * 0.4, 590);
+  let translateY = Math.min(scrollY * 0.3, 590);
 
   // Apply transform
   textElement.style.transform = `translateY(-${translateY}px)`;

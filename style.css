@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 body {
-  font-family: "Archivo", sans-serif;
+  font-family: "Archivo";
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -9,23 +9,16 @@ body {
 html {
   scrollbar-width: none;
 }
-
-/* For Internet Explorer & Edge */
-/* body {
-  
-} */
-
 .slider {
   width: 100%;
 }
 .slide {
   display: flex !important;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: white;
 }
-
-/* Custom Slick Dots */
 .slick-dots {
   display: flex;
   justify-content: center;

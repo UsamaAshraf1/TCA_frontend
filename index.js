@@ -1,3 +1,23 @@
+AOS.init();
+setTimeout(() => {
+  document.getElementById("section1").classList.remove("opacity-0");
+  document.getElementById("section1").setAttribute("data-aos-delay", "500");
+}, 0);
+
+setTimeout(() => {
+  document.getElementById("section2").classList.remove("opacity-0");
+  document.getElementById("section2").setAttribute("data-aos-delay", "1000");
+}, 2000);
+
+setTimeout(() => {
+  document.getElementById("section3").classList.remove("opacity-0");
+  document.getElementById("section3").setAttribute("data-aos-delay", "1500");
+}, 4000);
+
+
+
+
+
 let toggleBtn = document.querySelector("#navbar-toggle");
 let collapse = document.querySelector("#navbar-collapse");
 

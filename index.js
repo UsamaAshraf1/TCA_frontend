@@ -1,4 +1,6 @@
 AOS.init();
+
+// Mountain Section Cards
 setTimeout(() => {
   document.getElementById("section1").classList.remove("opacity-0");
   document.getElementById("section1").setAttribute("data-aos-delay", "500");
@@ -14,6 +16,22 @@ setTimeout(() => {
   document.getElementById("section3").setAttribute("data-aos-delay", "1500");
 }, 4000);
 
+
+// Service Section Cards
+setTimeout(() => {
+  document.getElementById("service1").classList.remove("opacity-0");
+  document.getElementById("service1").setAttribute("data-aos-delay", "500");
+}, 0);
+
+setTimeout(() => {
+  document.getElementById("service2").classList.remove("opacity-0");
+  document.getElementById("service2").setAttribute("data-aos-delay", "1000");
+}, 2000);
+
+setTimeout(() => {
+  document.getElementById("service3").classList.remove("opacity-0");
+  document.getElementById("service3").setAttribute("data-aos-delay", "1500");
+}, 4000);
 
 
 

@@ -9,6 +9,8 @@ body {
 html {
   scrollbar-width: none;
 }
+
+/* Slider */
 .slider {
   width: 100%;
 }
@@ -38,6 +40,15 @@ html {
 }
 .slick-dots li.slick-active {
   background-color: black;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex-direction: column;
+  }
+  .slick-dots li {
+    margin-top: 50px !important;
+  }
 }
 /* ---------------------------Leaf View------------------- */
 .leaf-1 {

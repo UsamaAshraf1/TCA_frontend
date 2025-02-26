@@ -1,6 +1,6 @@
 AOS.init();
 
-// Mountain Section Cards
+// --------------Mountain Section Cards-------------
 setTimeout(() => {
   document.getElementById("section1").classList.remove("opacity-0");
   document.getElementById("section1").setAttribute("data-aos-delay", "500");
@@ -9,15 +9,15 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById("section2").classList.remove("opacity-0");
   document.getElementById("section2").setAttribute("data-aos-delay", "1000");
-}, 2000);
+}, 1000);
 
 setTimeout(() => {
   document.getElementById("section3").classList.remove("opacity-0");
   document.getElementById("section3").setAttribute("data-aos-delay", "1500");
-}, 4000);
+}, 1500);
 
 
-// Service Section Cards
+// ----------------Service Section Cards-----------------
 setTimeout(() => {
   document.getElementById("service1").classList.remove("opacity-0");
   document.getElementById("service1").setAttribute("data-aos-delay", "500");
@@ -26,16 +26,16 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById("service2").classList.remove("opacity-0");
   document.getElementById("service2").setAttribute("data-aos-delay", "1000");
-}, 2000);
+}, 1000);
 
 setTimeout(() => {
   document.getElementById("service3").classList.remove("opacity-0");
   document.getElementById("service3").setAttribute("data-aos-delay", "1500");
-}, 4000);
+}, 1500);
 
 
 
-
+// -----------------Navbar-----------------
 let toggleBtn = document.querySelector("#navbar-toggle");
 let collapse = document.querySelector("#navbar-collapse");
 
@@ -87,14 +87,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+// ------------------Mountain Text Show Hide--------------------
 document.addEventListener("scroll", function () {
   let scrollY = window.scrollY;
   let textElement = document.getElementById("scrollText");
-
-  // Calculate translation but limit it to a max of -556px
   let translateY = Math.min(scrollY * 0.3, 590);
-
-  // Apply transform
   textElement.style.transform = `translateY(-${translateY}px)`;
 });
 

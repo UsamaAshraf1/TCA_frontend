@@ -90,6 +90,7 @@
           <img
             src="../back_mount.png"
             class="absolute bottom-[400px] md:bottom-[700px] h-[1177px] left-0 w-full object-cover z-10"
+            id="backMount"
             alt="Back Mountain"
           />
 
@@ -103,6 +104,7 @@
           <img
             src="../front_mount.png"
             class="absolute bottom-0 h-[1157px] md:h-[1557px] left-0 w-full object-cover z-20"
+            id="FrontMount"
             alt="Front Mountain"
           />
         </div>
@@ -123,12 +125,33 @@
       document.addEventListener("scroll", function () {
         let scrollY = window.scrollY;
         let textElement = document.getElementById("scrollText");
+        // let backMountain = document.getElementById("backMount");
+        // let frontMountain = document.getElementById("FrontMount");
 
         // Moves the text up as the user scrolls
         if (window.innerWidth < 768) {
           textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
         } else {
           textElement.style.transform = `translateY(-${scrollY * 1.5}px)`;
+          // backMountain.style.transform = `translateY(-${scrollY * 0.5}px)`;
+          // frontMountain.style.transform = `translateY(-${scrollY * 0.6}px)`;
+        }
+      });
+
+
+      document.addEventListener("mousemove", function () {
+        let scrollY = window.scrollY;
+        // let textElement = document.getElementById("scrollText");
+        let backMountain = document.getElementById("backMount");
+        let frontMountain = document.getElementById("FrontMount");
+
+        // Moves the text up as the user scrolls
+        if (window.innerWidth < 768) {
+          // textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
+        } else {
+          // textElement.style.transform = `translateY(-${scrollY * 1.5}px)`;
+          backMountain.style.transform = `translateY(-${scrollY * 0.5}px)`;
+          frontMountain.style.transform = `translateY(-${scrollY * 0.6}px)`;
         }
       });
     </script>

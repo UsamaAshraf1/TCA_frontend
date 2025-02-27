@@ -45,7 +45,7 @@
               <img src="Assets/logo.svg" alt="" height="52px" width="185px" />
             </a>
             <button
-              class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+              class="px-3 py-1 rounded text-black opacity-50 hover:opacity-75 lg:hidden"
               id="navbar-toggle"
             >
               <svg
@@ -248,7 +248,7 @@
               </div>
             </div>
 
-            <div class="lg:hidden">
+            <div class="lg:hidden border-t-1">
               <button
                 type="button"
                 class="flex w-full justify-between items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button-mobile"
@@ -303,7 +303,7 @@
 
             <button
               type="button"
-              class="flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
+              class="hidden lg:flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
               aria-expanded="false"
             >
               What We Do
@@ -322,9 +322,33 @@
               </svg>
             </button>
 
+            <div class="lg:hidden">
+              <button
+                type="button"
+                class="flex w-full justify-between items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button-mobile"
+                aria-controls="disclosure-1"
+                aria-expanded="false"
+              >
+                What We Do
+                <svg
+                  class="size-5 flex-none"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
             <button
               type="button"
-              class="flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
+              class="hidden lg:flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
               aria-expanded="false"
             >
               How We Do It
@@ -343,9 +367,33 @@
               </svg>
             </button>
 
+            <div class="lg:hidden">
+              <button
+                type="button"
+                class="flex w-full justify-between items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button-mobile"
+                aria-controls="disclosure-1"
+                aria-expanded="false"
+              >
+                How We Do It
+                <svg
+                  class="size-5 flex-none"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
             <button
               type="button"
-              class="flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
+              class="hidden lg:flex items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button"
               aria-expanded="false"
             >
               Resources
@@ -364,38 +412,59 @@
               </svg>
             </button>
 
+            <div class="lg:hidden">
+              <button
+                type="button"
+                class="flex w-full justify-between items-center gap-x-1 p-2 lg:px-4 text-[#1F2328] font-[500] leading-[17.40px] uppercase who-we-button-mobile"
+                aria-controls="disclosure-1"
+                aria-expanded="false"
+              >
+                Resources
+                <svg
+                  class="size-5 flex-none"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="flex justify-between mx-3 mt-[48px] mb-[32px] lg:hidden"
+            >
+              <ul class="text-[16px] font-[500] leading-loose text-[#535862]">
+                <li>About TCA</li>
+                <li>Core Values</li>
+                <li>TCA Team</li>
+                <li>News</li>
+              </ul>
+
+              <ul class="text-[16px] font-[500] leading-loose text-[#535862]">
+                <li>Careers</li>
+                <li>Contact</li>
+                <li>Sitemap</li>
+                <li>Cookie settings</li>
+              </ul>
+            </div>
+
             <a
               href="#"
-              class="px-2 h-[39px] lg:px-8 lg:mx-2 text-white text-center uppercase mt-1 lg:mt-0 lg:ml-1 bg-[#EC5C35] text-[14px] font-[400] flex justify-center items-center rounded-[2px] lg:hidden"
+              class="px-2 h-[44px] lg:px-8 lg:mx-2 text-white text-center uppercase mt-1 lg:mt-0 lg:ml-1 bg-[#EC5C35] text-[14px] font-[400] flex justify-center items-center rounded-[2px] lg:hidden"
               >BOOK A MEETING
             </a>
 
-            <div class="flex justify-center items-center mt-3 lg:hidden">
-              <a href="">
-                <img
-                  src="Assets/linkdln.svg"
-                  alt=""
-                  height="16px"
-                  width="16px"
-                />
-              </a>
-              <a href="" class="ms-2">
-                <img
-                  src="Assets/instagram.svg"
-                  alt=""
-                  height="17px"
-                  width="17px"
-                />
-              </a>
-              <a href="" class="ms-2">
-                <img
-                  src="Assets/youtube.svg"
-                  alt=""
-                  height="16px"
-                  width="20px"
-                />
-              </a>
-            </div>
+            <a
+              href="#"
+              class="px-2 h-[44px] lg:px-8 lg:mx-2 mt-[12px] text-black border text-center uppercase mt-1 lg:mt-0 lg:ml-1 text-[14px] font-[400] flex justify-center items-center rounded-[2px] lg:hidden"
+              >TAKE THE ASSESSMENT
+            </a>
           </div>
 
           <div class="hidden lg:flex flex-col lg:flex-row mt-3 lg:mt-0">
@@ -716,7 +785,7 @@
 
           <div
             id="scrollText"
-            class="absolute text-[36px] md:text-[96px] top-[300px] md:top-0 md:bottom-[70vh] left-[10vw] md:left-[16vw] 2xl:left-[26vw] z-[15]"
+            class="absolute text-[36px] md:text-[96px] top-[300px] md:top-0 md:bottom-[70vh] sm:left-[25vw] md:left-[16vw] 2xl:left-[26vw] z-[15]"
           >
             <span class="font-[700]">TCA Approach </span> <br />
             <span class="font-[700] md:font-[900]">“People-Focused” </span>

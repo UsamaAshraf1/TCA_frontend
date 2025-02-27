@@ -16,7 +16,6 @@ setTimeout(() => {
   document.getElementById("section3").setAttribute("data-aos-delay", "1500");
 }, 1500);
 
-
 // ----------------Service Section Cards-----------------
 setTimeout(() => {
   document.getElementById("service1").classList.remove("opacity-0");
@@ -32,8 +31,6 @@ setTimeout(() => {
   document.getElementById("service3").classList.remove("opacity-0");
   document.getElementById("service3").setAttribute("data-aos-delay", "1500");
 }, 1500);
-
-
 
 // -----------------Navbar-----------------
 let toggleBtn = document.querySelector("#navbar-toggle");
@@ -87,12 +84,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 // ------------------Mountain Text Show Hide--------------------
 document.addEventListener("scroll", function () {
   let scrollY = window.scrollY;
   let textElement = document.getElementById("scrollText");
-  let translateY = Math.min(scrollY * 0.3, 590);
+  let translateY;
+  if (window.innerWidth < 768) {
+    translateY = Math.min(scrollY * 0.5, 1400);
+  } else {
+    translateY = Math.min(scrollY * 0.8, 1590);
+  }
   textElement.style.transform = `translateY(-${translateY}px)`;
 });
 

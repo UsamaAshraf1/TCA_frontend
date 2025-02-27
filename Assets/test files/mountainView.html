@@ -125,35 +125,33 @@
       document.addEventListener("scroll", function () {
         let scrollY = window.scrollY;
         let textElement = document.getElementById("scrollText");
-        // let backMountain = document.getElementById("backMount");
-        // let frontMountain = document.getElementById("FrontMount");
-
-        // Moves the text up as the user scrolls
-        if (window.innerWidth < 768) {
-          textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
-        } else {
-          textElement.style.transform = `translateY(-${scrollY * 1.5}px)`;
-          // backMountain.style.transform = `translateY(-${scrollY * 0.5}px)`;
-          // frontMountain.style.transform = `translateY(-${scrollY * 0.6}px)`;
-        }
-      });
-
-
-      document.addEventListener("mousemove", function () {
-        let scrollY = window.scrollY;
-        // let textElement = document.getElementById("scrollText");
         let backMountain = document.getElementById("backMount");
         let frontMountain = document.getElementById("FrontMount");
 
         // Moves the text up as the user scrolls
         if (window.innerWidth < 768) {
-          // textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
+          textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
         } else {
-          // textElement.style.transform = `translateY(-${scrollY * 1.5}px)`;
-          backMountain.style.transform = `translateY(-${scrollY * 0.5}px)`;
+          textElement.style.transform = `translateY(-${scrollY * 2.3}px)`;
+          backMountain.style.transform = `translateY(-${scrollY * -0.2}px)`;
           frontMountain.style.transform = `translateY(-${scrollY * 0.6}px)`;
         }
       });
+
+
+      // document.addEventListener("mousemove", function () {
+      //   let scrollY = window.scrollY;
+      //   let textElement = document.getElementById("scrollText");
+      //   let backMountain = document.getElementById("backMount");
+      //   let frontMountain = document.getElementById("FrontMount");
+      //   if (window.innerWidth < 768) {
+      //     textElement.style.transform = `translateY(-${scrollY * 0.8}px)`;
+      //   } else {
+      //     textElement.style.transform = `translateY(-${scrollY * 1.5}px)`;
+      //     backMountain.style.transform = `translateY(-${scrollY * 0.5}px)`;
+      //     frontMountain.style.transform = `translateY(-${scrollY * 0.6}px)`;
+      //   }
+      // });
     </script>
   </body>
 </html>

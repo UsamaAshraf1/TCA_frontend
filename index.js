@@ -91,8 +91,10 @@ document.addEventListener("scroll", function () {
   let translateY;
   if (window.innerWidth < 768) {
     translateY = Math.min(scrollY * 0.5, 1400);
+  } else if (window.innerWidth > 1800) {
+    translateY = Math.min(scrollY * 0.7, 1300);
   } else {
-    translateY = Math.min(scrollY * 0.8, 1590);
+    translateY = Math.min(scrollY * 0.7, 1200);
   }
   textElement.style.transform = `translateY(-${translateY}px)`;
 });

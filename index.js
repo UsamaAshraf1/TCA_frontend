@@ -1,5 +1,13 @@
 AOS.init();
 
+document.getElementById("menu-toggle").addEventListener("change", function () {
+  if (this.checked) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
+});
+
 // --------------Mountain Section Cards-------------
 setTimeout(() => {
   document.getElementById("section1").classList.remove("opacity-0");

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <input id="menu-toggle" type="checkbox" />
+    <main>
+      <div class="content">
+        <!-- <div class="content__img content__img--left"></div>
+        <div class="content__title content__title--left">2018</div>
+        <div class="content__img content__img--main"></div>
+
+        <div class="content__title content__title--main">
+          <span style="grid-area: lt-1">A</span>
+          <span style="grid-area: lt-2">B</span>
+          <span style="grid-area: lt-3">C</span>
+          <span style="grid-area: lt-4">D</span>
+        </div>
+        <div class="content__img content__img--right"></div>
+        <div class="content__title content__title--right">2019</div> -->
+        <div
+          class="w-[100vw] h-auto md:h-[600px] 2xl:h-[781px] bg-[url('../heroBackgroubd.jpeg')] bg-cover bg-center bg-black/30 bg-blend-overlay"
+        >
+          <div
+            class="container mx-auto flex flex-col-reverse md:flex-row py-[100px] px-[42px] md:px-16 justify-center md:justify-between 2xl:pt-[200px]"
+          >
+            <div class="md:w-[50vw] mt-[244px] md:mt-0">
+              <p
+                class="text-white text-[30px] leading-[32.64px] md:leading-[44px] 2xl:text-[40px] content__title content__title--right"
+              >
+                Through human-centric change management, we bring together
+                strategy, relationships, and innovation for lasting impact!
+              </p>
+
+              <p
+                class="text-[24px] md:text-[30px] text-[#EC5C35] mt-[40px] md:mt-[25px] font-[600] leading-[26.11px] md:leading-[32.64px]"
+                style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 1)"
+              >
+                7X More Change Success Through TCA's Approach
+              </p>
+
+              <p
+                class="text-[20px] font-[400] leading-[21.76px] text-white mt-[40px] md:mt-[25px] md:w-[400px]"
+              >
+                Find out what it takes to make change happen for your
+                project—complete your assessment today!
+              </p>
+              <button
+                class="bg-[#EC5C35] text-white text-[18px] md:text-[16px] leading-[28px] md:leading-[17.41px] px-10 md:px-12 h-[60px] md:h-[47px] mt-[40px] md:mt-[25px] rounded-[2px] uppercase"
+              >
+                TAKE THE ASSESSMENT
+              </button>
+            </div>
+
+            <div
+              class="md:w-[50vw] flex justify-center md:justify-end items-center"
+            >
+              <div
+                class="w-[181px] md:w-[438px] h-[160px] md:h-[387px] content__img content__img--right"
+              >
+                <img src="../heroRightSide.png" alt="" class="w-full h-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-wrap">
+        <div class="cover">
+          <div class="cover-inner"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu__top">
+          <div class="menu__title">
+            <img src="../icons/black_logo.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="menu__nav-top">
+            <a class="menu__link uppercase" href="#">
+              <label for="menu-toggle">WHO WE ARE</label>
+            </a>
+            <a class="menu__link uppercase" href="#">
+              <label for="menu-toggle">What We Do</label>
+            </a>
+            <a class="menu__link uppercase" href="#">
+              <label for="menu-toggle">How We Do It</label>
+            </a>
+
+            <a class="menu__link uppercase" href="#">
+              <label for="menu-toggle">Resources</label>
+            </a>
+          </div>
+          <div class="menu__side">
+            <!-- <a class="menu__link" href="#">Login</a> -->
+            <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+              <a
+                href="#"
+                class="px-2 h-[39px] lg:px-8 lg:mx-2 text-white text-center rounded-[2px] transition-colors duration-300 mt-1 lg:mt-0 lg:ml-1 bg-black flex justify-center items-center"
+                >BOOK A MEETING
+              </a>
+
+              <div class="flex justify-center items-center ms-16">
+                <a href="">
+                  <img
+                    src="../icons/black_linkdln.png"
+                    alt=""
+                    height="16px"
+                    width="16px"
+                  />
+                </a>
+                <a href="" class="ms-4">
+                  <img
+                    src="../icons/black_instagram.png"
+                    alt=""
+                    height="17px"
+                    width="17px"
+                  />
+                </a>
+                <a href="" class="ms-4">
+                  <img
+                    src="../icons/black_youtube.png"
+                    alt=""
+                    height="16px"
+                    width="20px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__content-wrap">
+          <div class="menu__content">
+            <!-- <div class="menu__nav-content">
+              <div class="column">
+                <div class="column__title">New In</div>
+                <a class="menu__link" href="#">Blouses</a>
+                <a class="menu__link" href="#">Jeans</a>
+                <a class="menu__link" href="#">Trousers</a>
+                <div class="column__title">Discounts</div>
+                <a class="menu__link" href="#">T-Shirts</a>
+                <a class="menu__link" href="#">Party</a>
+                <a class="menu__link" href="#">Basics</a>
+              </div>
+              <div class="column">
+                <div class="column__title">Trending</div>
+                <a class="menu__link" href="#">New Season</a>
+                <a class="menu__link" href="#">Holiday</a>
+                <a class="menu__link" href="#">Outdoor</a>
+              </div>
+            </div>
+            <button class="menu__back">
+              <label for="menu-toggle">
+                <svg width="10" height="182" viewBox="0 0 10 121">
+                  <path d="M5 0 .5 9h9L5 0Zm.5 120.5V8h-1v113h1v-.5Z"></path>
+                </svg>
+              </label>
+            </button> -->
+
+            <div class="flex ps-[200px]">
+              <div class="z-10 overflow-hidden">
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4"
+                  >
+                    <div class="flex rounded-lg">
+                      <img
+                        src="../icons/black_about.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="#"
+                        class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
+                      >
+                        About TCA
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p
+                        class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
+                      >
+                        Learn what makes TCA unique and impactful.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4"
+                  >
+                    <div class="flex rounded-lg">
+                      <img
+                        src="../icons/black_values.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="#"
+                        class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
+                      >
+                        Core Values
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p
+                        class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
+                      >
+                        Explore the principles that drive everything we do.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
+                  >
+                    <div class="flex rounded-lg">
+                      <img
+                        src="../icons/black_team.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="#"
+                        class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
+                      >
+                        TCA Team
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p
+                        class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
+                      >
+                        Meet the people powering our mission.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
+                  >
+                    <div class="flex rounded-lg">
+                      <img
+                        src="../icons/black_news.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="#"
+                        class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
+                      >
+                        News
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p
+                        class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
+                      >
+                        Stay updated with the latest happenings at TCA.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
+                  >
+                    <div class="flex rounded-lg">
+                      <img
+                        src="../icons/black_contact.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="#"
+                        class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
+                      >
+                        Contact
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p
+                        class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
+                      >
+                        Get in touch with us for inquiries or support.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="fly_nav" class="back_button absolute right-20 bottom-6 text-[96px] text-[#1F2328]">
+                <label for="menu-toggle">
+                  <h1 class="">Fly Farward..</h1>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

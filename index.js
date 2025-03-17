@@ -8,6 +8,73 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
   }
 });
 
+function toggleModal(name = "", role = "", image = "", desc = "") {
+  const modal = document.getElementById("modal");
+  const modalName = document.getElementById("modal-name");
+  const modalRole = document.getElementById("modal-role");
+  const modalImage = document.getElementById("modal-image");
+  const modalDesc = document.getElementById("modal-desc");
+
+  if (name && role && image) {
+    modalName.textContent = name;
+    modalRole.textContent = role;
+    modalImage.src = image;
+    modalDesc.textContent = desc;
+  }
+
+  // modal.classList.toggle("hidden");
+  if (modal.classList.contains("opacity-0")) {
+    modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+    modal.classList.add("opacity-100", "scale-100");
+  } else {
+    modal.classList.remove("opacity-100", "scale-100");
+    modal.classList.add("opacity-0", "scale-95", "pointer-events-none");
+  }
+}
+
+// Graph Carousel
+$(document).ready(function () {
+  $(".graph_Carousel").slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust for mobile screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
+
+// Case Study Carousel
+$(document).ready(function () {
+  $(".slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust for mobile screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
 // --------------Mountain Section Cards-------------
 setTimeout(() => {
   document.getElementById("section1").classList.remove("opacity-0");

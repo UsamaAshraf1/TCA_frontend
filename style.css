@@ -31,9 +31,11 @@ html {
   bottom: -50px !important;
 }
 .slick-dots li {
-  width: 30px !important;
+  /* width: 30px !important;
+  height: 10px !important; */
+  width: 10px !important;
   height: 10px !important;
-  background-color: gray;
+  background-color: #FBDED6;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   margin-top: 32px !important;
@@ -42,7 +44,7 @@ html {
   display: none !important;
 }
 .slick-dots li.slick-active {
-  background-color: black;
+  background-color: #FFC5B5;
 }
 
 @media (max-width: 768px) {

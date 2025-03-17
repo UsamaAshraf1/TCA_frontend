@@ -43,7 +43,7 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
-        breakpoint: 768, // Adjust for mobile screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -53,7 +53,50 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".button_carousel_one").slick({
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true, 
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    variableWidth: true,
+  });
+});
 
+$(document).ready(function () {
+  $(".button_carousel_two").slick({
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true, 
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    variableWidth: true,
+  });
+});
+
+$(document).ready(function () {
+  $(".button_carousel_three").slick({
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    variableWidth: true,
+  });
+});
 // Case Study Carousel
 $(document).ready(function () {
   $(".slider").slick({
@@ -65,7 +108,7 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
-        breakpoint: 768, // Adjust for mobile screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

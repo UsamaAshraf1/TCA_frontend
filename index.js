@@ -1,5 +1,9 @@
 AOS.init();
 
+window.addEventListener("scroll", () => {
+  AOS.refresh();
+});
+
 document.getElementById("menu-toggle").addEventListener("change", function () {
   if (this.checked) {
     document.body.classList.add("no-scroll");
@@ -26,9 +30,11 @@ function toggleModal(name = "", role = "", image = "", desc = "") {
   if (modal.classList.contains("opacity-0")) {
     modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
     modal.classList.add("opacity-100", "scale-100");
+    document.body.classList.add("no-scroll");
   } else {
     modal.classList.remove("opacity-100", "scale-100");
     modal.classList.add("opacity-0", "scale-95", "pointer-events-none");
+    document.body.classList.remove("no-scroll");
   }
 }
 
@@ -61,7 +67,7 @@ $(document).ready(function () {
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, 
+    autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
     variableWidth: true,
@@ -76,7 +82,7 @@ $(document).ready(function () {
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, 
+    autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
     variableWidth: true,

@@ -19,7 +19,7 @@ html {
 }
 .slide {
   display: flex !important;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: white;
@@ -35,7 +35,7 @@ html {
   height: 10px !important; */
   width: 10px !important;
   height: 10px !important;
-  background-color: #FBDED6;
+  background-color: #fbded6;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   margin-top: 32px !important;
@@ -44,13 +44,23 @@ html {
   display: none !important;
 }
 .slick-dots li.slick-active {
-  background-color: #FFC5B5;
+  background-color: #ffc5b5;
 }
-
+.slide_one {
+  width: 35vw !important;
+  height: 650px !important;
+}
+.slide_two {
+  width: 39vw !important;
+  height: 650px !important;
+}
+.slide img {
+  background-color: transparent !important;
+}
 @media (max-width: 768px) {
-  .slide {
+  /* .slide {
     flex-direction: column;
-  }
+  } */
   .slick-dots li {
     margin-top: 50px !important;
   }

@@ -10,6 +10,11 @@ html {
   scrollbar-width: none;
 }
 
+#scrollText {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: translateY(-1000px);
+}
+
 .no-scroll {
   overflow: hidden;
 }

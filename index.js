@@ -1,8 +1,46 @@
 AOS.init();
 
+// window.addEventListener("scroll", () => {
+//   AOS.refresh();
+// });
+
+// document.addEventListener("scroll", function () {
+//   console.log("Scroll started");
+//   let textElement = document.getElementById("scrollText");
+//   if (!textElement) return; // Prevent errors if element is missing
+
+//   let scrollY = window.scrollY;
+//   let factor = window.innerWidth < 768 ? 0.5 : 0.7;
+//   let translateY = -1000 + scrollY * factor; // Moves up from -1000px
+
+//   textElement.style.transform = `translateY(${translateY}px)`;
+//   textElement.style.opacity = Math.min(1, scrollY / 500); // Smooth fade-in
+// });
+
+// Optimize scroll event with requestAnimationFrame
+let ticking = false;
 window.addEventListener("scroll", () => {
-  AOS.refresh();
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      AOS.refresh(); // If using AOS, refresh it in a less frequent way
+      updateTextPosition();
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
+
+function updateTextPosition() {
+  let textElement = document.getElementById("scrollText");
+  if (!textElement) return;
+
+  let scrollY = window.scrollY;
+  let factor = window.innerWidth < 768 ? 0.5 : 0.7;
+  let translateY = -1000 + scrollY * factor; // Moves up from -1000px
+
+  textElement.style.transform = `translateY(${-translateY}px)`;
+  textElement.style.opacity = Math.min(1, scrollY / 500); // Smooth fade-in
+}
 
 document.getElementById("menu-toggle").addEventListener("change", function () {
   if (this.checked) {
@@ -209,19 +247,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ------------------Mountain Text Show Hide--------------------
-document.addEventListener("scroll", function () {
-  let scrollY = window.scrollY;
-  let textElement = document.getElementById("scrollText");
-  let translateY;
-  if (window.innerWidth < 768) {
-    translateY = Math.min(scrollY * 0.5, 1400);
-  } else if (window.innerWidth > 1800) {
-    translateY = Math.min(scrollY * 0.7, 1300);
-  } else {
-    translateY = Math.min(scrollY * 0.7, 1200);
-  }
-  textElement.style.transform = `translateY(-${translateY}px)`;
-});
+// document.addEventListener("scroll", function () {
+//   let scrollY = window.scrollY;
+//   let textElement = document.getElementById("scrollText");
+//   let translateY;
+//   if (window.innerWidth < 768) {
+//     translateY = Math.min(scrollY * 0.5, 1400);
+//   } else if (window.innerWidth > 1800) {
+//     translateY = Math.min(scrollY * 0.7, 1300);
+//   } else {
+//     translateY = Math.min(scrollY * 0.7, 1200);
+//   }
+//   textElement.style.transform = `translateY(-${translateY}px)`;
+// });
 
 function toggleDropdown(event, id) {
   event.preventDefault();

@@ -407,11 +407,11 @@ main {
 
   opacity: 0;
   transform: translateY(400%);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 #menu-toggle:checked + main .back_button {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1.6s ease;
+  transition: all 1s ease;
 }

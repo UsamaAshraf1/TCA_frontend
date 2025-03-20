@@ -50,6 +50,33 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
   }
 });
 
+// function toggleModal(name = "", role = "", image = "", desc = "") {
+//   const modal = document.getElementById("modal");
+//   const modalName = document.getElementById("modal-name");
+//   const modalRole = document.getElementById("modal-role");
+//   const modalImage = document.getElementById("modal-image");
+//   const modalDesc = document.getElementById("modal-desc");
+
+//   if (name && role && image) {
+//     modalName.textContent = name;
+//     modalRole.textContent = role;
+//     modalImage.src = image;
+//     modalDesc.textContent = desc;
+//   }
+
+//   if (modal.classList.contains("opacity-0")) {
+//     modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+//     modal.classList.add("opacity-100", "scale-100","blow-up");
+//     document.body.classList.add("no-scroll");
+//   } else {
+//     modal.classList.remove("opacity-100", "scale-100");
+//     modal.classList.add("opacity-0", "scale-95", "pointer-events-none","blow-down");
+//     document.body.classList.remove("no-scroll");
+//   }
+// }
+
+// Graph Carousel
+
 function toggleModal(name = "", role = "", image = "", desc = "") {
   const modal = document.getElementById("modal");
   const modalName = document.getElementById("modal-name");
@@ -64,19 +91,27 @@ function toggleModal(name = "", role = "", image = "", desc = "") {
     modalDesc.textContent = desc;
   }
 
-  // modal.classList.toggle("hidden");
   if (modal.classList.contains("opacity-0")) {
+    // Remove blow-down before adding blow-up
+    modal.classList.remove("blow-down");
+
     modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
-    modal.classList.add("opacity-100", "scale-100");
+    modal.classList.add("opacity-100", "scale-100", "blow-up");
+
     document.body.classList.add("no-scroll");
   } else {
+    // Remove blow-up and wait before adding blow-down
+    modal.classList.remove("blow-up");
+
+    modal.classList.add("blow-down");
+
     modal.classList.remove("opacity-100", "scale-100");
     modal.classList.add("opacity-0", "scale-95", "pointer-events-none");
+
     document.body.classList.remove("no-scroll");
   }
 }
 
-// Graph Carousel
 $(document).ready(function () {
   $(".graph_Carousel").slick({
     dots: true,
@@ -138,8 +173,9 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
-    variableWidth: true,
+    variableWidth: false,
   });
+ 
 });
 // Case Study Carousel
 $(document).ready(function () {

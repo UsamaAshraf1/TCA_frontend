@@ -148,10 +148,11 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $(".button_carousel_two").css("visibility", "visible");
   $(".button_carousel_two").slick({
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 5000,
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
@@ -159,7 +160,9 @@ $(document).ready(function () {
     autoplaySpeed: 0,
     cssEase: "linear",
     variableWidth: true,
+    rtl: true,
   });
+
 });
 
 $(document).ready(function () {
@@ -175,7 +178,6 @@ $(document).ready(function () {
     cssEase: "linear",
     variableWidth: false,
   });
- 
 });
 // Case Study Carousel
 $(document).ready(function () {
@@ -301,3 +303,29 @@ function toggleDropdown(event, id) {
   event.preventDefault();
   document.getElementById(id).classList.toggle("hidden");
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("button_carousel_two");
+  const track_one = document.getElementById("button_carousel_one");
+  const track_three = document.getElementById("button_carousel_three");
+  const items = Array.from(track.children);
+  const itemsOne = Array.from(track_one.children);
+  const itemsThree = Array.from(track_three.children);
+
+  // Clone items to make an infinite scrolling effect
+  items.forEach((item) => {
+    let clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  itemsOne.forEach((item) => {
+    let clone = item.cloneNode(true);
+    track_one.appendChild(clone);
+  });
+
+  itemsThree.forEach((item) => {
+    let clone = item.cloneNode(true);
+    track_three.appendChild(clone);
+  });
+});

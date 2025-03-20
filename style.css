@@ -52,11 +52,11 @@ html {
   background-color: #ffc5b5;
 }
 .slide_one {
-  width: 35vw !important;
+  width: 36vw !important;
   height: 650px !important;
 }
 .slide_two {
-  width: 39vw !important;
+  width: 41vw !important;
   height: 650px !important;
 }
 .slide img {
@@ -134,5 +134,34 @@ html {
 
 
 
+
 /* -------------------- */
 
+@keyframes scroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes Newscroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-one, .animate-scroll-three{
+  display: flex;
+  animation: Newscroll 30s linear infinite;
+}

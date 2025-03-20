@@ -43,33 +43,74 @@
       <input id="menu-toggle" type="checkbox" />
       <main>
         <div class="content">
-          <div
+          <!-- <div
             class="w-[100vw] h-screen bg-[url('Assets/heroBackgroubd.jpeg')] bg-cover bg-center bg-black/30 bg-blend-overlay"
           >
             <div
               class="container mx-auto flex flex-col-reverse md:flex-row py-[100px] px-[42px] md:px-16 justify-center md:justify-between 2xl:pt-[200px]"
             >
               <div class="md:w-[50vw] mt-[244px] md:mt-0">
-                <!-- <p
-                  class="text-white text-[30px] leading-[32.64px] md:leading-[44px] 2xl:text-[40px] content__title content__title--right"
-                >
-                  Through human-centric change management, we bring together
-                  strategy, relationships, and innovation for lasting impact!
-                </p>
-
-                <p
-                  class="text-[24px] md:text-[30px] text-[#EC5C35] mt-[40px] md:mt-[25px] font-[600] leading-[26.11px] md:leading-[32.64px]"
-                  style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 1)"
-                >
-                  7X More Change Success Through TCA's Approach
-                </p> -->
-
                 <h1
                   class="font-[400] text-[54px] leading-[100%] text-white mt-[15vh]"
                 >
                   The Future of Change
                 </h1>
 
+                <p
+                  class="text-[24px] font-[400] leading-[100%] text-white mt-[50px]"
+                >
+                  Find out what it takes to make change happen for your
+                  organization - complete your assessment today!
+                </p>
+                <button
+                  class="bg-[#EC5C35] text-white text-[18px] font-[400] leading-[100%] px-10 h-[56px] mt-[50px] rounded-full uppercase"
+                >
+                  TAKE THE ASSESSMENT
+                </button>
+              </div>
+
+              <div
+                class="md:w-[50vw] flex justify-center md:justify-end items-center"
+              >
+                <div
+                  class="w-[181px] md:w-[438px] h-[160px] md:h-[387px] content__img content__img--right"
+                >
+                  <img
+                    src="Assets/heroRightSide.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="relative w-[100vw] h-screen overflow-hidden">
+            <!-- Background Video -->
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            >
+              <source src="Assets/video/hero.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay to Darken Background -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/30"></div>
+
+            <!-- Content Container -->
+            <div
+              class="relative container mx-auto flex flex-col-reverse md:flex-row py-[100px] px-[42px] md:px-16 justify-center md:justify-between 2xl:pt-[200px]"
+            >
+              <div class="md:w-[50vw] mt-[244px] md:mt-0">
+                <h1
+                  class="font-[400] text-[54px] leading-[100%] text-white mt-[15vh]"
+                >
+                  The Future of Change
+                </h1>
                 <p
                   class="text-[24px] font-[400] leading-[100%] text-white mt-[50px]"
                 >

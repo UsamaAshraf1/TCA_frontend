@@ -132,8 +132,41 @@ html {
   animation: blowDown 0.5s ease-in forwards;
 }
 
+/* ----------------------- */
+.button-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing as needed */
+  overflow: hidden;
+}
 
-
+.button-container::before,
+.button-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+}
+.button-container::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #111,
+    rgba(32, 35, 39, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+.button-container::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(32, 35, 39, 1),
+    rgba(32, 35, 39, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
 
 /* -------------------- */
 
@@ -146,7 +179,6 @@ html {
   }
 }
 
-
 @keyframes Newscroll {
   from {
     transform: translateX(0%);
@@ -158,10 +190,11 @@ html {
 
 .animate-scroll {
   display: flex;
-  animation: scroll 40s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
-.animate-scroll-one, .animate-scroll-three{
+.animate-scroll-one,
+.animate-scroll-three {
   display: flex;
-  animation: Newscroll 30s linear infinite;
+  animation: Newscroll 50s linear infinite;
 }

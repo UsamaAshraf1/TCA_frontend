@@ -35,7 +35,7 @@ function updateTextPosition() {
   if (!textElement) return;
 
   let scrollY = window.scrollY;
-  let factor = window.innerWidth < 768 ? 0.5 : 0.7;
+  let factor = window.innerWidth < 768 ? 0.4 : 0.7;
   let translateY = -1000 + scrollY * factor; // Moves up from -1000px
 
   textElement.style.transform = `translateY(${-translateY}px)`;
@@ -114,6 +114,8 @@ function toggleModal(name = "", role = "", image = "", desc = "") {
 
 $(document).ready(function () {
   $(".graph_Carousel").slick({
+    centerMode: true,
+    centerPadding: "20px",
     dots: true,
     infinite: true,
     speed: 1000,
@@ -126,6 +128,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          centerPadding: "40px", 
         },
       },
       {
@@ -133,58 +136,13 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: "0px", 
         },
       },
     ],
   });
 });
 
-// $(document).ready(function () {
-//   $(".button_carousel_one").slick({
-//     dots: false,
-//     infinite: true,
-//     speed: 2000,
-//     slidesToShow: 7,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 0,
-//     cssEase: "linear",
-//     variableWidth: true,
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".button_carousel_two").css("visibility", "visible");
-//   $(".button_carousel_two").slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 5000,
-//     slidesToShow: 7,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 0,
-//     cssEase: "linear",
-//     variableWidth: true,
-//     rtl: true,
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".button_carousel_three").slick({
-//     dots: false,
-//     infinite: true,
-//     speed: 2000,
-//     slidesToShow: 7,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 0,
-//     cssEase: "linear",
-//     variableWidth: false,
-//   });
-// });
 // Case Study Carousel
 $(document).ready(function () {
   $(".slider").slick({
@@ -223,20 +181,20 @@ setTimeout(() => {
 }, 1500);
 
 // ----------------Service Section Cards-----------------
-setTimeout(() => {
-  document.getElementById("service1").classList.remove("opacity-0");
-  document.getElementById("service1").setAttribute("data-aos-delay", "500");
-}, 0);
+// setTimeout(() => {
+//   document.getElementById("service1").classList.remove("opacity-0");
+//   document.getElementById("service1").setAttribute("data-aos-delay", "500");
+// }, 0);
 
-setTimeout(() => {
-  document.getElementById("service2").classList.remove("opacity-0");
-  document.getElementById("service2").setAttribute("data-aos-delay", "1000");
-}, 1000);
+// setTimeout(() => {
+//   document.getElementById("service2").classList.remove("opacity-0");
+//   document.getElementById("service2").setAttribute("data-aos-delay", "1000");
+// }, 1000);
 
-setTimeout(() => {
-  document.getElementById("service3").classList.remove("opacity-0");
-  document.getElementById("service3").setAttribute("data-aos-delay", "1500");
-}, 1500);
+// setTimeout(() => {
+//   document.getElementById("service3").classList.remove("opacity-0");
+//   document.getElementById("service3").setAttribute("data-aos-delay", "1500");
+// }, 1500);
 
 // -----------------Navbar-----------------
 let toggleBtn = document.querySelector("#navbar-toggle");

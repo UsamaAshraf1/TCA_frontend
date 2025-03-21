@@ -207,3 +207,13 @@ html {
   display: flex;
   animation: Newscroll 50s linear infinite;
 }
+
+/* -------------------------- */
+.graph_Carousel .slick-slide {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.25; /* Default opacity for all slides */
+}
+
+.graph_Carousel .slick-center {
+  opacity: 1 !important; /* Highlight center slide */
+}

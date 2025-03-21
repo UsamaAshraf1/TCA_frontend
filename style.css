@@ -61,10 +61,10 @@ html {
 }
 @media (max-width: 1122px) {
   .slide_one {
-    width: 80vw !important;
+    width: 92vw !important;
   }
   .slide_two {
-    width: 70vw !important;
+    width: 89vw !important;
   }
 }
 .slide img {
@@ -80,6 +80,7 @@ html {
 }
 /* ---------------------------Leaf View------------------- */
 .leaf-1 {
+  margin-left: 20px;
   width: 350px;
   height: 350px;
   border-radius: 0 70%;

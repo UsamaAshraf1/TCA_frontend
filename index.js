@@ -35,7 +35,7 @@ function updateTextPosition() {
   if (!textElement) return;
 
   let scrollY = window.scrollY;
-  let factor = window.innerWidth < 768 ? 0.4 : 0.7;
+  let factor = window.innerWidth < 768 ? 0.5 : 0.8;
   let translateY = -1000 + scrollY * factor; // Moves up from -1000px
 
   textElement.style.transform = `translateY(${-translateY}px)`;

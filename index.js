@@ -122,6 +122,13 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -132,53 +139,52 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".button_carousel_one").slick({
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    variableWidth: true,
-  });
-});
+// $(document).ready(function () {
+//   $(".button_carousel_one").slick({
+//     dots: false,
+//     infinite: true,
+//     speed: 2000,
+//     slidesToShow: 7,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     autoplay: true,
+//     autoplaySpeed: 0,
+//     cssEase: "linear",
+//     variableWidth: true,
+//   });
+// });
 
-$(document).ready(function () {
-  $(".button_carousel_two").css("visibility", "visible");
-  $(".button_carousel_two").slick({
-    dots: true,
-    infinite: true,
-    speed: 5000,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    variableWidth: true,
-    rtl: true,
-  });
+// $(document).ready(function () {
+//   $(".button_carousel_two").css("visibility", "visible");
+//   $(".button_carousel_two").slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 5000,
+//     slidesToShow: 7,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     autoplay: true,
+//     autoplaySpeed: 0,
+//     cssEase: "linear",
+//     variableWidth: true,
+//     rtl: true,
+//   });
+// });
 
-});
-
-$(document).ready(function () {
-  $(".button_carousel_three").slick({
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    variableWidth: false,
-  });
-});
+// $(document).ready(function () {
+//   $(".button_carousel_three").slick({
+//     dots: false,
+//     infinite: true,
+//     speed: 2000,
+//     slidesToShow: 7,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     autoplay: true,
+//     autoplaySpeed: 0,
+//     cssEase: "linear",
+//     variableWidth: false,
+//   });
+// });
 // Case Study Carousel
 $(document).ready(function () {
   $(".slider").slick({
@@ -186,11 +192,11 @@ $(document).ready(function () {
     infinite: true,
     speed: 1000,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1122,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -303,7 +309,6 @@ function toggleDropdown(event, id) {
   event.preventDefault();
   document.getElementById(id).classList.toggle("hidden");
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.getElementById("button_carousel_two");

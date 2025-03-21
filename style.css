@@ -59,6 +59,14 @@ html {
   width: 41vw !important;
   height: 650px !important;
 }
+@media (max-width: 1122px) {
+  .slide_one {
+    width: 80vw !important;
+  }
+  .slide_two {
+    width: 70vw !important;
+  }
+}
 .slide img {
   background-color: transparent !important;
 }

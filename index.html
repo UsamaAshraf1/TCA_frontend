@@ -446,7 +446,7 @@
     >
       <div class="w-full h-full flex items-center justify-center">
         <div
-          class="bg-white w-full h-full rounded-lg overflow-hidden shadow-xl transform transition-all"
+          class="bg-white w-full h-full rounded-lg overflow-y-scroll shadow-xl transform transition-all"
         >
           <div class="bg-white pb-6">
             <div class="md:h-[50vh] overflow-hidden">
@@ -458,13 +458,18 @@
               class="absolute top-5 right-10 md:right-20 w-[40px] h-[40px] md:w-[76px] md:h-[76px] cursor-pointer"
               onclick="toggleModal()"
             />
-            <div class="absolute top-[120px]  md:top-[35vh] right-5 md:right-20 text-white">
-              <h2 class="text-[26] md:text-[48px] font-[700] leading-[20px]" id="modal-name">
+            <div
+              class="md:absolute px-6 mt-10 md:mt-0 md:px-0 md:top-[35vh] right-5 md:right-20 text-black md:text-white"
+            >
+              <h2
+                class="text-[36px] md:text-[48px] font-[700] leading-[100%] md:leading-[20px]"
+                id="modal-name"
+              >
                 Agent Name
               </h2>
 
               <p
-                class="text-[20px] md:text-[24px] font-[500] leading-[15px] mt-2 md:mt-8"
+                class="text-[20px] md:text-[24px] font-[500] leading-[30px] md:leading-[15px] mt-2 md:mt-8"
                 id="modal-role"
               >
                 Agent Role
@@ -473,7 +478,7 @@
 
             <p
               id="modal-desc"
-              class="px-6 md:px-20 mt-10 md:mt-24 md:w-[60%] text-justify text-[24px] leading-[30px] font-[400]"
+              class="px-6 md:px-20 mt-6 md:mt-24 md:w-[60%] text-start md:text-justify text-[20px] md:text-[24px] leading-[30px] font-[400]"
             >
               Desc
             </p>
@@ -600,7 +605,7 @@
     >
       <div>
         <h3
-          class="text-[32px] md:text-[44px] font-[700]  px-[36px] md:px-0 md:leading-[100%] uppercase"
+          class="text-[32px] md:text-[44px] font-[700] px-[36px] md:px-0 md:leading-[100%] uppercase"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -1246,14 +1251,18 @@
           </div>
         </div>
 
-        <div class="flex justify-center mt-[74px]">
+        <div class="hidden md:flex justify-center mt-[74px]">
           <div>
-            <div class="leaf-1 overflow-hidden">
+            <div
+              class="leaf-1 overflow-hidden"
+            >
               <img
+                id="img1"
                 src="Assets/leaf_image_1.png"
                 alt=""
                 class="w-full h-full object-cover"
               />
+           
             </div>
             <div class="leaf-2 overflow-hidden">
               <img
@@ -1281,6 +1290,105 @@
           </div>
         </div>
       </div>
+      <div class="container mx-auto px-[40px] md:px-0 block md:hidden">
+        <div class="flex justify-center mt-[74px] leaf_wrapper flex-wrap gap-4">
+          <!-- Leaf 1 -->
+          <div class="flip-container w-[150px] h-[150px] md:w-auto md:h-auto">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="Assets/leaf_image_1.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div
+                  class="flip-card-back flex flex-col items-center justify-center"
+                >
+                  <span class="font-bold">People-Centricity</span>
+                  <p class="text-sm font-[400]">
+                    We prioritize the people impacted by change, ensuring their
+                    voices are heard and their needs addressed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leaf 2 -->
+          <div class="flip-container w-[150px] h-[150px] md:w-auto md:h-auto">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="Assets/leaf-image-3.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flip-card-back flex flex-col items-center justify-center"
+                >
+                  <span class="font-bold">Integrity</span>
+                  <p class="text-sm font-[400]">
+                    We uphold transparency, honesty, and ethical principles in
+                    every engagement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leaf 3 -->
+          <div class="flip-container w-[150px] h-[150px] md:w-auto md:h-auto">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="Assets/leaf_image_2.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div
+                  class="flip-card-back flex flex-col items-center justify-center"
+                >
+                  <span class="font-bold">Teamwork</span>
+                  <p class="text-sm font-[400]">
+                    We collaborate with stakeholders to foster shared
+                    accountability during transitions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leaf 4 -->
+          <div class="flip-container w-[150px] h-[150px] md:w-auto md:h-auto">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="Assets/leaf-image-4.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flip-card-back flex flex-col items-center justify-center"
+                >
+                  <span class="font-bold">Creativity</span>
+                  <p class="text-sm font-[400]">
+                    We develop innovative, tailored solutions to meet unique
+                    organizational challenges.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- -----------------Work with a Change Agent--------- -->
@@ -1297,7 +1405,7 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
           >
-            Work with a <br class="hidden md:block"/>
+            Work with a <br class="hidden md:block" />
             Change Agent
           </h1>
           <p
@@ -1344,7 +1452,9 @@
 
       <div class="slider md:pt-[100px] h-[660px] md:h-[750px]">
         <!-- Sllide 1 -->
-        <div class="slide slide_one bg-[#F5C89E] rounded-[50px] mx-[20px] md:mx-0">
+        <div
+          class="slide slide_one bg-[#F5C89E] rounded-[50px] mx-[20px] md:mx-0"
+        >
           <div class="w-[239px] flex justify-center items-center">
             <img
               src="Assets/carousel_image_one.png"
@@ -1373,7 +1483,9 @@
           </div>
         </div>
         <!-- Slide 2 -->
-        <div class="slide slide_two bg-[#FFEBE6] rounded-[50px] mx-[20px] md:mx-10">
+        <div
+          class="slide slide_two bg-[#FFEBE6] rounded-[50px] mx-[20px] md:mx-10"
+        >
           <div class="w-[239px] flex justify-center items-center">
             <img
               src="Assets/carousel_image_two.png"
@@ -1451,7 +1563,7 @@
                 <p class="text-[16px] font-[400] leading-[24px] pt-[8px]">
                   We will send you a letter once a week to keep you up to date
                   on
-                  <br />
+                  <br class="hidden md:block" />
                   the best practices in change management. No spam.
                 </p>
               </div>
@@ -1617,6 +1729,7 @@
       </div>
     </div>
 
+  
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>

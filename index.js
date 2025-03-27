@@ -35,7 +35,15 @@ function updateTextPosition() {
   if (!textElement) return;
 
   let scrollY = window.scrollY;
-  let factor = window.innerWidth < 768 ? 0.5 : 0.8;
+  let factor;
+  // = window.innerWidth < 768 ? 0.5 : 0.8;
+  if (window.innerWidth < 768) {
+    factor = 0.5; // Mobile - Small screens
+  } else if (window.innerWidth < 1200) {
+    factor = 0.6; // Mobile - Medium screens
+  } else {
+    factor = 0.8; // Tablets
+  }
   let translateY = -1000 + scrollY * factor; // Moves up from -1000px
 
   textElement.style.transform = `translateY(${-translateY}px)`;
@@ -128,7 +136,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "0px", 
+          centerPadding: "0px",
         },
       },
       {
@@ -136,7 +144,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "0px", 
+          centerPadding: "0px",
         },
       },
     ],

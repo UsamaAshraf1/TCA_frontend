@@ -61,10 +61,10 @@ html {
 }
 @media (max-width: 1122px) {
   .slide_one {
-    width: 65vw !important;
+    width: 82vw !important;
   }
   .slide_two {
-    width: 84vw !important;
+    width: 76vw !important;
   }
 }
 @media (max-width: 768px) {
@@ -118,6 +118,22 @@ html {
   margin-left: 20px;
 }
 
+/* @media(max-width:1200px){
+  .leaf-1 {
+    margin-left: 70px;
+    width: 300px;
+    height: 350px;
+    border-radius: 0 70%;
+    transform: rotate(0deg);
+  }
+  .leaf-3 {
+    width: 330px;
+    height: 350px;
+    border-radius: 0 70%;
+    transform: rotate(90deg);
+    margin-left: 20px;
+  }
+} */
 @media(max-width:768px) {
   .leaf_wrapper{
     width: 92vw;
@@ -125,6 +141,7 @@ html {
     margin-left: -25px !important;
   }
 }
+
 
 /* Agennst Animation */
 @keyframes blowUp {

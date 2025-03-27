@@ -128,7 +128,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "40px", 
+          centerPadding: "0px", 
         },
       },
       {

@@ -59,11 +59,11 @@
             <!-- Overlay to Darken Background -->
             <div class="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
-            <!-- Content Container -->
             <div
-              class="relative container mx-auto flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] md:px-16 justify-center md:justify-between 2xl:pt-[200px]"
+              class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
             >
-              <div class="md:w-[50vw]">
+              <div class="md:w-[50vw] relative z-10">
+                <!-- Added z-10 to ensure it's behind -->
                 <h1
                   class="font-[400] text-[54px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
                 >
@@ -83,10 +83,11 @@
               </div>
 
               <div
-                class="md:w-[50vw] flex justify-center md:justify-end items-center"
+                class="md:w-[50vw] flex justify-center md:justify-end items-center mt-4 md:mt-[15vh] xl:mt-6 relative z-20"
               >
+                <!-- Added z-20 to keep it in front -->
                 <div
-                  class="w-[181px] md:w-[438px] h-[160px] md:h-[387px] content__img content__img--right"
+                  class="w-[181px] md:w-[300px] md:h-[287px] lg:w-[438px] h-[160px] lg:h-[387px] content__img content__img--right"
                 >
                   <img
                     src="Assets/heroRightSide.png"
@@ -339,7 +340,7 @@
           </h1>
           <div class="flex justify-center">
             <p
-              class="w-[70vw] md:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B]"
+              class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B]"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
@@ -449,7 +450,7 @@
           class="bg-white w-full h-full rounded-lg overflow-y-scroll shadow-xl transform transition-all"
         >
           <div class="bg-white pb-6">
-            <div class="md:h-[50vh] overflow-hidden">
+            <div class="lg:h-[50vh] overflow-hidden">
               <img src="" alt="" class="w-full" id="modal-image" />
             </div>
             <img
@@ -459,7 +460,7 @@
               onclick="toggleModal()"
             />
             <div
-              class="md:absolute px-6 mt-10 md:mt-0 md:px-0 md:top-[35vh] right-5 md:right-20 text-black md:text-white"
+              class="lg:absolute px-6 mt-10 lg:mt-0 lg:px-0 lg:top-[35vh] right-5 lg:right-20 text-black lg:text-white"
             >
               <h2
                 class="text-[36px] md:text-[48px] font-[700] leading-[100%] md:leading-[20px] uppercase"
@@ -478,7 +479,7 @@
 
             <p
               id="modal-desc"
-              class="px-6 md:px-20 mt-6 md:mt-24 md:w-[60%] text-start md:text-justify text-[20px] md:text-[24px] leading-[30px] font-[400]"
+              class="px-6 lg:px-20 mt-6 lg:mt-24 lg:w-[60%] text-start lg:text-justify text-[20px] md:text-[24px] leading-[30px] font-[400]"
             >
               Desc
             </p>
@@ -610,9 +611,6 @@
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
-          <!-- data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000" -->
           People-Driven Change Management
         </h3>
         <p
@@ -717,7 +715,8 @@
               >TCA Approach
             </span>
             <br />
-            <span class="font-[700] md:font-[900] text-[46px] md:text-[136px]"
+            <span
+              class="font-[700] md:font-[900] text-[46px] md:text-[96px] xl:text-[136px]"
               >“People-Focused” </span
             >
           </div>
@@ -743,7 +742,7 @@
     <!-- ---------------Network of Industry Expertise & Experience------- -->
     <div class="bg-[#1F2328] text-white pt-[158px] pb-[137px]">
       <h1
-        class="text-[44px] font-[700] leading-[100%] text-center px-2 md:px-0 uppercase"
+        class="text-[44px] font-[700] leading-[100%] text-center px-2 md-px-4 lg:px-0 uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -752,7 +751,7 @@
         & Experience 
       </h1>
       <p
-        class="mt-[41px] text-[18px] font-[400] leading-[24px] text-center px-[10vw] md:px-[25vw]"
+        class="mt-[41px] text-[18px] font-[400] leading-[24px] text-center px-[10vw] md:px-[12vw] lg:px-[25vw]"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1171,7 +1170,7 @@
         <!-- data-aos="fade-up"
         data-aos-anchor-placement="top-bottom" -->
         <p
-          class="text-center md:px-[15vw] 2xl:px-[20vw] text-[24px] font-[500] leading-[100%] mt-[35px] text-[#000000]"
+          class="text-center md:px-[10vw] lg:px-[15vw] 2xl:px-[20vw] text-[24px] font-[500] leading-[100%] mt-[35px] text-[#000000]"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -1395,14 +1394,14 @@
 
     <!-- -----------------Work with a Change Agent--------- -->
     <div
-      class="bg-[#FFEBE6] rounded-[50px] mx-[20px] md:mx-16 h-auto py-24 md:py-0 lg:h-screen 2xl:h-[815px]"
+      class="bg-[#FFEBE6] rounded-[50px] mx-[20px] md:mx-16 h-auto py-24 md:py-0 xl:h-screen 2xl:h-[815px]"
     >
-      <div class="flex flex-col lg:flex-row justify-between">
+      <div class="flex flex-col xl:flex-row justify-between">
         <div
-          class="lg:w-[50%] pe-[20px] md:pe-[100px] lg:pe-0 ps-[20px] md:ps-[100px] flex flex-col justify-center"
+          class="xl:w-[50%] pe-[20px] md:pe-[100px] xl:pe-0 ps-[20px] md:ps-[100px] flex flex-col justify-center"
         >
           <h1
-            class="text-[44px] font-[700] leading-[44px] text-[#EC5C35] uppercase"
+            class="text-[44px] font-[700] leading-[44px] md:pt-[100px] xl:pt-0 text-[#EC5C35] uppercase"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
@@ -1425,7 +1424,7 @@
             fostering alignment, and ensuring sustainable, high-impact change
           </p>
           <button
-            class="bg-[#EC5C35] rounded-full w-auto md:w-[50%] mt-[80px] font-[700] text-[18px] leading-[24px] h-[70px] text-white min-w-max px-10"
+            class="bg-[#EC5C35] rounded-full w-auto md:w-[50%] mt-[80px] font-[700] text-[18px] leading-[24px] h-[70px] text-white min-w-max px-10 md:mb-[100px] xl:mb-0"
           >
             Work with a change agent
           </button>
@@ -1436,7 +1435,7 @@
           <img
             src="Assets/chnage_agent.png"
             alt=""
-            class="h-auto md:h-screen w-auto 2xl:w-[650px] 2xl:h-[815px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
+            class="h-auto xl:h-screen w-auto 2xl:w-[650px] 2xl:h-[815px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
           />
         </div>
       </div>
@@ -1556,7 +1555,7 @@
         <div class="bg-[#1F2328] text-white rounded-t-2xl">
           <div class="container mx-auto pt-[80px]">
             <div
-              class="flex flex-col md:flex-row justify-center md:justify-between py-[40px] rounded-full px-16 bg-[#535862]"
+              class="flex flex-col lg:flex-row justify-center lg:justify-between py-[40px] rounded-full px-16 bg-[#535862]"
             >
               <div>
                 <p class="font-[600] text-[20px] leading-[30px]">
@@ -1565,13 +1564,13 @@
                 <p class="text-[16px] font-[400] leading-[24px] pt-[8px]">
                   We will send you a letter once a week to keep you up to date
                   on
-                  <br class="hidden md:block" />
+                  <br class="hidden lg:block" />
                   the best practices in change management. No spam.
                 </p>
               </div>
               <div>
                 <form
-                  class="flex flex-col md:flex-row justify-center md:justify-end items-center md:items-end mt-[32px] md:mt-0"
+                  class="flex flex-col md:flex-row justify-center lg:justify-end items-center md:items-end mt-[32px] lg:mt-0"
                 >
                   <input
                     type="text"
@@ -1594,10 +1593,10 @@
         <div class="bg-[#1F2328] rounded-b-2xl mx-2">
           <div class="container mx-auto">
             <div
-              class="grid grid-cols-2 md:grid-cols-7 gap-4 py-[64px] justify-between"
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 py-[64px] justify-between"
             >
               <div
-                class="col-span-2 bg-[#535862] p-10 rounded-tr-3xl rounded-bl-3xl rounded-tl-xl rounded-br-xl"
+                class="col-span-2 md:col-span-3 lg:col-span-2 bg-[#535862] p-10 rounded-tr-3xl rounded-bl-3xl rounded-tl-xl rounded-br-xl"
               >
                 <div class="flex">
                   <img

@@ -61,6 +61,14 @@ html {
 }
 @media (max-width: 1122px) {
   .slide_one {
+    width: 65vw !important;
+  }
+  .slide_two {
+    width: 84vw !important;
+  }
+}
+@media (max-width: 768px) {
+  .slide_one {
     width: 92vw !important;
   }
   .slide_two {

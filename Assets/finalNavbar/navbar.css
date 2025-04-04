@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
 
 :root {
   --orange: #ec5c35cc;
@@ -218,7 +218,7 @@ main {
 }
 
 .cover-inner {
-  background-image: url(../heroBackgroubd.jpeg);
+  /* background-image: url(../heroBackgroubd.jpeg); */
   background-position: center;
   background-size: cover;
 }
@@ -260,10 +260,10 @@ main {
   transition: all 0.5s ease;
 }
 
-#menu-toggle:checked + main .content__img--left,
+/* #menu-toggle:checked + main .content__img--left,
 #menu-toggle:checked + main .content__img--right {
   transform: translateY(-10rem);
-}
+} */
 
 .menu__content {
   transform: translateY(-100%);

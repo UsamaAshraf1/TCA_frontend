@@ -38,11 +38,11 @@ function updateTextPosition() {
   let factor;
   // = window.innerWidth < 768 ? 0.5 : 0.8;
   if (window.innerWidth < 768) {
-    factor = 0.5; // Mobile - Small screens
+    factor = 0.4; // Mobile - Small screens
   } else if (window.innerWidth < 1200) {
-    factor = 0.6; // Mobile - Medium screens
+    factor = 0.4; // Mobile - Medium screens
   } else {
-    factor = 0.8; // Tablets
+    factor = 0.7; // Tablets
   }
   let translateY = -1000 + scrollY * factor; // Moves up from -1000px
 
@@ -154,10 +154,12 @@ $(document).ready(function () {
 // Case Study Carousel
 $(document).ready(function () {
   $(".slider").slick({
+    centerMode: true,
+    centerPadding: "0px",
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
@@ -166,6 +168,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: "0px",
         },
       },
     ],

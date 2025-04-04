@@ -39,7 +39,6 @@
     </div>
     <!-------------------------Hero Section------------------------->
     <div>
-      <!-- h-auto md:h-[600px] 2xl:h-[781px] -->
       <input id="menu-toggle" type="checkbox" />
       <main>
         <div class="content">
@@ -342,7 +341,6 @@
             data-aos-duration="1000"
           >
             People-Driven Change Management
-            <!-- <br class="hidden md:block" /> -->
           </h1>
           <p
             class="mt-[80px] text-[18px] font-[400] leading-[24px]"
@@ -1776,28 +1774,18 @@
       function syncCardHeights() {
         const card1 = document.getElementById("card1");
         const card2 = document.getElementById("card2");
-
         if (!card1 || !card2) return;
-
-        // Reset height to auto first to get correct height dynamically
         card1.style.height = "auto";
         card2.style.height = "auto";
-
-        // Allow a short delay for content (like images) to load
         setTimeout(() => {
           const height1 = card1.getBoundingClientRect().height;
           const height2 = card2.getBoundingClientRect().height;
-
-          // Set both cards to the maximum height
           const maxHeight = Math.max(height1, height2);
           card1.style.height = `${maxHeight}px`;
           card2.style.height = `${maxHeight}px`;
-        }, 50); // Delay ensures images and text have fully rendered
+        }, 50);
       }
-
-      // Run on page load
       window.addEventListener("load", syncCardHeights);
-      // Run after images have fully loaded
       window.addEventListener("resize", syncCardHeights);
       window.addEventListener("DOMContentLoaded", syncCardHeights);
     </script>

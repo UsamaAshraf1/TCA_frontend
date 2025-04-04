@@ -51,7 +51,7 @@ html {
 .slick-dots li.slick-active {
   background-color: #ffc5b5;
 }
-.slide_one {
+/* .slide_one {
   width: 36vw !important;
   height: 650px !important;
 }
@@ -74,7 +74,7 @@ html {
   .slide_two {
     width: 89vw !important;
   }
-}
+} */
 .slide img {
   background-color: transparent !important;
 }
@@ -86,6 +86,10 @@ html {
     margin-top: 50px !important;
   }
 }
+@media (max-width: 768px) {
+  
+}
+
 /* ---------------------------Leaf View------------------- */
 .leaf-1 {
   margin-left: 20px;
@@ -134,14 +138,13 @@ html {
     margin-left: 20px;
   }
 } */
-@media(max-width:768px) {
-  .leaf_wrapper{
+@media (max-width: 768px) {
+  .leaf_wrapper {
     width: 92vw;
     overflow: hidden;
     margin-left: -25px !important;
   }
 }
-
 
 /* Agennst Animation */
 @keyframes blowUp {

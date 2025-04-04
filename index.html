@@ -336,7 +336,7 @@
           class="xl:w-[50%] pe-[20px] md:pe-[100px] xl:pe-0 ps-[20px] md:ps-[100px] flex flex-col justify-center"
         >
           <h1
-            class="text-[44px] font-[700] leading-[44px] md:pt-[100px] xl:pt-0 text-[#EC5C35] uppercase"
+            class="text-[36px] md:text-[44px] font-[700] leading-[100%] md:pt-[100px] xl:pt-0 text-[#EC5C35] uppercase"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
@@ -380,7 +380,7 @@
       <div class="pt-24">
         <div class="text-center">
           <h1
-            class="uppercase text-[44px] font-[700] text-[#1F2328]"
+            class="uppercase text-[36px] md:text-[44px] font-[700] leading-[100%] text-[#1F2328]"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
@@ -541,12 +541,12 @@
       class="bg-gradient-to-r from-white via-transparent to-white mt-32 mx-4 md:mx-10 pb-10"
     >
       <h1
-        class="text-center font-[700] text-[44px] leading-[100%] uppercase"
+        class="text-center font-[700] text-[36px] md:text-[44px] leading-[100%] uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
       >
-        Change led by People, Enhanced by <br />
+        Change led by People, Enhanced by <br class="hidden md:block" />
         Technology
       </h1>
       <p
@@ -792,7 +792,7 @@
     <!-- ---------------Network of Industry Expertise & Experience------- -->
     <div class="bg-[#1F2328] text-white pt-[158px] pb-[137px]">
       <h1
-        class="text-[44px] font-[700] leading-[100%] text-center px-[20px] xl:px-0 uppercase"
+        class="text-[36px] md:text-[44px] font-[700] leading-[100%] text-center px-[10px] xl:px-0 uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1481,7 +1481,7 @@
     <!---------------------------Case Study------------------->
     <div class="bg-white container mx-auto pb-[100px]">
       <div
-        class="text-[36px] md:text-[44px] text-center font-[700] leading-[50.4px] md:leading-[140%] pt-[84px] uppercase"
+        class="text-[36px] md:text-[44px] text-center font-[700] leading-[100%] md:leading-[100%] pt-[84px] uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1489,8 +1489,11 @@
         Change Success Stories
       </div>
 
-      <div class="slider md:pt-[100px] w-full">
-        <div class="bg-[#F5C89E] rounded-[50px] pb-24 lg:h-[570px] mx-[10px]">
+      <div class="slider pt-[50px] md:pt-[100px] w-full">
+        <div
+          class="bg-[#F5C89E] rounded-[50px] pb-24 mx-[10px] h-auto"
+          id="card1"
+        >
           <div class="w-full flex justify-center items-center">
             <img
               src="Assets/carousel_image_one.png"
@@ -1533,7 +1536,10 @@
             </p>
           </div>
         </div>
-        <div class="bg-[#F5C89E] rounded-[50px] pb-24 lg:h-[570px] mx-[10px]">
+        <div
+          class="bg-[#F5C89E] rounded-[50px] pb-24 mx-[10px] h-auto"
+          id="card2"
+        >
           <div class="w-full flex justify-center items-center">
             <img
               src="Assets/carousel_image_two.png"
@@ -1551,10 +1557,6 @@
               >
             </div>
             <p class="text-[16px] leading-[140%] mt-2 text-[#3C3C43D9]">
-              <!-- <span class="font-[700]">
-                Industry: Agriculture & Food Processing
-              </span>
-              <br /> -->
               <span class="font-[700]"> THE CHANGE</span>
               <br />
               <span class="font-[500] mt-4">
@@ -1770,6 +1772,35 @@
       </div>
     </div>
 
+    <script>
+      function syncCardHeights() {
+        const card1 = document.getElementById("card1");
+        const card2 = document.getElementById("card2");
+
+        if (!card1 || !card2) return;
+
+        // Reset height to auto first to get correct height dynamically
+        card1.style.height = "auto";
+        card2.style.height = "auto";
+
+        // Allow a short delay for content (like images) to load
+        setTimeout(() => {
+          const height1 = card1.getBoundingClientRect().height;
+          const height2 = card2.getBoundingClientRect().height;
+
+          // Set both cards to the maximum height
+          const maxHeight = Math.max(height1, height2);
+          card1.style.height = `${maxHeight}px`;
+          card2.style.height = `${maxHeight}px`;
+        }, 50); // Delay ensures images and text have fully rendered
+      }
+
+      // Run on page load
+      window.addEventListener("load", syncCardHeights);
+      // Run after images have fully loaded
+      window.addEventListener("resize", syncCardHeights);
+      window.addEventListener("DOMContentLoaded", syncCardHeights);
+    </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>

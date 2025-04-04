@@ -387,7 +387,7 @@
           </h1>
           <div class="flex justify-center">
             <p
-              class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B]"
+              class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B] mt-4"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
@@ -1777,13 +1777,13 @@
         if (!card1 || !card2) return;
         card1.style.height = "auto";
         card2.style.height = "auto";
-        setTimeout(() => {
+        // setTimeout(() => {
           const height1 = card1.getBoundingClientRect().height;
           const height2 = card2.getBoundingClientRect().height;
           const maxHeight = Math.max(height1, height2);
           card1.style.height = `${maxHeight}px`;
           card2.style.height = `${maxHeight}px`;
-        }, 50);
+        // }, 50);
       }
       window.addEventListener("load", syncCardHeights);
       window.addEventListener("resize", syncCardHeights);

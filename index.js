@@ -144,7 +144,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "10px",
+          centerPadding: "5px",
         },
       },
     ],
@@ -176,20 +176,20 @@ $(document).ready(function () {
 });
 
 // --------------Mountain Section Cards-------------
-setTimeout(() => {
-  document.getElementById("section1").classList.remove("opacity-0");
-  document.getElementById("section1").setAttribute("data-aos-delay", "500");
-}, 0);
+// setTimeout(() => {
+//   document.getElementById("section1").classList.remove("opacity-0");
+//   document.getElementById("section1").setAttribute("data-aos-delay", "500");
+// }, 0);
 
-setTimeout(() => {
-  document.getElementById("section2").classList.remove("opacity-0");
-  document.getElementById("section2").setAttribute("data-aos-delay", "1000");
-}, 1000);
+// setTimeout(() => {
+//   document.getElementById("section2").classList.remove("opacity-0");
+//   document.getElementById("section2").setAttribute("data-aos-delay", "1000");
+// }, 1000);
 
-setTimeout(() => {
-  document.getElementById("section3").classList.remove("opacity-0");
-  document.getElementById("section3").setAttribute("data-aos-delay", "1500");
-}, 1500);
+// setTimeout(() => {
+//   document.getElementById("section3").classList.remove("opacity-0");
+//   document.getElementById("section3").setAttribute("data-aos-delay", "1500");
+// }, 1500);
 
 // ----------------Service Section Cards-----------------
 // setTimeout(() => {

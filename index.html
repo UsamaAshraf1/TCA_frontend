@@ -810,7 +810,7 @@
       </p>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-10 px-[36px] md:px-[10vw] pt-[90px] md:pt-24 h-[50vh] z-[10]"
+        class="grid grid-cols-1 md:grid-cols-3 gap-10 px-[36px] md:px-[10vw] pt-[90px] md:pt-24 z-[10]"
       >
         <div
           class="text-center text-white opacity-0"
@@ -850,7 +850,7 @@
         </div>
       </div>
       <div class="px-4">
-        <div class="mt-[300px] md:mt-[50px] button-container">
+        <div class="mt-[300px] md:mt-[100px] button-container">
           <div
             class="button_carousel_one_wrapper overflow-hidden relative w-full mt-4"
           >
@@ -1777,11 +1777,11 @@
         card1.style.height = "auto";
         card2.style.height = "auto";
         // setTimeout(() => {
-          const height1 = card1.getBoundingClientRect().height;
-          const height2 = card2.getBoundingClientRect().height;
-          const maxHeight = Math.max(height1, height2);
-          card1.style.height = `${maxHeight}px`;
-          card2.style.height = `${maxHeight}px`;
+        const height1 = card1.getBoundingClientRect().height;
+        const height2 = card2.getBoundingClientRect().height;
+        const maxHeight = Math.max(height1, height2);
+        card1.style.height = `${maxHeight}px`;
+        card2.style.height = `${maxHeight}px`;
         // }, 50);
       }
       window.addEventListener("load", syncCardHeights);

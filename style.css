@@ -239,7 +239,10 @@ html {
   animation: scroll 50s linear infinite;
 }
 
-.animate-scroll-one,
+.animate-scroll-one{
+  display: flex;
+  animation: Newscroll 30s linear infinite;
+}
 .animate-scroll-three {
   display: flex;
   animation: Newscroll 50s linear infinite;

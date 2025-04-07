@@ -40,7 +40,8 @@ html {
   height: 10px !important; */
   width: 10px !important;
   height: 10px !important;
-  background-color: #fbded6;
+  background-color: #B7978C;
+  opacity: 0.4;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   margin-top: 32px !important;
@@ -49,7 +50,8 @@ html {
   display: none !important;
 }
 .slick-dots li.slick-active {
-  background-color: #ffc5b5;
+  opacity: 1;
+  background-color: #B7978C;
 }
 /* .slide_one {
   width: 36vw !important;

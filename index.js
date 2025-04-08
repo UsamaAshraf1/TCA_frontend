@@ -177,21 +177,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".partner_carousel").slick({
-    // centerMode: true,
-    // centerPadding: "0px",
     dots: false,
     infinite: true,
-    // speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 1000,
     autoplay: true,
-    autoplaySpeed: 0, // No delay between scrolls
-    speed: 3000, // Slow speed for smooth scroll
+    autoplaySpeed: 0,
+    speed: 3000,
     cssEase: "linear",
-
     responsive: [
       {
         breakpoint: 1122,

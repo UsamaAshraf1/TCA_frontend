@@ -175,6 +175,36 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".partner_carousel").slick({
+    centerMode: true,
+    centerPadding: "0px",
+    dots: false,
+    infinite: true,
+    // speed: 1000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 0, // No delay between scrolls
+    speed: 3000, // Slow speed for smooth scroll
+    cssEase: "linear",
+
+    responsive: [
+      {
+        breakpoint: 1122,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0px",
+        },
+      },
+    ],
+  });
+});
+
 // --------------Mountain Section Cards-------------
 // setTimeout(() => {
 //   document.getElementById("section1").classList.remove("opacity-0");
@@ -303,5 +333,3 @@ document.addEventListener("DOMContentLoaded", function () {
     track_three.appendChild(clone);
   });
 });
-
-

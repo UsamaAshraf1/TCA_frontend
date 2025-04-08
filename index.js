@@ -123,7 +123,7 @@ function toggleModal(name = "", role = "", image = "", desc = "") {
 $(document).ready(function () {
   $(".graph_Carousel").slick({
     centerMode: true,
-    centerPadding: "40px",
+    centerPadding: "150px",
     dots: true,
     infinite: true,
     speed: 1000,

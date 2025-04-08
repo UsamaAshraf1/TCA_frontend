@@ -24,6 +24,40 @@
     <!-- aos animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <style>
+      .flip-container {
+        perspective: 1000px;
+      }
+
+      .flipper {
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      .flip-container:hover .flipper {
+        transform: rotateY(180deg);
+      }
+
+      .front,
+      .back {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .back {
+        transform: rotateY(180deg);
+      }
+    </style> -->
+
+    <style>
+      
+    </style>
   </head>
   <body>
     <!------------------------header------------------------------->
@@ -373,7 +407,7 @@
       </div>
     </div>
     <!-- ------------------Meet our Change Agents-------------------->
-    <div class="bg-[#FFF0EC]">
+    <!-- <div class="bg-[#FFF0EC]">
       <div class="pt-24">
         <div class="text-center">
           <h1
@@ -405,7 +439,7 @@
               onclick="toggleModal('Fatima Djoudi', 'Change Leader Oil & Gas', 'Assets/modal_agent_two.svg', 'With 25+ years in oil & gas, Fatima is passionate about solving complex engineering challenges. Specializing in oil & gas treatment, LNG, and process safety, she drives efficiency and sustainability. Skilled in HAZOPs and strategic project execution, she ensures seamless transitions from feasibility to commissioning—building a future of innovation and operational excellence.')"
             >
               <div
-                class="absolute bottom-0 z-0 bg-[#D9D9D9] group-hover:bg-[#EC5C35] w-full md:w-[394px] h-[337px] rounded-tl-[250px] rounded-tr-[20px]"
+                class="absolute bottom-0 z-0 bg-[#D9D9D9] group-hover:bg-[#EC5C35] w-full md:w-[394px] h-[337px] rounded-tl-[20px] rounded-tr-[20px]"
               ></div>
               <div
                 class="w-full md:w-[376px] h-[450px] absolute bottom-0 right-[6px] z-10"
@@ -449,7 +483,7 @@
               onclick="toggleModal('Frederico Compires', 'Change Leader Financial Services & Banking', 'Assets/modal_agent.png', 'Frederico is passionate about helping businesses adapt, innovate, and thrive. With experience in finance, business development, and entrepreneurship, he understands how smart systems drive meaningful change. As Co-Founder of GiGzy, he empowered artists with new opportunities. Now, at The Change Agency, he applies his expertise to help organizations navigate change and unlock their full potential.')"
             >
               <div
-                class="absolute bottom-0 z-0 bg-[#D9D9D9] group-hover:bg-[#EC5C35] w-full md:w-[394px] h-[337px] rounded-tl-[20px] rounded-tr-[250px]"
+                class="absolute bottom-0 z-0 bg-[#D9D9D9] group-hover:bg-[#EC5C35] w-full md:w-[394px] h-[337px] rounded-tl-[20px] rounded-tr-[20px]"
               ></div>
               <div class="w-full md:w-[380px] h-[450px] absolute bottom-0 z-10">
                 <img
@@ -532,7 +566,165 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="bg-[#FFF0EC]">
+      <div class="pt-24">
+        <div class="text-center">
+          <h1
+            class="uppercase text-[36px] md:text-[44px] font-[700] px-[10px] md:px-0 leading-[100%] text-[#1F2328]"
+          >
+            Meet our Change Agents
+          </h1>
+          <div class="flex justify-center">
+            <p
+              class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B] mt-4"
+            >
+              Empowering Change through People, our passionate Change Agents are
+              embedded within your teams to turn change into opportunity,
+              driving confidence and lasting impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center flex-wrap items-center mt-10 gap-10">
+          <!-- Click Flip Card -->
+          <div
+            onclick="this.classList.toggle('flipped')"
+            class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
+          >
+            <div class="flipper w-full h-full">
+              <!-- Front -->
+              <div
+                class="front rounded-t-[20px] bg-[#D9D9D9] hover:bg-[#EC5C35] overflow-hidden"
+              >
+                <div class="relative h-full">
+                  <img
+                    src="Assets/agent_one.png"
+                    alt="Fatima Djoudi"
+                    class="w-full h-full object-cover rounded-t-[20px]"
+                  />
+                  <div
+                    class="absolute bottom-0 z-30 text-white w-full h-[130px] flex flex-col items-center justify-center text-center"
+                    style="
+                      background: linear-gradient(
+                        0deg,
+                        #19191b 27.08%,
+                        rgba(25, 25, 27, 0.49) 72.4%,
+                        rgba(25, 25, 27, 0) 100%
+                      );
+                    "
+                  >
+                    <h2 class="text-[16px] font-[700] uppercase">
+                      Fatima Djoudi
+                    </h2>
+                    <p class="text-[14px] font-[500] uppercase">
+                      Change Leader Oil & Gas
+                    </p>
+                    <img
+                      src="Assets/icons/white_linkdln.png"
+                      class="w-[16px] h-[16px] mt-2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back -->
+              <div
+                class="back bg-[#D9D9D9] text-black rounded-t-[20px] p-6 flex flex-col justify-center items-center text-center"
+              >
+                <h2 class="text-[20px] font-bold uppercase mb-2">
+                  Fatima Djoudi
+                </h2>
+                <p class="text-[16px] font-medium mb-4">
+                  Change Leader Oil & Gas
+                </p>
+                <p class="text-[14px] font-normal leading-[22px]">
+                  With 25+ years in oil & gas, Fatima is passionate about
+                  solving complex engineering challenges. Specializing in oil &
+                  gas treatment, LNG, and process safety, she drives efficiency
+                  and sustainability. Skilled in HAZOPs and strategic project
+                  execution, she ensures seamless transitions from feasibility
+                  to commissioning—building a future of innovation and
+                  operational excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            onclick="this.classList.toggle('flipped')"
+            class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
+          >
+            <div class="flipper w-full h-full">
+              <!-- Front -->
+              <div
+                class="front rounded-t-[20px] bg-[#D9D9D9] hover:bg-[#EC5C35] overflow-hidden"
+              >
+                <div class="relative h-full">
+                  <img
+                    src="Assets/Agent-two.png"
+                    alt="Fatima Djoudi"
+                    class="w-full h-full object-cover rounded-t-[20px]"
+                  />
+                  <div
+                    class="absolute bottom-0 z-30 text-white w-full h-[130px] flex flex-col items-center justify-center text-center"
+                    style="
+                      background: linear-gradient(
+                        0deg,
+                        #19191b 27.08%,
+                        rgba(25, 25, 27, 0.49) 72.4%,
+                        rgba(25, 25, 27, 0) 100%
+                      );
+                    "
+                  >
+                    <h2 class="text-[16px] font-[700] uppercase">
+                      Frederico Compires
+                    </h2>
+                    <p class="text-[14px] font-[500] uppercase">
+                      Change Leader Financial Services & Banking
+                    </p>
+                    <img
+                      src="Assets/icons/white_linkdln.png"
+                      class="w-[16px] h-[16px] mt-2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back -->
+              <div
+                class="back bg-[#D9D9D9] text-black rounded-t-[20px] p-6 flex flex-col justify-center items-center text-center"
+              >
+                <h2 class="text-[20px] font-bold uppercase mb-2">
+                  Frederico Compires
+                </h2>
+                <p class="text-[16px] font-medium mb-4">
+                  Change Leader Financial Services & Banking
+                </p>
+                <p class="text-[14px] font-normal leading-[22px]">
+                  Frederico is passionate about helping businesses adapt,
+                  innovate, and thrive. With experience in finance, business
+                  development, and entrepreneurship, he understands how smart
+                  systems drive meaningful change. As Co-Founder of GiGzy, he
+                  empowered artists with new opportunities. Now, at The Change
+                  Agency, he applies his expertise to help organizations
+                  navigate change and unlock their full potential.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pb-[50px]">
+          <button
+            class="bg-[#EC5C35] rounded-full w-auto mt-[80px] font-[700] text-[18px] leading-[24px] h-[70px] text-white min-w-max px-4 md:px-10 md:mb-[100px] xl:mb-0"
+          >
+            View More
+          </button>
+        </div>
+      </div>
     </div>
+
     <!-- --------------------------Graph Section------------------------- -->
     <div
       class="bg-gradient-to-r from-white via-transparent to-white mt-32 mx-4 md:mx-10 pb-10"

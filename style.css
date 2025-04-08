@@ -40,7 +40,7 @@ html {
   height: 10px !important; */
   width: 10px !important;
   height: 10px !important;
-  background-color: #B7978C;
+  background-color: #b7978c;
   opacity: 0.4;
   border-radius: 10px;
   transition: background-color 0.3s ease;
@@ -51,7 +51,7 @@ html {
 }
 .slick-dots li.slick-active {
   opacity: 1;
-  background-color: #B7978C;
+  background-color: #b7978c;
 }
 /* .slide_one {
   width: 36vw !important;
@@ -89,7 +89,6 @@ html {
   }
 }
 @media (max-width: 768px) {
-  
 }
 
 /* ---------------------------Leaf View------------------- */
@@ -241,7 +240,7 @@ html {
   animation: scroll 50s linear infinite;
 }
 
-.animate-scroll-one{
+.animate-scroll-one {
   display: flex;
   animation: Newscroll 30s linear infinite;
 }
@@ -299,5 +298,34 @@ html {
 .flip-card-back {
   /* background: #4a5568;
   color: white; */
+  transform: rotateY(180deg);
+}
+
+/* --------------------Agent Flip----------------- */
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.back {
   transform: rotateY(180deg);
 }

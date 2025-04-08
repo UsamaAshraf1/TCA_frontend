@@ -179,7 +179,7 @@ $(document).ready(function () {
   $(".partner_carousel").slick({
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,

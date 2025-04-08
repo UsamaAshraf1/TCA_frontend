@@ -177,8 +177,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".partner_carousel").slick({
-    centerMode: true,
-    centerPadding: "0px",
+    // centerMode: true,
+    // centerPadding: "0px",
     dots: false,
     infinite: true,
     // speed: 1000,
@@ -196,9 +196,15 @@ $(document).ready(function () {
       {
         breakpoint: 1122,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "0px",
         },
       },
     ],

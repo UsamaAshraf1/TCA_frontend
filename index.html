@@ -361,7 +361,7 @@
     <div
       class="bg-[#FFEBE6] rounded-[50px] mx-[20px] md:mx-16 h-auto py-24 md:py-0 xl:h-screen 2xl:h-[815px] my-[100px]"
     >
-      <div class="flex flex-col xl:flex-row justify-between">
+      <div class="flex flex-col lg:flex-row justify-between">
         <div
           class="xl:w-[50%] pe-[20px] md:pe-[100px] xl:pe-0 ps-[20px] md:ps-[100px] flex flex-col justify-center"
         >
@@ -394,12 +394,12 @@
           </button>
         </div>
         <div
-          class="mt-10 lg:mt-0 flex justify-center lg:justify-end px-[20px] md:px-0"
+          class="mt-10 lg:mt-0 hidden xl:flex justify-center lg:items-center xl:justify-end px-[20px] md:px-0"
         >
           <img
             src="Assets/Jen_image.jpg"
             alt=""
-            class="h-auto xl:h-screen w-auto 2xl:h-[815px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
+            class="h-auto lg:h-[80vh] xl:h-screen w-auto 2xl:h-[815px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
           />
         </div>
       </div>
@@ -1040,7 +1040,7 @@
         </div>
       </div>
       <div class="px-4">
-        <div class="mt-[300px] md:mt-[100px] button-container">
+        <div class="mt-[100px] button-container">
           <div
             class="button_carousel_one_wrapper overflow-hidden relative w-full mt-4"
           >
@@ -1861,6 +1861,13 @@
             class="object-contain h-full w-full"
           />
         </div>
+        <div class="w-36 h-36">
+          <img
+            src="Assets/Partner/partner_nine.png"
+            alt="Partner 4"
+            class="object-contain h-full w-full"
+          />
+        </div>
       </div>
     </div>
     <!-------------------------Footer---------------------->
@@ -2045,23 +2052,41 @@
     </div>
 
     <script>
-      function syncCardHeights() {
-        const card1 = document.getElementById("card1");
-        const card2 = document.getElementById("card2");
+      // function syncCardHeights() {
+      //   const card1 = document.getElementById("card1");
+      //   const card2 = document.getElementById("card2");
+      //   if (!card1 || !card2) return;
+      //   card1.style.height = "auto";
+      //   card2.style.height = "auto";
+      //   // setTimeout(() => {
+      //   const height1 = card1.getBoundingClientRect().height;
+      //   const height2 = card2.getBoundingClientRect().height;
+      //   const maxHeight = Math.max(height1, height2);
+      //   card1.style.height = `${maxHeight}px`;
+      //   card2.style.height = `${maxHeight}px`;
+      //   // }, 50);
+      // }
+      // window.addEventListener("load", syncCardHeights);
+      // window.addEventListener("resize", syncCardHeights);
+      // window.addEventListener("DOMContentLoaded", syncCardHeights);
+      const card1 = document.getElementById("card1");
+      const card2 = document.getElementById("card2");
+
+      function adjustHeights() {
         if (!card1 || !card2) return;
         card1.style.height = "auto";
         card2.style.height = "auto";
-        // setTimeout(() => {
-        const height1 = card1.getBoundingClientRect().height;
-        const height2 = card2.getBoundingClientRect().height;
-        const maxHeight = Math.max(height1, height2);
+        const maxHeight = Math.max(card1.offsetHeight, card2.offsetHeight);
         card1.style.height = `${maxHeight}px`;
         card2.style.height = `${maxHeight}px`;
-        // }, 50);
       }
-      window.addEventListener("load", syncCardHeights);
-      window.addEventListener("resize", syncCardHeights);
-      window.addEventListener("DOMContentLoaded", syncCardHeights);
+
+      const observer = new ResizeObserver(adjustHeights);
+      observer.observe(card1);
+      observer.observe(card2);
+
+      window.addEventListener("load", adjustHeights);
+      window.addEventListener("DOMContentLoaded", adjustHeights);
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

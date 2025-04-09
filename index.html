@@ -2052,26 +2052,8 @@
     </div>
 
     <script>
-      // function syncCardHeights() {
-      //   const card1 = document.getElementById("card1");
-      //   const card2 = document.getElementById("card2");
-      //   if (!card1 || !card2) return;
-      //   card1.style.height = "auto";
-      //   card2.style.height = "auto";
-      //   // setTimeout(() => {
-      //   const height1 = card1.getBoundingClientRect().height;
-      //   const height2 = card2.getBoundingClientRect().height;
-      //   const maxHeight = Math.max(height1, height2);
-      //   card1.style.height = `${maxHeight}px`;
-      //   card2.style.height = `${maxHeight}px`;
-      //   // }, 50);
-      // }
-      // window.addEventListener("load", syncCardHeights);
-      // window.addEventListener("resize", syncCardHeights);
-      // window.addEventListener("DOMContentLoaded", syncCardHeights);
       const card1 = document.getElementById("card1");
       const card2 = document.getElementById("card2");
-
       function adjustHeights() {
         if (!card1 || !card2) return;
         card1.style.height = "auto";
@@ -2080,7 +2062,6 @@
         card1.style.height = `${maxHeight}px`;
         card2.style.height = `${maxHeight}px`;
       }
-
       const observer = new ResizeObserver(adjustHeights);
       observer.observe(card1);
       observer.observe(card2);

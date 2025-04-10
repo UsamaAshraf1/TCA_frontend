@@ -588,7 +588,8 @@
         <div class="flex justify-center flex-wrap items-center mt-10 gap-10">
           <!-- Click Flip Card -->
           <div
-            onclick="this.classList.toggle('flipped')"
+            onclick="toggleFlipped(this)"
+            ]
             class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
           >
             <div class="flipper w-full h-full">
@@ -651,7 +652,7 @@
           </div>
 
           <div
-            onclick="this.classList.toggle('flipped')"
+            onclick="toggleFlipped(this)"
             class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
           >
             <div class="flipper w-full h-full">
@@ -2068,6 +2069,32 @@
 
       window.addEventListener("load", adjustHeights);
       window.addEventListener("DOMContentLoaded", adjustHeights);
+
+      function toggleFlipped(element) {
+        // Toggle the 'flipped' class on the flip-container
+        element.classList.toggle("flipped");
+
+        // Find the div with the 'absolute' class inside the front div
+        const absoluteDiv = element.querySelector(".front .absolute");
+        const NewabsoluteDiv = element.querySelector(".front .relative div");
+
+        // If 'flipped' is present, remove 'absolute'; otherwise, add it back
+        //if (element.classList.contains("flipped")) {
+        //  absoluteDiv.classList.remove("absolute");
+        //} else {
+        // NewabsoluteDiv.classList.add("absolute");
+        //}
+
+        if (element.classList.contains("flipped")) {
+          setTimeout(() => {
+            absoluteDiv.classList.remove("absolute");
+          }, 250); // 500ms delay before removing the class
+        } else {
+          setTimeout(() => {
+            NewabsoluteDiv.classList.add("absolute");
+          }, 300); // 500ms delay before adding the class
+        }
+      }
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

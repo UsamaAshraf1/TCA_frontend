@@ -186,6 +186,9 @@ $(document).ready(function () {
     autoplaySpeed: 0,
     speed: 3000,
     cssEase: "linear",
+    pauseOnHover: false,
+    swipe: false,
+    draggable: false,
     responsive: [
       {
         breakpoint: 1122,

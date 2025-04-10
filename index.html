@@ -96,9 +96,10 @@
               <div class="relative z-10">
                 <!-- Added z-10 to ensure it's behind -->
                 <h1
-                  class="font-[700] text-[60px] md:text-[72px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                  id="typed-text"
+                  class="font-[700] text-[60px] md:text-[76px] 2xl:text-[106px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
                 >
-                  The Future of Change
+                  <!-- The Future of Change -->
                 </h1>
                 <p
                   class="text-[24px] md:text-[44px] font-[400] leading-[100%] text-white mt-[50px] md:w-[60vw]"
@@ -571,12 +572,18 @@
         <div class="text-center">
           <h1
             class="uppercase text-[36px] md:text-[44px] font-[700] px-[10px] md:px-0 leading-[100%] text-[#1F2328]"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
           >
             Meet our Change Agents
           </h1>
           <div class="flex justify-center">
             <p
               class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B] mt-4"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
             >
               Empowering Change through People, our passionate Change Agents are
               embedded within your teams to turn change into opportunity,
@@ -588,8 +595,8 @@
         <div class="flex justify-center flex-wrap items-center mt-10 gap-10">
           <!-- Click Flip Card -->
           <div
-            onclick="toggleFlipped(this)"
-            ]
+            onmouseenter="toggleFlipped(this)"
+            onmouseleave="toggleFlipped(this)"
             class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
           >
             <div class="flipper w-full h-full">
@@ -652,7 +659,8 @@
           </div>
 
           <div
-            onclick="toggleFlipped(this)"
+            onmouseenter="toggleFlipped(this)"
+            onmouseleave="toggleFlipped(this)"
             class="flip-container w-[90vw] md:w-[400px] h-[500px] cursor-pointer"
           >
             <div class="flipper w-full h-full">
@@ -1890,7 +1898,7 @@
                   the best practices in change management. No spam.
                 </p>
               </div>
-              <div>
+              <div class="flex justify-center items-center">
                 <form
                   class="flex flex-col md:flex-row justify-center lg:justify-end items-center md:items-end mt-[32px] lg:mt-0"
                 >
@@ -2071,30 +2079,34 @@
       window.addEventListener("DOMContentLoaded", adjustHeights);
 
       function toggleFlipped(element) {
-        // Toggle the 'flipped' class on the flip-container
         element.classList.toggle("flipped");
-
-        // Find the div with the 'absolute' class inside the front div
         const absoluteDiv = element.querySelector(".front .absolute");
         const NewabsoluteDiv = element.querySelector(".front .relative div");
-
-        // If 'flipped' is present, remove 'absolute'; otherwise, add it back
-        //if (element.classList.contains("flipped")) {
-        //  absoluteDiv.classList.remove("absolute");
-        //} else {
-        // NewabsoluteDiv.classList.add("absolute");
-        //}
-
         if (element.classList.contains("flipped")) {
           setTimeout(() => {
             absoluteDiv.classList.remove("absolute");
-          }, 250); // 500ms delay before removing the class
+          }, 250);
         } else {
           setTimeout(() => {
             NewabsoluteDiv.classList.add("absolute");
-          }, 300); // 500ms delay before adding the class
+          }, 300);
         }
       }
+
+      const fullText = "The Future of Change";
+      const typedTextEl = document.getElementById("typed-text");
+      let index = 0;
+
+      function typeText() {
+        if (index < fullText.length) {
+          typedTextEl.textContent += fullText.charAt(index);
+          index++;
+          setTimeout(typeText, 100); // speed of typing
+        }
+      }
+
+      // Start typing on load
+      window.addEventListener("DOMContentLoaded", typeText);
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

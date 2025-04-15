@@ -1,9 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
-
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 :root {
   --orange: #ec5c35cc;
 }
 
+.tca_button {
+  font-family: "JetBrains Mono", monospace;
+}
 *,
 *::before,
 *::after {
@@ -80,7 +83,7 @@ main {
 
 .menu__top {
   align-items: center;
-  background-color: var(--orange);
+  /* background-color: var(--orange); */
   border-radius: 2rem;
   grid-template-areas: "title ... top-nav ... side";
   justify-content: space-between;
@@ -116,6 +119,7 @@ main {
 .menu__link {
   display: inline-block;
   position: relative;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .menu__link:last-child {
@@ -140,6 +144,7 @@ main {
   grid-area: side;
   justify-self: end;
   min-width: max-content;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .menu__content-wrap {

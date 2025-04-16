@@ -1,8 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 body {
   /* font-family: "Archivo"; */
   font-family: "Cal Sans", sans-serif;
   -ms-overflow-style: none;
+}
+.agent_meet,.stats_number {
+  font-family: "JetBrains Mono", monospace;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -188,7 +194,7 @@ html {
   overflow: hidden;
 }
 
-.button-container::before,
+/* .button-container::before,
 .button-container::after {
   content: "";
   position: absolute;
@@ -214,7 +220,7 @@ html {
     rgba(32, 35, 39, 0.7),
     rgba(0, 0, 0, 0)
   );
-}
+} */
 
 /* -------------------- */
 

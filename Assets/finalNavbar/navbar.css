@@ -101,7 +101,7 @@ main {
   height: calc(1rem + 4px);
   overflow: hidden;
   min-width: max-content;
-  margin-left: 6vw;
+  /* margin-left: 2vw; */
 }
 @media (min-width: 1600px) {
   .menu__nav-top {

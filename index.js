@@ -123,7 +123,7 @@ function toggleModal(name = "", role = "", image = "", desc = "") {
 $(document).ready(function () {
   $(".graph_Carousel").slick({
     centerMode: true,
-    centerPadding: "300px",
+    centerPadding: "470px",
     dots: true,
     infinite: true,
     speed: 1000,
@@ -131,6 +131,30 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     responsive: [
+      {
+        breakpoint: 1540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "400px",
+        },
+      },
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "350px",
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "300px",
+        },
+      },
       {
         breakpoint: 1100,
         settings: {

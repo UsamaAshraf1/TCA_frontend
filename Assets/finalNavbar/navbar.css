@@ -5,7 +5,7 @@
 }
 
 .tca_button {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono";
 }
 *,
 *::before,
@@ -51,7 +51,7 @@ main {
 }
 .menu__title {
   width: 185px;
-  height: 40px;
+  height: 48px;
 }
 
 .content__img--right {
@@ -119,7 +119,7 @@ main {
 .menu__link {
   display: inline-block;
   position: relative;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono";
 }
 
 .menu__link:last-child {
@@ -144,7 +144,7 @@ main {
   grid-area: side;
   justify-self: end;
   min-width: max-content;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono";
 }
 
 .menu__content-wrap {

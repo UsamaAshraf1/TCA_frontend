@@ -362,6 +362,18 @@ html {
 .white-button:hover {
   background: linear-gradient(red, red) padding-box,
     linear-gradient(to top, red, red) border-box;
+} */
+
+
+.tca-container {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+.tca-container:hover {
+  background-color: black !important;
+}
+.tca-container a {
+  pointer-events: none;
 }
 
 .change-agent-button {

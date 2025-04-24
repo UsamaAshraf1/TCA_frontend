@@ -50,13 +50,13 @@ function updateTextPosition() {
   textElement.style.opacity = Math.min(1, scrollY / 500); // Smooth fade-in
 }
 
-document.getElementById("menu-toggle").addEventListener("change", function () {
-  if (this.checked) {
-    document.body.classList.add("no-scroll");
-  } else {
-    document.body.classList.remove("no-scroll");
-  }
-});
+// document.getElementById("menu-toggle").addEventListener("change", function () {
+//   if (this.checked) {
+//     document.body.classList.add("no-scroll");
+//   } else {
+//     document.body.classList.remove("no-scroll");
+//   }
+// });
 
 // function toggleModal(name = "", role = "", image = "", desc = "") {
 //   const modal = document.getElementById("modal");

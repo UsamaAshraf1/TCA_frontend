@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCA</title>
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/finalNavbar/navbar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+
+    <!-- aos animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cal-sans@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="./fonts/CalSans-SemiBold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+
+    <style>
+      .card-wrapper {
+        position: relative;
+        isolation: isolate;
+      }
+      .card-wrapper::before {
+        content: "";
+        position: absolute;
+        inset: -8px;
+        border-radius: 20px;
+        background: linear-gradient(
+          180deg,
+          rgba(230, 230, 230, 0.54) 0%,
+          rgba(255, 198, 183, 0.54) 100%
+        );
+        z-index: -1;
+        opacity: 0;
+      }
+      .card-wrapper:hover::before {
+        border-radius: 40px 40px 20px 20px;
+        background: linear-gradient(
+          180deg,
+          rgba(236, 92, 53, 0.37) 0%,
+          rgba(255, 198, 183, 0.42) 100%
+        );
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!------------------------header------------------------------->
+    <div>
+      <nav class="bg-[#1E1E1E] h-[27px]">
+        <div
+          class="container mx-auto flex justify-center md:justify-end items-center text-white md:pr-5 pt-1 text-[14px] font-[400] leading-[15.23px]"
+        >
+          <p>info@the-change-agency.ca</p>
+          <p class="ms-14">+1 (506) 588-7073</p>
+        </div>
+      </nav>
+    </div>
+    <!-------------------------Hero Section------------------------->
+    <div>
+      <input id="menu-toggle" type="checkbox" />
+      <main>
+        <div class="content">
+          <div class="relative w-[100vw] h-screen overflow-hidden">
+            <!-- Background Video -->
+            <img
+              src="Assets/who_we_are_hero.png"
+              alt="Background Image"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <!-- Overlay to Darken Background -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+
+            <div
+              class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
+            >
+              <div class="relative" style="z-index: 105">
+                <h1
+                  id="typed-text"
+                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                >
+                  Driven by Passion, <br />
+                  Backed by Expertise
+                </h1>
+
+                <div
+                  class="button_carousel_one_wrapper overflow-hidden relative w-full mt-[30vh]"
+                >
+                  <div class="flex gap-2 whitespace-nowrap w-max text-white">
+                    <button
+                      class="border border-[#1E1918] bg-[#191413] text-[#FF997D] text-[16px] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      Digital Transformation
+                    </button>
+                    <button
+                      class="border border-[#1E1918] text-[16px] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      Sustainability
+                    </button>
+                    <button
+                      class="border border-[#1E1918] text-[16px] text-[#FF997D] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      AI Adoption
+                    </button>
+                    <button
+                      class="border border-[#1E1918] bg-[#191413] text-[16px] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      Energy <span class="text-[#FF997D]">Transition</span>
+                    </button>
+                    <button
+                      class="border border-[#1E1918] text-[16px] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      Workforce
+                      <span class="text-[#FF997D]">Transformation</span>
+                    </button>
+                    <button
+                      class="border border-[#1E1918] text-[16px] bg-[#191413] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      DEI/Inclusivity
+                    </button>
+                    <button
+                      class="border border-[#1E1918] text-[16px] text-[#FF997D] font-[400] leading-[24px] px-4 h-[40px] rounded-[12px] min-w-max"
+                    >
+                      Financial Services
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-wrap">
+          <div class="cover">
+            <div class="cover-inner"></div>
+          </div>
+        </div>
+        <div class="menu hidden xl:block">
+          <div class="menu__top">
+            <div class="menu__title">
+              <a href="/TCA/index.html">
+                <img
+                  src="Assets/icons/new_Logo.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </a>
+            </div>
+            <div class="menu__nav-top">
+              <a class="menu__link uppercase" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >WHO WE ARE</label
+                >
+              </a>
+              <a class="menu__link uppercase" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >What We Do</label
+                >
+              </a>
+              <a class="menu__link uppercase" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >How We Do It</label
+                >
+              </a>
+              <a class="menu__link uppercase" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >TCA Channel portal</label
+                >
+              </a>
+
+              <a class="menu__link uppercase" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >Resources</label
+                >
+              </a>
+            </div>
+            <div class="menu__side">
+              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+                <div class="py-5 px-2 rounded-lg text-black tca_button">
+                  <a
+                    class="bg-white py-3 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px]"
+                    href=""
+                    >Book a call</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- -------------------------Text Section-------------------- -->
+    <div class="my-[150px] px-[10vw]">
+      <p class="text-center text-[32px] font-[500] leading-[130%]">
+        The Change Agency (TCA) is a human-centered change consultancy dedicated
+        to making transformations seamless, strategic, and sustainable. We go
+        beyond traditional change management by embedding expert Change Agents
+        who bring deep industry knowledge and a passion for driving impact.
+      </p>
+
+      <div class="mx-6">
+        <div class="mt-[60px] flex justify-between flex-wrap">
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              500+
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              EXPERT <br />
+              CHANGE AGENTS
+            </p>
+          </div>
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              100+
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              YEARS OF <br />
+              COMBINED EXPERIENCE
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              15+
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              INDUSTRIES <br />
+              COVERED
+            </p>
+          </div>
+        </div>
+        <div class="mt-[32px] flex justify-between flex-wrap">
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              *1*
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              UNIFIED <br />
+              METHODOLOGY
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              50+
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              SUCCESSFUL <br />
+              TRANSFORMATIONS
+            </p>
+          </div>
+          <div>
+            <p
+              class="stats_number text-[70px] font-[400] leading-[100%] text-[#EC5C35]"
+            >
+              10+
+            </p>
+            <p class="text-[24px] font-[400] leading-[34px] mt-1">
+              REGIONS <br />
+              SERVED
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------Footer---------------------->
+    <div class="bg-[#1F2328] footer">
+      <div class="bg-[#1F2328] rounded-b-2xl mx-2">
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-[64px] justify-between"
+          >
+            <div class="col-span-2 md:col-span-3 lg:col-span-3 pt-4 px-10">
+              <div class="flex">
+                <img
+                  src="Assets/icons/white_Logo.png"
+                  alt=""
+                  height="52px"
+                  width="185px"
+                />
+              </div>
+              <p
+                class="text-[#535862] text-[16px] font-[400] leading-[24px] mt-[32px] md:w-[350px]"
+              >
+                TCA is a technology-enabled organizational change management
+                consultancy specializing in guiding organizations through
+                successful transformations with a focus on people-centered
+                strategies. 
+              </p>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#FFFFFF]"
+              >
+                Company
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Who We Are</li>
+                <li>What We Do</li>
+                <li>How We Do It</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                Resources
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                LEGAL
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+
+      <div class="container mx-auto py-[64px]">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between rounded-full px-10"
+        >
+          <div>
+            <p class="font-[600] text-[20px] leading-[30px] text-white">
+              Join our newsletter
+            </p>
+            <p
+              class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
+            >
+              We will send you a letter once a week to keep you up to date on
+              <br class="hidden lg:block" />
+              the best practices in change management. No spam.
+            </p>
+          </div>
+          <div class="flex">
+            <form
+              class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#1F2328]"
+              />
+
+              <a
+                class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                href=""
+                >Subscribe</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-12 py-[32px]">
+          <p
+            class="col-span-12 md:col-span-11 text-[#535862] text-[16px] font-[400] leading-[24px] text-center md:text-start"
+          >
+            © 2025 The Change Agency. All rights reserved.
+          </p>
+          <span
+            class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
+          >
+            <a href="">
+              <img
+                src="Assets/footer_linkdln.png"
+                alt=""
+                height="24px"
+                width="24px"
+              />
+            </a>
+            <a href="">
+              <img
+                src="Assets/footer_facebook.png"
+                alt=""
+                height="24px"
+                width="24px"
+                class="ms-[24px]"
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -232,6 +232,39 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".partner_new_slider").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: false,
+    // autoplaySpeed: 0,
+    // speed: 3000,
+    // cssEase: "linear",
+    // pauseOnHover: false,
+    // swipe: false,
+    // draggable: false,
+    // responsive: [
+    //   {
+    //     breakpoint: 1122,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  });
+});
+
 // --------------Mountain Section Cards-------------
 // setTimeout(() => {
 //   document.getElementById("section1").classList.remove("opacity-0");

@@ -8,6 +8,11 @@
   src: url("./fonts/CalSans-SemiBold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "TT Commons";
+  src: url("./fonts/TT_Commons_Regular.otf") format("opentype");
+}
+
 body {
   font-family: "Inter";
   -ms-overflow-style: none;
@@ -25,6 +30,10 @@ h6,
 .agent_meet,
 .stats_number {
   font-family: "JetBrains Mono";
+}
+
+.newText {
+  font-family: "TT Commons";
 }
 ::-webkit-scrollbar {
   display: none;

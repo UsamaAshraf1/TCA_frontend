@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCA Referal</title>
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/finalNavbar/navbar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+
+    <!-- aos animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cal-sans@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="./fonts/CalSans-SemiBold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+
+    <style>
+      /* Custom styles for the timeline */
+      .timeline-container {
+        position: relative;
+        padding: 20px 0;
+      }
+      .timeline-line {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #f97316; /* Orange color for the timeline */
+        transform: translateX(-50%);
+        border: none;
+        border-left: 2px dashed #f97316;
+      }
+      .timeline-circle {
+        width: 24px;
+        height: 24px;
+        /* background: white; */
+        /* border: 2px solid #f97316; */
+        /* border-radius: 50%; */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        /* background-color: white;
+        padding: 20px 20px; */
+      }
+      .timeline-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .timeline-content {
+        width: 45%;
+        padding: 20px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .timeline-item:nth-child(even) .timeline-content {
+        margin-right: auto;
+        margin-left: 0;
+      }
+      .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!------------------------header------------------------------->
+    <div>
+      <nav class="bg-[#1E1E1E] h-[27px]">
+        <div
+          class="container mx-auto flex justify-center md:justify-end items-center text-white md:pr-5 pt-1 text-[14px] font-[400] leading-[15.23px]"
+        >
+          <p>info@the-change-agency.ca</p>
+          <p class="ms-14">+1 (506) 588-7073</p>
+        </div>
+      </nav>
+    </div>
+    <!-------------------------Hero Section------------------------->
+    <div>
+      <input id="menu-toggle" type="checkbox" />
+      <main>
+        <div class="content">
+          <div class="relative w-[100vw] h-screen overflow-hidden">
+            <!-- Background Video -->
+            <img
+              src="Assets/refral_hero.jpg"
+              alt="Background Image"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <!-- Overlay to Darken Background -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+
+            <div
+              class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
+            >
+              <div class="relative" style="z-index: 105">
+                <h1
+                  id="typed-text"
+                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                >
+                  The Change Agency <br />
+                  Referral Program
+                </h1>
+                <p class="text-white text-[20px] font-[400] mt-[24px]">
+                  Change starts with a conversation and the best ones come
+                  through people who know our <br />
+                  impact. If you’ve worked with us, partnered with us, or
+                  believe in people-first change, <br />
+                  here’s your chance to connect your network with The Change
+                  Agency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-wrap">
+          <div class="cover">
+            <div class="cover-inner"></div>
+          </div>
+        </div>
+        <div class="menu hidden xl:block">
+          <div class="menu__top">
+            <div class="menu__title">
+              <a href="/index.html">
+                <img
+                  src="Assets/icons/new_Logo.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </a>
+            </div>
+            <div class="menu__nav-top">
+              <a class="menu__link uppercase opacity-75" href="/whoweare.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >WHO WE ARE</span
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="/whatwedo.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >What We Do</span
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >How We Do It</label
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >Change Portal</label
+                >
+              </a>
+
+              <a class="menu__link uppercase" href="/resources.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >Resources</span
+                >
+              </a>
+            </div>
+            <div class="menu__side">
+              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+                <div class="py-5 px-2 rounded-lg text-black tca_button">
+                  <a
+                    class="bg-white py-3 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px]"
+                    href=""
+                    >Book a call</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- -------------------How it Works-------------------- -->
+    <div class="mt-[150px] mx-[7vw]">
+      <h1 class="text-[54px] font-[600] leading-[64px] text-center">
+        How it Works
+      </h1>
+
+   
+    </div>
+    <!-- ---------------Why Refer?------------------- -->
+
+    <div class="bg-[#000000] md:h-[586px] mt-[150px]">
+      <div class="py-[150px] text-white px-[7vw]">
+        <h1 class="text-[54px] font-[600] leading-[64px] text-center">
+          Why Refer?
+        </h1>
+        <p class="text-[20px] font-[400] leading-[130%] text-center mt-[24px]">
+          When you refer someone to TCA, you’re not just making a connection,
+          you’re <br />
+          building a community. Here’s how we say thank you:
+        </p>
+
+        <div class="grid grid-cols-3 gap-6 mt-[60px]">
+          <div class="text-center">
+            <h5 class="text-[24px] font-[600] leading-[27.17px] text-[#EC5C35]">
+              Exclusive Invitations
+            </h5>
+            <p class="mt-[16px] text-[16px] font-[400] leading-[130%]">
+              Access to private Change & Coffee sessions and roundtable events
+              hosted by our Founder
+            </p>
+          </div>
+          <div class="text-center">
+            <h5 class="text-[24px] font-[600] leading-[27.17px] text-[#EC5C35]">
+              Recognition
+            </h5>
+            <p class="mt-[16px] text-[16px] font-[400] leading-[130%]">
+              Be celebrated across our website, podcast, and social media for
+              your partnership
+            </p>
+          </div>
+
+          <div class="text-center">
+            <h5 class="text-[24px] font-[600] leading-[27.17px] text-[#EC5C35]">
+              Mutual Benefits
+            </h5>
+            <p class="mt-[16px] text-[16px] font-[400] leading-[130%]">
+              Grow your own network, align with meaningful change, and be part
+              of real transformation stories
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------Referral Streams We Track----------------------- -->
+
+    <div class="mt-[150px] mx-[7vw]">
+      <h1 class="text-[54px] font-[600] leading-[64px] text-center">
+        Referral Streams We Track
+      </h1>
+      <div class="grid grid-cols-5 gap-[30px] mt-[62px]">
+        <div
+          class="p-[40px] rounded-[12px] col-span-2"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(252, 252, 253, 0) 0%,
+              #f8f8f8 66.39%
+            );
+            box-shadow: 0px 0px 0px 1px #0c002014;
+          "
+        >
+          <p class="text-[28px] font-[500] leading-[130%] text-[#1F2328]">
+            Understanding where our referrals come from helps us support and
+            celebrate our partners better.
+          </p>
+          <p
+            class="mt-[54px] text-[24px] font-[400] leading-[130%] text-[#595959]"
+          >
+            Whether you connected with us via different channels, it all starts
+            with the Referral Submission Form.
+          </p>
+          <button
+            class="mt-[24px] px-[16px] py-[10px] bg-[#1F2328] rounded-[8px] text-[#FFFFFF]"
+          >
+            SUBMIT A REFERRAL
+          </button>
+        </div>
+        <div class="col-span-3">
+          <div class="relative">
+            <img
+              src="Assets/refral_team_img.jpg"
+              alt=""
+              class="h-[480px] w-full rounded-[12px]"
+            />
+            <div
+              class="absolute inset-0 rounded-[12px]"
+              style="
+                background: linear-gradient(
+                  180deg,
+                  rgba(0, 0, 0, 0) 0%,
+                  #000000 84.85%
+                );
+              "
+            ></div>
+            <div class="absolute bottom-8 left-10 right-10 text-white">
+              <span> We capture referral sources from:</span> <br />
+              <div class="flex flex-wrap mt-[8px]">
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  Email
+                </button>
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] ms-2 mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  LinkedIn DM’s
+                </button>
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] ms-2 mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  Social Media Platforms
+                </button>
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  Networking Events
+                </button>
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] ms-2 mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  Word-Of-Mouth
+                </button>
+                <button
+                  class="px-[24px] py-[16px] rounded-[12px] bg-[#2A2A2A] font-[400] text-[18px] leading-[130%] ms-2 mt-[16px]"
+                  style="border: 1px solid #ffffff12"
+                >
+                  Our Website
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------What Happens After You Refer?------------------ -->
+    <div class="mt-[150px] mx-[7vw]">
+      <h1 class="text-[54px] font-[600] leading-[64px] text-center">
+        What Happens After You Refer?
+      </h1>
+      <p
+        class="text-[20px] font-[400] leading-[130%] text-center text-[#666666] mt-[24px]"
+      >
+        Once your referral is submitted, we take it from there - keeping you
+        informed at every step.
+      </p>
+
+      <div class="grid grid-cols-4 gap-[24px] mt-[60px]">
+        <div
+          class="relative p-[24px] rounded-[12px] h-[328px]"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(252, 252, 253, 0) 0%,
+              #f8f8f8 66.39%
+            );
+            box-shadow: 0px 0px 0px 1px #0c002014;
+          "
+        >
+          <img
+            src="Assets/icons/Refer_card_bg.png"
+            alt=""
+            class="absolute top-0 right-0 h-[104px] w-[120px]"
+          />
+
+          <div>
+            <div class="w-[90px] h-[90px]">
+              <img
+                src="Assets/icons/refer_icon1.png"
+                alt=""
+                class="w-[54px] h-[64px]"
+              />
+            </div>
+
+            <h5 class="mt-[60px] font-[600] text-[20px] leading-[24px]">
+              Added to Our CRM
+            </h5>
+            <p
+              class="text-[16px] font-[400] leading-[130%] text-[#595959] mt-[16px]"
+            >
+              They’re added to our CRM and begin a light-touch engagement
+              journey through our Referral Nurturing Funnel built on trust.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative p-[24px] rounded-[12px] h-[328px]"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(252, 252, 253, 0) 0%,
+              #f8f8f8 66.39%
+            );
+            box-shadow: 0px 0px 0px 1px #0c002014;
+          "
+        >
+          <img
+            src="Assets/icons/Refer_card_bg.png"
+            alt=""
+            class="absolute top-0 right-0 h-[104px] w-[120px]"
+          />
+
+          <div>
+            <div class="w-[90px] h-[90px]">
+              <img
+                src="Assets/icons/refer_icon2.png"
+                alt=""
+                class="w-[64px] h-[64px]"
+              />
+            </div>
+
+            <h5 class="mt-[60px] font-[600] text-[20px] leading-[24px]">
+              Personalized Connection
+            </h5>
+            <p
+              class="text-[16px] font-[400] leading-[130%] text-[#595959] mt-[16px]"
+            >
+              We connect your referral with our team for a free assessment,
+              followed by a tailored, insight-driven conversation.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative p-[24px] rounded-[12px] h-[328px]"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(252, 252, 253, 0) 0%,
+              #f8f8f8 66.39%
+            );
+            box-shadow: 0px 0px 0px 1px #0c002014;
+          "
+        >
+          <img
+            src="Assets/icons/Refer_card_bg.png"
+            alt=""
+            class="absolute top-0 right-0 h-[104px] w-[120px]"
+          />
+
+          <div>
+            <div class="w-[90px] h-[90px]">
+              <img
+                src="Assets/icons/refer_icon3.png"
+                alt=""
+                class="w-[53px] h-[64px]"
+              />
+            </div>
+
+            <h5 class="mt-[60px] font-[600] text-[20px] leading-[24px]">
+              Relationship Nurturing
+            </h5>
+            <p
+              class="text-[16px] font-[400] leading-[130%] text-[#595959] mt-[16px]"
+            >
+              We nurture the relationship with valuable insights, follow-ups,
+              and connection to our leadership team.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative p-[24px] rounded-[12px] h-[328px]"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(252, 252, 253, 0) 0%,
+              #f8f8f8 66.39%
+            );
+            box-shadow: 0px 0px 0px 1px #0c002014;
+          "
+        >
+          <img
+            src="Assets/icons/Refer_card_bg.png"
+            alt=""
+            class="absolute top-0 right-0 h-[104px] w-[120px]"
+          />
+
+          <div>
+            <div class="w-[90px] h-[90px]">
+              <img
+                src="Assets/icons/refer_icon4.png"
+                alt=""
+                class="w-[64px] h-[54px]"
+              />
+            </div>
+
+            <h5 class="mt-[60px] font-[600] text-[20px] leading-[24px]">
+              You Stay in the Loop
+            </h5>
+            <p
+              class="text-[16px] font-[400] leading-[130%] text-[#595959] mt-[16px]"
+            >
+              You stay in the loop throughout the process and get recognized
+              when your referral becomes a client.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------Talk Section---------------------- -->
+    <div class="py-[150px]">
+      <div class="relative h-[585px] bg-white mx-[7vw]">
+        <img
+          src="Assets/talk_1.jpg"
+          alt=""
+          class="w-[122px] h-[119px] absolute"
+        />
+        <img
+          src="Assets/talk_2.jpg"
+          alt=""
+          class="w-[136px] h-[133px] absolute right-0 rotate-[15deg]"
+        />
+        <img
+          src="Assets/talk_3.jpg"
+          alt=""
+          class="w-[163px] h-[160px] absolute bottom-5 -rotate-[8.32deg]"
+        />
+        <img
+          src="Assets/talk_4.jpg"
+          alt=""
+          class="w-[158px] h-[155px] absolute bottom-0 right-0"
+        />
+        <div class="absolute inset-0 flex justify-center mt-10">
+          <div>
+            <div class="flex justify-center">
+              <img
+                src="Assets/video/butterfly.gif"
+                alt=""
+                class="w-[150px] h-[150px]"
+              />
+            </div>
+
+            <h1 class="font-[600] text-[56px] leading-[130%] mx-14 text-center">
+              The Future of Change - Powered by People, Enabled by Innovation
+            </h1>
+            <p
+              class="font-[400] text-[22px] leading-[130%] text-center text-[#666666] mx-44 mt-[24px]"
+            >
+              Whether you’re a past client, trusted partner, or industry
+              connection, your referrals fuel our mission to drive people-first
+              change.
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="font-[600] text-[16px] leading-[24px] bg-black text-white uppercase px-[16px] py-[10px] rounded-[8px] mt-[40px]"
+              >
+                LET’S TALK
+              </button>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------Footer---------------------->
+    <div class="bg-[#1F2328] footer">
+      <div class="bg-[#1F2328] rounded-b-2xl mx-2">
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-[64px] justify-between"
+          >
+            <div class="col-span-2 md:col-span-3 lg:col-span-3 pt-4 px-10">
+              <div class="flex">
+                <img
+                  src="Assets/icons/white_Logo.png"
+                  alt=""
+                  height="52px"
+                  width="185px"
+                />
+              </div>
+              <p
+                class="text-[#535862] text-[16px] font-[400] leading-[24px] mt-[32px] md:w-[350px]"
+              >
+                TCA is a technology-enabled organizational change management
+                consultancy specializing in guiding organizations through
+                successful transformations with a focus on people-centered
+                strategies. 
+              </p>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#FFFFFF]"
+              >
+                Company
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Who We Are</li>
+                <li>What We Do</li>
+                <li>How We Do It</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                Resources
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                LEGAL
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+
+      <div class="container mx-auto py-[64px]">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between rounded-full px-10"
+        >
+          <div>
+            <p class="font-[600] text-[20px] leading-[30px] text-white">
+              Join our newsletter
+            </p>
+            <p
+              class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
+            >
+              We will send you a letter once a week to keep you up to date on
+              <br class="hidden lg:block" />
+              the best practices in change management. No spam.
+            </p>
+          </div>
+          <div class="flex">
+            <form
+              class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#1F2328]"
+              />
+
+              <a
+                class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                href=""
+                >Subscribe</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-12 py-[32px]">
+          <p
+            class="col-span-12 md:col-span-11 text-[#535862] text-[16px] font-[400] leading-[24px] text-center md:text-start"
+          >
+            © 2025 The Change Agency. All rights reserved.
+          </p>
+          <span
+            class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
+          >
+            <a href="">
+              <img
+                src="Assets/footer_linkdln.png"
+                alt=""
+                height="24px"
+                width="24px"
+              />
+            </a>
+            <a href="">
+              <img
+                src="Assets/footer_facebook.png"
+                alt=""
+                height="24px"
+                width="24px"
+                class="ms-[24px]"
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

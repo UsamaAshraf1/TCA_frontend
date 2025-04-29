@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How we do it</title>
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/finalNavbar/navbar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+
+    <!-- aos animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cal-sans@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="./fonts/CalSans-SemiBold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+  </head>
+
+  <body>
+    <!------------------------header------------------------------->
+    <div>
+      <nav class="bg-[#1E1E1E] h-[27px]">
+        <div
+          class="container mx-auto flex justify-center md:justify-end items-center text-white md:pr-5 pt-1 text-[14px] font-[400] leading-[15.23px]"
+        >
+          <p>info@the-change-agency.ca</p>
+          <p class="ms-14">+1 (506) 588-7073</p>
+        </div>
+      </nav>
+    </div>
+    <!-------------------------Hero Section------------------------->
+    <div>
+      <input id="menu-toggle" type="checkbox" />
+      <main>
+        <div class="content">
+          <div class="relative w-[100vw] h-screen overflow-hidden">
+            <!-- Background Video -->
+            <img
+              src="Assets/how_we_do_it_hero.jpg"
+              alt="Background Image"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <!-- Overlay to Darken Background -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+
+            <div
+              class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
+            >
+              <div class="relative" style="z-index: 105">
+                <h1
+                  id="typed-text"
+                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                >
+                  Change Led by People, <br />
+                  Enhanced by Technology
+                </h1>
+                <p class="text-white text-[20px] font-[400] mt-[24px]">
+                  We help organizations navigate change with a human- centered
+                  <br />
+                  approach bringing clarity to complexity, turning strategy into
+                  action, <br />
+                  and building the foundations for long-term, sustainable
+                  impact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-wrap">
+          <div class="cover">
+            <div class="cover-inner"></div>
+          </div>
+        </div>
+        <div class="menu hidden xl:block">
+          <div class="menu__top">
+            <div class="menu__title">
+              <a href="/index.html">
+                <img
+                  src="Assets/icons/new_Logo.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </a>
+            </div>
+            <div class="menu__nav-top">
+              <a class="menu__link uppercase opacity-75" href="/whoweare.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >WHO WE ARE</span
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="/whatwedo.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >What We Do</span
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >How We Do It</label
+                >
+              </a>
+              <a class="menu__link uppercase opacity-75" href="#">
+                <label
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >Change Portal</label
+                >
+              </a>
+
+              <a class="menu__link uppercase" href="/resources.html">
+                <span
+                  for="menu-toggle"
+                  class="text-[16px] font-[400] text-white"
+                  >Resources</span
+                >
+              </a>
+            </div>
+            <div class="menu__side">
+              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+                <div class="py-5 px-2 rounded-lg text-black tca_button">
+                  <a
+                    class="bg-white py-3 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px]"
+                    href=""
+                    >Book a call</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- ------------------Our Proven Approach to Leading Change------------------------ -->
+    <div class="mt-[150px] mx-[7vw]">
+      <h1
+        class="text-[54px] leading-[64px] font-[600] text-center text-[#1F2328]"
+      >
+        Our Proven Approach to Leading Change
+      </h1>
+      <p
+        class="mt-[24px] font-[400] text-[20px] leading-[130%] text-center text-[#666666]"
+      >
+        Our proven approach guides organizations through every stage of
+        transformation, aligning <br />
+        people, strategy, and action to create meaningful, lasting impact.
+      </p>
+
+      <div class="mt-[60px]">
+        <!-- <div class="h-[10px]"
+          style="
+            border: 2.16px solid;
+
+            border-image-source: linear-gradient(
+              90deg,
+              #ffffff 0%,
+              rgba(236, 92, 53, 0.5) 100%
+            );
+          "
+        ></div> -->
+
+        <div class="grid grid-cols-3 gap-10">
+          <div class="text-center">
+            <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+              Strategic Alignment & Clarity
+            </h4>
+            <p
+              class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+            >
+              Align leadership, teams & stakeholders with vision, values &
+              objectives.
+            </p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+              Actionable Planning & Implementation
+            </h4>
+            <p
+              class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+            >
+              Assess readiness, build plans, and support teams in execution.
+            </p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+              Long-Term Sustainability & Adoption
+            </h4>
+            <p
+              class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+            >
+              Embed change into culture with feedback, measurement &
+              reinforcement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------Graph Section------------------------- -->
+    <div
+      class="bg-gradient-to-r from-white via-transparent to-white mt-[150px] mx-4 md:mx-10 pb-10"
+    >
+      <h1
+        class="text-center font-[700] text-[36px] md:text-[44px] leading-[100%] uppercase"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        Change led by People, Enhanced by <br class="hidden md:block" />
+        Technology
+      </h1>
+      <p
+        class="text-center font-[400] text-[18px] leading-[24px] text-[#52525B] mt-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        Making Change Visible - so Everyone stays Informed & Involved <br />
+        Keeping leaders and teams aligned
+      </p>
+      <div class="flex justify-center items-center">
+        <div class="graph_Carousel w-full mt-24">
+          <div
+            class="flex flex-col rounded-3xl graph_card_background mx-2 h-[480px] md:h-[628px]"
+          >
+            <div
+              class="flex justify-center item-center py-4 px-2 md:px-10 mx-2 md:mx-0"
+            >
+              <img
+                src="Assets/video/one.png"
+                alt=""
+                class="mt-2 h-[250px] md:h-[400px]"
+              />
+            </div>
+            <div class="pt-4 pb-14 px-2 md:px-[42px] mx-2 md:mx-4">
+              <p
+                class="text-[22px] md:text-[24px] font-[600] leading-[32px] text-[#0C0020] graph_card_title"
+              >
+                Change Progress Bar (0% to 100%)
+              </p>
+              <p
+                class="mt-3 text-[16px] md:text-[18px] font-[400] leading-[130%] text-[#595959]"
+              >
+                Follow every phase of your transformation from Planning and
+                Execution to Adoption, stay informed at each milestone as you
+                move toward 100% completion.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-3xl graph_card_background mx-2 h-[480px] md:h-[628px]"
+          >
+            <div
+              class="flex justify-center item-center py-4 px-2 md:px-10 mx-2 md:mx-0"
+            >
+              <img
+                src="Assets/video/two.png"
+                alt=""
+                class="mt-2 h-[250px] md:h-[400px]"
+              />
+            </div>
+            <div class="pt-4 pb-14 px-2 md:px-10 mx-2 md:mx-4">
+              <p
+                class="text-[22px] md:text-[24px] font-[600] leading-[32px] text-[#0C0020] graph_card_title"
+              >
+                Support
+              </p>
+              <p
+                class="mt-2 text-[16px] md:text-[18px] font-[400] leading-[130%] text-[#595959]"
+              >
+                How leaders feel about this changeand their confidence in making
+                it happen
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-3xl graph_card_background mx-2 h-[480px] md:h-[628px]"
+          >
+            <div
+              class="flex justify-center item-center py-4 px-2 md:px-10 mx-2 md:mx-0"
+            >
+              <img
+                src="Assets/video/three.png"
+                alt=""
+                class="mt-2 h-[250px] md:h-[400px]"
+              />
+            </div>
+            <div class="pt-4 pb-14 px-2 md:px-[42px] mx-2 md:mx-4">
+              <p
+                class="text-[22px] md:text-[24px] font-[600] leading-[32px] text-[#0C0020] graph_card_title"
+              >
+                Those impacted by change
+              </p>
+              <p
+                class="mt-3 text-[16px] md:text-[18px] font-[400] leading-[130%] text-[#595959]"
+              >
+                Measure the real-world effect of your initiatives. Track direct
+                influence, indirect reach, and overall market response to drive
+                smarter decisions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-3xl graph_card_background mx-2 h-[480px] md:h-[628px]"
+          >
+            <div
+              class="flex justify-center item-center py-4 px-2 md:px-10 mx-2 md:mx-0"
+            >
+              <img
+                src="Assets/video/four.png"
+                alt=""
+                class="mt-2 h-[250px] md:h-[400px]"
+              />
+            </div>
+            <div class="pt-4 pb-14 px-2 md:px-[42px] mx-2 md:mx-4">
+              <p
+                class="text-[22px] md:text-[24px] font-[600] leading-[32px] text-[#0C0020] graph_card_title"
+              >
+                What is holding teams back?
+              </p>
+              <p
+                class="mt-3 text-[16px] md:text-[18px] font-[400] leading-[130%] text-[#595959]"
+              >
+                Is your team equipped to navigate change? Measure readiness and
+                align for success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------Talk Section---------------------- -->
+    <div class="py-[150px]">
+      <div class="relative h-[585px] bg-white mx-[7vw]">
+        <img
+          src="Assets/talk_1.jpg"
+          alt=""
+          class="w-[122px] h-[119px] absolute"
+        />
+        <img
+          src="Assets/talk_2.jpg"
+          alt=""
+          class="w-[136px] h-[133px] absolute right-0 rotate-[15deg]"
+        />
+        <img
+          src="Assets/talk_3.jpg"
+          alt=""
+          class="w-[163px] h-[160px] absolute bottom-5 -rotate-[8.32deg]"
+        />
+        <img
+          src="Assets/talk_4.jpg"
+          alt=""
+          class="w-[158px] h-[155px] absolute bottom-0 right-0"
+        />
+        <div class="absolute inset-0 flex justify-center mt-10">
+          <div>
+            <div class="flex justify-center">
+              <img
+                src="Assets/video/butterfly.gif"
+                alt=""
+                class="w-[150px] h-[150px]"
+              />
+            </div>
+
+            <h1 class="font-[600] text-[56px] leading-[130%] mx-14 text-center">
+              The Future of Change - Powered by People, Enabled by Innovation
+            </h1>
+            <p
+              class="font-[400] text-[22px] leading-[130%] text-center text-[#666666] mx-44 mt-[24px]"
+            >
+              Whether you’re a past client, trusted partner, or industry
+              connection, your referrals fuel our mission to drive people-first
+              change.
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="font-[600] text-[16px] leading-[24px] bg-black text-white uppercase px-[16px] py-[10px] rounded-[8px] mt-[40px]"
+              >
+                LET’S TALK
+              </button>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------Footer---------------------->
+    <div class="bg-[#1F2328] footer">
+      <div class="bg-[#1F2328] rounded-b-2xl mx-2">
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-[64px] justify-between"
+          >
+            <div class="col-span-2 md:col-span-3 lg:col-span-3 pt-4 px-10">
+              <div class="flex">
+                <img
+                  src="Assets/icons/white_Logo.png"
+                  alt=""
+                  height="52px"
+                  width="185px"
+                />
+              </div>
+              <p
+                class="text-[#535862] text-[16px] font-[400] leading-[24px] mt-[32px] md:w-[350px]"
+              >
+                TCA is a technology-enabled organizational change management
+                consultancy specializing in guiding organizations through
+                successful transformations with a focus on people-centered
+                strategies. 
+              </p>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#FFFFFF]"
+              >
+                Company
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Who We Are</li>
+                <li>What We Do</li>
+                <li>How We Do It</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                Resources
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                LEGAL
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+
+      <div class="container mx-auto py-[64px]">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between rounded-full px-10"
+        >
+          <div>
+            <p class="font-[600] text-[20px] leading-[30px] text-white">
+              Join our newsletter
+            </p>
+            <p
+              class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
+            >
+              We will send you a letter once a week to keep you up to date on
+              <br class="hidden lg:block" />
+              the best practices in change management. No spam.
+            </p>
+          </div>
+          <div class="flex">
+            <form
+              class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#1F2328]"
+              />
+
+              <a
+                class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                href=""
+                >Subscribe</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-12 py-[32px]">
+          <p
+            class="col-span-12 md:col-span-11 text-[#535862] text-[16px] font-[400] leading-[24px] text-center md:text-start"
+          >
+            © 2025 The Change Agency. All rights reserved.
+          </p>
+          <span
+            class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
+          >
+            <a href="">
+              <img
+                src="Assets/footer_linkdln.png"
+                alt=""
+                height="24px"
+                width="24px"
+              />
+            </a>
+            <a href="">
+              <img
+                src="Assets/footer_facebook.png"
+                alt=""
+                height="24px"
+                width="24px"
+                class="ms-[24px]"
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

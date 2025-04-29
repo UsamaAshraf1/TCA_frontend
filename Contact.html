@@ -41,7 +41,7 @@
 
   <body>
     <!------------------------header------------------------------->
-    <div>
+    <!-- <div>
       <nav class="bg-[#1E1E1E] h-[27px]">
         <div
           class="container mx-auto flex justify-center md:justify-end items-center text-white md:pr-5 pt-1 text-[14px] font-[400] leading-[15.23px]"
@@ -50,115 +50,61 @@
           <p class="ms-14">+1 (506) 588-7073</p>
         </div>
       </nav>
-    </div>
+    </div> -->
     <!-------------------------Hero Section------------------------->
     <div>
-      <input id="menu-toggle" type="checkbox" />
-      <main>
-        <div class="content">
-          <div class="relative w-[100vw] h-screen overflow-hidden">
-            <!-- Background Video -->
-            <img
-              src="Assets/change_portal_hero.png"
-              alt="Background Image"
-              class="absolute top-0 left-0 w-full h-full object-cover"
-            />
-            <!-- Overlay to Darken Background -->
-            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+      <div class="top-10 pt-4">
+        <div class="menu__top">
+          <div class="menu__title">
+            <a href="/index.html" class="top-2">
+              <img
+                src="Assets/icons/new_black_logo.png"
+                alt=""
+                class="w-[153px] h-[37px]"
+              />
+            </a>
+          </div>
+          <div class="menu__nav-top">
+            <a class="menu__link uppercase opacity-75" href="/whoweare.html">
+              <span for="menu-toggle" class="text-[16px] font-[400] text-black"
+                >WHO WE ARE</span
+              >
+            </a>
+            <a class="menu__link uppercase opacity-75" href="/whatwedo.html">
+              <span for="menu-toggle" class="text-[16px] font-[400] text-black"
+                >What We Do</span
+              >
+            </a>
+            <a class="menu__link uppercase opacity-75" href="#">
+              <label for="menu-toggle" class="text-[16px] font-[400] text-black"
+                >How We Do It</label
+              >
+            </a>
+            <a class="menu__link uppercase opacity-75" href="#">
+              <label for="menu-toggle" class="text-[16px] font-[400] text-black"
+                >Change Portal</label
+              >
+            </a>
 
-            <div
-              class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
-            >
-              <div class="relative" style="z-index: 105">
-                <h1
-                  id="typed-text"
-                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+            <a class="menu__link uppercase" href="/resources.html">
+              <span for="menu-toggle" class="text-[16px] font-[400] text-black"
+                >Resources</span
+              >
+            </a>
+          </div>
+          <div class="menu__side">
+            <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+              <div class="py-5 px-2 rounded-lg text-black tca_button">
+                <a
+                  class="bg-white py-3 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px]"
+                  href=""
+                  >Book a call</a
                 >
-                  AI and Data-Driven <br />
-                  Insights
-                </h1>
-                <p class="text-white text-[20px] font-[400] mt-[24px]">
-                  Change is complex, but it shouldn’t be chaotic. The TCA Change
-                  Portal makes transformation clear, <br />
-                  measurable, and people-driven. Designed to keep leaders and
-                  teams aligned, our AI- <br />
-                  powered platform provides real-time insights, tracks progress,
-                  and identifies barriers - ensuring <br />
-                  that every stakeholder stays informed and engaged.
-                </p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="cover-wrap">
-          <div class="cover">
-            <div class="cover-inner"></div>
-          </div>
-        </div>
-        <div class="menu hidden xl:block">
-          <div class="menu__top">
-            <div class="menu__title">
-              <a href="/index.html">
-                <img
-                  src="Assets/icons/new_Logo.png"
-                  alt=""
-                  class="w-full h-full"
-                />
-              </a>
-            </div>
-            <div class="menu__nav-top">
-              <a class="menu__link uppercase opacity-75" href="/whoweare.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >WHO WE ARE</span
-                >
-              </a>
-              <a class="menu__link uppercase opacity-75" href="/whatwedo.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >What We Do</span
-                >
-              </a>
-              <a class="menu__link uppercase opacity-75" href="#">
-                <label
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >How We Do It</label
-                >
-              </a>
-              <a class="menu__link uppercase opacity-75" href="#">
-                <label
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >Change Portal</label
-                >
-              </a>
-
-              <a class="menu__link uppercase" href="/resources.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >Resources</span
-                >
-              </a>
-            </div>
-            <div class="menu__side">
-              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
-                <div class="py-5 px-2 rounded-lg text-black tca_button">
-                  <a
-                    class="bg-white py-3 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px]"
-                    href=""
-                    >Book a call</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      </div>
     </div>
 
     <!-- --------------------------Change Readiness Pulse Check----------------------- -->

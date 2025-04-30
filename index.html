@@ -65,6 +65,24 @@
         );
         opacity: 1;
       }
+
+      /* ----------------- */
+      /* #typed-text {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 100%;
+        color: white;
+        margin-top: 10vh;
+      }
+      @media (min-width: 768px) {
+        #typed-text {
+          font-size: 150px;
+          margin-top: 15vh;
+        }
+      } */
+      #typed-text span {
+        display: block; 
+      }
     </style>
   </head>
 
@@ -82,11 +100,10 @@
     </div> -->
     <!-------------------------Hero Section------------------------->
     <div>
-      <input id="menu-toggle" type="checkbox" />
-      <main>
-        <div class="content">
-          <div class="relative w-[100vw] h-screen overflow-hidden">
-            <!-- Background Video -->
+      <!-- <input id="menu-toggle" type="checkbox" /> -->
+      <main class="h-[1024px]">
+        <div class="content h-[1024px]">
+          <div class="relative w-[100vw] h-[1024px]">
             <video
               autoplay
               loop
@@ -98,32 +115,33 @@
               Your browser does not support the video tag.
             </video>
 
-            <!-- Overlay to Darken Background -->
             <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
             <div
               class="relative flex flex-col-reverse md:flex-row py-[40px] md:py-[100px] px-[42px] lg:px-16 justify-center md:justify-between 2xl:pt-[200px] item-center"
             >
               <div class="relative" style="z-index: 105">
-                <!-- Added z-10 to ensure it's behind -->
+              
                 <h1
                   id="typed-text"
-                  class="font-[700] text-[60px] w-[80vw] md:text-[106px] 2xl:text-[106px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                  class="font-[700] md:h-[300px] text-[60px] md:text-[150px] 2xl:text-[150px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
                 >
-                  <!-- The Future of Change -->
+                  <span id="line1"></span>
+                  <span id="line2"></span>
                 </h1>
                 <p
-                  class="text-[24px] md:text-[44px] font-[400] leading-[100%] text-white mt-[50px] md:w-[60vw]"
+                  class="text-[24px] md:text-[24px] font-[400] leading-[130%] text-white mt-[24px] md:w-[60vw]"
                 >
-                  Find out what it takes to make change happen for your
-                  organization - complete your assessment today!
+                  70% of change efforts fail due to people, not strategy – this
+                  4-minute pulse check reveals hidden misalignment in your team,
+                  processes, and perceptions before it sabotages your results!
                 </p>
 
                 <div
-                  class="py-5 w-[268px] mt-4 rounded-lg text-black tca_button"
+                  class="pb-[18px] pt-[20px] w-[268px] mt-[40px] rounded-[15px] text-black tca_button"
                 >
                   <a
-                    class="bg-white py-3 ms-2 px-8 rounded-lg text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
+                    class="bg-white py-3 ms-2 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
                     href=""
                     >Take the assessment</a
                   >
@@ -198,188 +216,12 @@
                   <a
                     class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
                     href=""
-                    >Take the assessment</a
+                    >Book a call</a
                   >
                 </div>
-
-                <!-- <div class="flex justify-center items-center ms-16">
-                  <a href="">
-                    <img
-                      src="Assets/icons/black_linkdln.png"
-                      alt=""
-                      height="16px"
-                      width="16px"
-                    />
-                  </a>
-                  <a href="" class="ms-4">
-                    <img
-                      src="Assets/icons/black_instagram.png"
-                      alt=""
-                      height="17px"
-                      width="17px"
-                    />
-                  </a>
-                  <a href="" class="ms-4">
-                    <img
-                      src="Assets/icons/black_youtube.png"
-                      alt=""
-                      height="16px"
-                      width="20px"
-                    />
-                  </a>
-                </div> -->
               </div>
             </div>
           </div>
-          <!-- <div class="menu__content-wrap">
-            <div class="menu__content">
-              <div class="flex ps-[200px]">
-                <div class="z-10 overflow-hidden">
-                  <div class="p-4">
-                    <div
-                      class="group relative flex items-center gap-x-6 rounded-lg p-4"
-                    >
-                      <div class="flex rounded-lg">
-                        <img
-                          src="Assets/icons/black_about.png"
-                          alt=""
-                          width="24px"
-                          height="24px"
-                        />
-                      </div>
-                      <div class="flex-auto">
-                        <a
-                          href="#"
-                          class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
-                        >
-                          About TCA
-                          <span class="absolute inset-0"></span>
-                        </a>
-                        <p
-                          class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
-                        >
-                          Learn what makes TCA unique and impactful.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="group relative flex items-center gap-x-6 rounded-lg p-4"
-                    >
-                      <div class="flex rounded-lg">
-                        <img
-                          src="Assets/icons/black_values.png"
-                          alt=""
-                          width="24px"
-                          height="24px"
-                        />
-                      </div>
-                      <div class="flex-auto">
-                        <a
-                          href="#"
-                          class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
-                        >
-                          Core Values
-                          <span class="absolute inset-0"></span>
-                        </a>
-                        <p
-                          class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
-                        >
-                          Explore the principles that drive everything we do.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
-                    >
-                      <div class="flex rounded-lg">
-                        <img
-                          src="Assets/icons/black_team.png"
-                          alt=""
-                          width="24px"
-                          height="24px"
-                        />
-                      </div>
-                      <div class="flex-auto">
-                        <a
-                          href="#"
-                          class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
-                        >
-                          TCA Team
-                          <span class="absolute inset-0"></span>
-                        </a>
-                        <p
-                          class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
-                        >
-                          Meet the people powering our mission.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
-                    >
-                      <div class="flex rounded-lg">
-                        <img
-                          src="Assets/icons/black_news.png"
-                          alt=""
-                          width="24px"
-                          height="24px"
-                        />
-                      </div>
-                      <div class="flex-auto">
-                        <a
-                          href="#"
-                          class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
-                        >
-                          News
-                          <span class="absolute inset-0"></span>
-                        </a>
-                        <p
-                          class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
-                        >
-                          Stay updated with the latest happenings at TCA.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6"
-                    >
-                      <div class="flex rounded-lg">
-                        <img
-                          src="Assets/icons/black_contact.png"
-                          alt=""
-                          width="24px"
-                          height="24px"
-                        />
-                      </div>
-                      <div class="flex-auto">
-                        <a
-                          href="#"
-                          class="block font-[600] text-[16px] leading-[24px] text-[#181D27]"
-                        >
-                          Contact
-                          <span class="absolute inset-0"></span>
-                        </a>
-                        <p
-                          class="mt-1 text-[14px] font-[400] leading-[20px] text-[#1F2328]"
-                        >
-                          Get in touch with us for inquiries or support.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  id="fly_nav"
-                  class="back_button absolute right-20 bottom-6 text-[66px] text-[#1F2328]"
-                >
-                  <label for="menu-toggle">
-                    <h1 class="">The Future of Change</h1>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </main>
     </div>
@@ -387,7 +229,7 @@
     <!-- ---------------Network of Industry Expertise & Experience------- -->
     <div class="bg-[#000000] text-white pt-[158px] pb-[137px]">
       <h1
-        class="text-[36px] md:text-[44px] font-[700] leading-[100%] text-center px-[10px] xl:px-0 uppercase"
+        class="text-[36px] md:text-[54px] font-[600] leading-[64px] text-center px-[10px] xl:px-0 uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -396,7 +238,7 @@
         Expertise & Experience 
       </h1>
       <p
-        class="mt-[41px] text-[18px] font-[400] leading-[24px] text-center px-[10vw] md:px-[12vw] lg:px-[25vw]"
+        class="mt-[41px] text-[20px] font-[400] leading-[130%] text-center px-[10vw] md:px-[12vw] lg:px-[25vw]"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -908,7 +750,7 @@
     <div>
       <div class="text-center mt-[100px]">
         <h1
-          class="text-[36px] md:text-[44px] font-[700] px-[10px] md:px-0 leading-[100%] text-[#1F2328]"
+          class="text-[36px] md:text-[54px] font-[600] px-[10px] md:px-0 leading-[64px] text-[#1F2328]"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -917,7 +759,7 @@
         </h1>
         <div class="flex justify-center">
           <p
-            class="w-[70vw] lg:w-[40vw] text-[18px] font-[400] leading-[24px] text-[#52525B] mt-4"
+            class="w-[70vw] lg:w-[40vw] text-[20px] font-[400] leading-[130%] text-[#52525B] mt-4"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
@@ -1188,7 +1030,7 @@
       class="bg-gradient-to-r from-white via-transparent to-white mt-32 mx-4 md:mx-10 pb-10"
     >
       <h1
-        class="text-center font-[700] text-[36px] md:text-[44px] leading-[100%] uppercase"
+        class="text-center font-[600] text-[36px] md:text-[54px] leading-[64px] uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1197,7 +1039,7 @@
         Enhanced by Technology
       </h1>
       <p
-        class="text-center font-[400] text-[18px] leading-[24px] text-[#52525B] mt-4"
+        class="text-center font-[400] text-[20px] leading-[130%] text-[#52525B] mt-4"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1695,7 +1537,7 @@
     <!---------------------------Case Study------------------->
     <div class="bg-white container mx-auto pb-[100px]">
       <h1
-        class="text-[36px] md:text-[44px] text-center font-[700] leading-[100%] md:leading-[100%] pt-[84px] uppercase"
+        class="text-[36px] md:text-[54px] text-center font-[600] leading-[64px] md:leading-[100%] pt-[84px] uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1806,10 +1648,10 @@
       </div>
     </div>
 
-    <!-- ------------------------------partner--------------------- -->
+    <!-- ------------------------------partner---------------------
     <div>
       <h1
-        class="text-[36px] md:text-[44px] font-[700] leading-[100%] text-center px-[10px] xl:px-0 uppercase"
+        class="text-[36px] md:text-[54px] font-[600] leading-[64px] text-center px-[10px] xl:px-0 uppercase"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -1881,13 +1723,7 @@
             class="object-contain h-full w-full"
           />
         </div>
-        <!-- <div class="w-36 h-36">
-          <img
-            src="Assets/Partner/partner_eight.png"
-            alt="Partner 4"
-            class="object-contain h-full w-full"
-          />
-        </div> -->
+      
         <div class="w-36 h-36">
           <img
             src="Assets/Partner/partner_nine.png"
@@ -1903,7 +1739,107 @@
           />
         </div>
       </div>
+    </div> -->
+    <!-- --------------------------Partner Carousel---------------------- -->
+    <div class="pt-[50px] pb-[100px] mx-[7vw]">
+      <h1 class="font-[600] text-[56px] leading-[64px] text-center">
+        Partners
+      </h1>
+      <p
+        class="font-[400] text-[22px] leading-[130%] text-center text-[#666666] mx-44 mt-[24px]"
+      >
+        Our partners provide unlimited value to our clients, ensuring we are
+        prioritizing innovation and collaboration to be the leaders in Change
+        Management and to ensure strategic and future-focused transformation
+        across all industries.
+      </p>
+
+      <div class="partner_new_slider mt-[60px]">
+        <div class="w-[328px] h-[370px] mx-3 p-[32px] partner_new_carousel">
+          <img
+            src="Assets/new_partner1.png"
+            alt=""
+            class="h-[38px] w-[176px]"
+          />
+          <h5 class="text-[24px] leading-[24px] text-[#0C0020] mt-[60px]">
+            Flowgent.ai
+          </h5>
+          <p
+            class="mt-[8px] font-[500] text-[16px] leading-[24px] text-[#666666]"
+          >
+            - Jan van Musscher
+          </p>
+          <p
+            class="mt-[16px] font-[400] text-[16px] leading-[130%] text-[#595959]"
+          >
+            FlowGent empowers organizations to build advanced conversational AI
+            agents that 10x customer experiences. Our scalable platform enables
+            seamless, human-like interactions that boost engagement and drive
+            operational efficiency.
+          </p>
+        </div>
+
+        <div class="w-[328px] h-[370px] mx-3 p-[32px] partner_new_carousel">
+          <img src="Assets/new_partner2.png" alt="" class="h-[38px] w-[35px]" />
+          <h5 class="text-[24px] leading-[24px] text-[#0C0020] mt-[60px]">
+            Antler Digital
+          </h5>
+          <p
+            class="mt-[8px] font-[500] text-[16px] leading-[24px] text-[#666666]"
+          >
+            - Sam Loyd
+          </p>
+          <p
+            class="mt-[16px] font-[400] text-[16px] leading-[130%] text-[#595959]"
+          >
+            Antler Digital is a boutique tech consultancy delivering tailored
+            business solutions through technology and AI. They design and build
+            SaaS platforms, agentic workflows, lead gen funnels, and custom
+            internal tools.
+          </p>
+        </div>
+
+        <div class="w-[328px] h-[370px] mx-3 p-[32px] partner_new_carousel">
+          <img src="Assets/new_partner3.png" alt="" class="h-[38px] w-[45px]" />
+          <h5 class="text-[24px] leading-[24px] text-[#0C0020] mt-[60px]">
+            Optimisably
+          </h5>
+          <p
+            class="mt-[8px] font-[500] text-[16px] leading-[24px] text-[#666666]"
+          >
+            - Francine McCutcheon
+          </p>
+          <p
+            class="mt-[16px] font-[400] text-[16px] leading-[130%] text-[#595959]"
+          >
+            Optimisably helps businesses in Dubai and beyond build
+            high-performing digital presences. From website optimisation to lead
+            generation and paid ads, we focus on measurable growth that aligns
+            with business goals.
+          </p>
+        </div>
+        <div class="w-[328px] h-[370px] mx-3 p-[32px] partner_new_carousel">
+          <img src="Assets/new_partner4.png" alt="" class="h-[38px] w-[37px]" />
+          <h5 class="text-[24px] leading-[24px] text-[#0C0020] mt-[60px]">
+            Dunnixer
+          </h5>
+          <p
+            class="mt-[8px] font-[500] text-[16px] leading-[24px] text-[#666666]"
+          >
+            - Ahmed Abbas
+          </p>
+          <p
+            class="mt-[16px] font-[400] text-[16px] leading-[130%] text-[#595959]"
+          >
+            Dunnixer offers AI-powered SaaS solutions for maturity assessments,
+            helping organizations identify gaps, optimize processes, and align
+            strategies for digital transformation. The platform provides
+            data-driven recommendations as well.
+          </p>
+        </div>
+      </div>
     </div>
+
     <!-------------------------Footer---------------------->
     <div class="bg-[#000000] footer">
       <div class="bg-[#000000] rounded-b-2xl mx-2">
@@ -2084,18 +2020,45 @@
         }
       }
 
-      const fullText = "Your Partner in Change";
-      const typedTextEl = document.getElementById("typed-text");
-      let index = 0;
+      const textLines = ["Your Partner in", "Change"];
+      const line1El = document.getElementById("line1");
+      const line2El = document.getElementById("line2");
+      let lineIndex = 0;
+      let charIndex = 0;
 
       function typeText() {
-        if (index < fullText.length) {
-          typedTextEl.textContent += fullText.charAt(index);
-          index++;
-          setTimeout(typeText, 100);
+        if (lineIndex < textLines.length) {
+          const currentLine = textLines[lineIndex];
+          const targetEl = lineIndex === 0 ? line1El : line2El;
+
+          if (charIndex < currentLine.length) {
+            targetEl.textContent += currentLine.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100); // Speed of typing
+          } else {
+            // Move to the next line
+            lineIndex++;
+            charIndex = 0;
+            setTimeout(typeText, 100); // Small delay before starting next line
+          }
         }
       }
+
+      // Start typing on load
       window.addEventListener("DOMContentLoaded", typeText);
+
+      // const fullText = "Your Partner in Change";
+      // const typedTextEl = document.getElementById("typed-text");
+      // let index = 0;
+
+      // function typeText() {
+      //   if (index < fullText.length) {
+      //     typedTextEl.textContent += fullText.charAt(index);
+      //     index++;
+      //     setTimeout(typeText, 100);
+      //   }
+      // }
+      // window.addEventListener("DOMContentLoaded", typeText);
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

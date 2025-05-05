@@ -180,7 +180,7 @@ $(document).ready(function () {
   $(".slider").slick({
     centerMode: true,
     centerPadding: "0px",
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
@@ -196,6 +196,14 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+  $(".next_new").on("click", function () {
+    $(".slider").slick("slickNext");
+  });
+
+  // Previous button click
+  $(".previous_new").on("click", function () {
+    $(".slider").slick("slickPrev");
   });
 });
 

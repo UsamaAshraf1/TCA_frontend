@@ -70,14 +70,19 @@
         align-items: center;
         margin-bottom: 40px;
         position: relative;
+        padding: 24px;
       }
       .timeline-content {
-        width: 45%;
+        width: 40%;
         padding: 20px;
-        background: white;
-        border: 1px solid #e5e7eb;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        background: linear-gradient(
+          180deg,
+          rgba(252, 252, 253, 0) 0%,
+          #f8f8f8 66.39%
+        );
+        box-shadow: 0px 0px 0px 1px #0c002014;
+        z-index: 10;
       }
       .timeline-item:nth-child(even) .timeline-content {
         margin-right: auto;
@@ -237,12 +242,18 @@
 
           <!-- Step 1 -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="text-orange-500 uppercase text-sm font-semibold mb-2">
+            <div class="timeline-content inset-0 pe-[60px]">
+              <p
+                class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
+              >
                 Step 1
-              </h3>
-              <h2 class="text-lg font-bold mb-2">Who Can Participate?</h2>
-              <ul class="list-disc pl-5 text-gray-700">
+              </p>
+              <h2 class="text-[24px] font-[600] leading-[24px] mb-[16px]">
+                Who Can Participate?
+              </h2>
+              <ul
+                class="list-disc ps-7 text-[#595959] text-[16px] font-[400] leading-[130%]"
+              >
                 <li>Business Associates</li>
                 <li>Past & Current Clients</li>
                 <li>Partners & Networking Connections</li>
@@ -250,8 +261,22 @@
                 <li>Change Management Advocates</li>
               </ul>
             </div>
+            <div
+              class="absolute inset-0 w-[20%] ms-[23%]"
+              style="
+                border: 5.43px solid;
+
+                border-image-source: linear-gradient(
+                  91.05deg,
+                  white 28.73%,
+                  #ffc6b7 99.11%
+                );
+                border-image-slice: 1;
+                border-image-width: 5.43px;
+                border-image-repeat: stretch;
+              "
+            ></div>
             <div class="timeline-circle" style="top: 50%">
-              <!-- User Icon for "Who Can Participate?" -->
               <div
                 class="bg-white rounded-full p-4 border flex justify-center items-center"
               >
@@ -266,19 +291,42 @@
 
           <!-- Step 2 -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="text-orange-500 uppercase text-sm font-semibold mb-2">
+            <div class="timeline-content pe-[60px]">
+              <p
+                class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
+              >
                 Step 2
-              </h3>
-              <h2 class="text-lg font-bold mb-2">Who Should You Refer?</h2>
-              <ul class="list-disc pl-5 text-gray-700">
-                <li>Businesses adopting or AI or automation</li>
-                <li>Companies changing sales or customer service processes</li>
-                <li>Organizations going through mergers or acquisitions</li>
+              </p>
+              <h2 class="text-[24px] font-[600] leading-[24px] mb-[16px]">
+                Who Should You Refer?
+              </h2>
+              <ul
+                class="list-disc ps-7 text-[#595959] text-[16px] font-[400] leading-[130%]"
+              >
+                <li>Businesses adopting AI or automation</li>
+                <li>Companies changing sales or customer strategies</li>
+                <li>
+                  Organizations going through mergers or leadership changes
+                </li>
                 <li>Teams adapting to new markets</li>
                 <li>Leaders managing hybrid/remote transitions</li>
               </ul>
             </div>
+            <div
+              class="absolute inset-0 w-[20%] ms-[81%]"
+              style="
+                border: 5.43px solid;
+
+                border-image-source: linear-gradient(
+                  91.05deg,
+                  white 28.73%,
+                  #ffc6b7 99.11%
+                );
+                border-image-slice: 1;
+                border-image-width: 5.43px;
+                border-image-repeat: stretch;
+              "
+            ></div>
             <div class="timeline-circle" style="top: 50%">
               <!-- User Icon for "Who Can Participate?" -->
               <div
@@ -295,20 +343,48 @@
 
           <!-- Step 3 -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="text-orange-500 uppercase text-sm font-semibold mb-2">
+            <div class="timeline-content pe-[60px]">
+              <p
+                class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
+              >
                 Step 3
-              </h3>
-              <h2 class="text-lg font-bold mb-2">
-                Know Someone Who Could Use Support?
+              </p>
+              <h2 class="text-[24px] font-[600] leading-[24px] mb-[16px]">
+                Know someone who could use our support?
               </h2>
-              <ul class="list-disc pl-5 text-gray-700">
-                <li>Submit a referral using our referral form</li>
-                <li>Introduce via LinkedIn, tag us in a relevant discussion</li>
-                <li>Send an email connecting us to your referral</li>
-                <li>Or simply refer The Change Agency</li>
+              <ul
+                class="list-disc ps-7 text-[#595959] text-[16px] font-[400] leading-[130%]"
+              >
+                <li>
+                  Submit a referral using our referral form here:
+                  <span class="text-[#EC5C35]"> [Link]</span>
+                </li>
+                <li>
+                  Introduce us via LinkedIn or tag us in a relevant discussion
+                </li>
+                <li>
+                  Send an email connecting us to your referral at:
+                  <span class="text-[#EC5C35]">
+                    rylan@the-change-agency.ca</span
+                  >
+                </li>
               </ul>
             </div>
+            <div
+              class="absolute inset-0 w-[20%] ms-[23%]"
+              style="
+                border: 5.43px solid;
+
+                border-image-source: linear-gradient(
+                  91.05deg,
+                  white 28.73%,
+                  #ffc6b7 99.11%
+                );
+                border-image-slice: 1;
+                border-image-width: 5.43px;
+                border-image-repeat: stretch;
+              "
+            ></div>
             <div class="timeline-circle" style="top: 50%">
               <!-- User Icon for "Who Can Participate?" -->
               <div
@@ -325,16 +401,38 @@
 
           <!-- Step 4 -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="text-orange-500 uppercase text-sm font-semibold mb-2">
+            <div class="timeline-content pe-[60px]">
+              <p
+                class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
+              >
                 Step 4
-              </h3>
-              <h2 class="text-lg font-bold mb-2">We Take It From There</h2>
-              <p class="text-gray-700">
-                We'll reach out within 48 hours, learn more about their needs,
-                and offer a Change Readiness Assessment to start their journey.
+              </p>
+              <h2 class="text-[24px] font-[600] leading-[24px] mb-[16px]">
+                We take it from there.
+              </h2>
+              <p
+                class="list-disc ps-1 text-[#595959] text-[16px] font-[400] leading-[130%]"
+              >
+                We’ll reach out within 48 hours, learn more about their needs,
+                and offer a free Change Readiness Assessment to start their
+                journey
               </p>
             </div>
+            <div
+              class="absolute inset-0 w-[20%] ms-[81%]"
+              style="
+                border: 5.43px solid;
+
+                border-image-source: linear-gradient(
+                  91.05deg,
+                  white 28.73%,
+                  #ffc6b7 99.11%
+                );
+                border-image-slice: 1;
+                border-image-width: 5.43px;
+                border-image-repeat: stretch;
+              "
+            ></div>
             <div class="timeline-circle" style="top: 50%">
               <!-- User Icon for "Who Can Participate?" -->
               <div
@@ -351,16 +449,37 @@
 
           <!-- Step 5 -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="text-orange-500 uppercase text-sm font-semibold mb-2">
+            <div class="timeline-content pe-[60px]">
+              <p
+                class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
+              >
                 Step 5
-              </h3>
-              <h2 class="text-lg font-bold mb-2">Close The Loop</h2>
-              <p class="text-gray-700">
-                We keep your referral in the loop with updates from first
-                contact to completed pipeline.
+              </p>
+              <h2 class="text-[24px] font-[600] leading-[24px] mb-[16px]">
+                Stay in the loop
+              </h2>
+              <p
+                class="list-disc ps-1 text-[#595959] text-[16px] font-[400] leading-[130%]"
+              >
+                You’ll be updated as your referral moves through the pipeline
+                from first contact to conversion
               </p>
             </div>
+            <div
+              class="absolute inset-0 w-[20%] ms-[23%]"
+              style="
+                border: 5.43px solid;
+
+                border-image-source: linear-gradient(
+                  91.05deg,
+                  white 28.73%,
+                  #ffc6b7 99.11%
+                );
+                border-image-slice: 1;
+                border-image-width: 5.43px;
+                border-image-repeat: stretch;
+              "
+            ></div>
             <div class="timeline-circle" style="top: 50%">
               <!-- User Icon for "Who Can Participate?" -->
               <div

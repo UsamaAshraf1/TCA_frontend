@@ -234,7 +234,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".partner_new_slider").slick({
-    dots: true,
+    // dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -262,6 +262,15 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+
+  $(".next").on("click", function () {
+    $(".partner_new_slider").slick("slickNext");
+  });
+
+  // Previous button click
+  $(".previous").on("click", function () {
+    $(".partner_new_slider").slick("slickPrev");
   });
 });
 

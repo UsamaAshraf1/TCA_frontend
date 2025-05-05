@@ -37,6 +37,64 @@
       type="font/otf"
       crossorigin
     />
+
+    <style>
+      .timeline-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+      }
+      .timeline-step {
+        position: relative;
+        flex: 1;
+        text-align: center;
+      }
+      .timeline-circle {
+        width: 98px;
+        height: 98px;
+        background-color: #fcfcfd;
+        /* border: 2px solid #ec5c35; */
+        border: 1px solid #5959590f;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #EC5C35;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+      .timeline-line {
+        position: absolute;
+        top: 90px;
+        left: 15%;
+        right: 15%;
+        height: 2px;
+        /* background: linear-gradient(
+          to right,
+          transparent 0%,
+          transparent 10%,
+          #ec5c35 10%,
+          #ec5c35 90%,
+          transparent 90%,
+          transparent 100%
+        ); */
+        /* border: 2.16px solid; */
+
+        background: linear-gradient(
+          90deg,
+          #ffffff 0%,
+          rgba(236, 92, 53, 0.5) 100%
+        );
+
+        background-size: 20px 2px;
+        z-index: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -201,8 +259,52 @@
             );
           "
         ></div> -->
+        <div class="timeline-container">
+          <div class="timeline-step">
+            <h1 class="timeline-circle">01</h1>
+            <div class="text-center mt-8 mx-4">
+              <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+                Strategic Alignment & Clarity
+              </h4>
+              <p
+                class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+              >
+                Align leadership, teams & stakeholders with vision, values &
+                objectives.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <h1 class="timeline-circle">02</h1>
+            <div class="text-center mt-8 mx-4">
+              <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+                Actionable Planning & Implementation
+              </h4>
+              <p
+                class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+              >
+                Assess readiness, build plans, and support teams in execution.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <h1 class="timeline-circle">03</h1>
+            <div class="text-center mt-8 mx-4">
+              <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
+                Long-Term Sustainability & Adoption
+              </h4>
+              <p
+                class="text-[#595959] text-[16px] font-[400] leading-[130%] mt-[16px]"
+              >
+                Embed change into culture with feedback, measurement &
+                reinforcement.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-line"></div>
+        </div>
 
-        <div class="grid grid-cols-3 gap-10">
+        <!-- <div class="grid grid-cols-3 gap-10">
           <div class="text-center">
             <h4 class="text-[20px] leading-[130%] font-[600] text-[#34373C]">
               Strategic Alignment & Clarity
@@ -235,7 +337,7 @@
               reinforcement.
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

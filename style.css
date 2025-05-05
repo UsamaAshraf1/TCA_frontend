@@ -446,3 +446,8 @@ html {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+/* ---------------------------------------- */
+.how_we_do_it_graph_section div .graph_Carousel .slick-active {
+  background: linear-gradient(180deg, #EC5C35 0%, #FCFCFD 66.39%);
+  box-shadow: 0px 0px 0px 1px #0c002014;
+}

@@ -73,8 +73,9 @@ main {
     "top"
     "content";
   grid-template-rows: 3rem 1fr;
-  z-index: 102;
+  z-index: 110;
   font-family: "JetBrains Mono";
+  height: 200px;
 }
 
 .menu__top,

@@ -155,71 +155,6 @@
           </div>
         </div> -->
         <div class="menu hidden xl:block">
-          <!-- <div class="menu__top">
-            <div class="menu__title">
-              <a href="/index.html">
-                <img
-                  src="Assets/icons/new_Logo.png"
-                  alt=""
-                  class="w-full h-full"
-                />
-              </a>
-            </div>
-            <div class="menu__nav-top">
-              <a class="menu__link uppercase opacity-75" href="/whoweare.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >WHO WE ARE</span
-                >
-              </a>
-              <a class="menu__link uppercase opacity-75" href="/whatwedo.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >What We Do</span
-                >
-              </a>
-              <a class="menu__link uppercase opacity-75" href="/howwedoit.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >How We Do It</span
-                >
-              </a>
-              <a
-                class="menu__link uppercase opacity-75"
-                href="/changeportal.html"
-              >
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >Change Portal</span
-                >
-              </a>
-
-              <a class="menu__link uppercase opacity-75" href="/resources.html">
-                <span
-                  for="menu-toggle"
-                  class="text-[16px] font-[400] text-white"
-                  >Resources</span
-                >
-              </a>
-            </div>
-            <div class="menu__side">
-              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
-                <div
-                  class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
-                >
-                  <a
-                    class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
-                    href=""
-                    >Book a call</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div> -->
           <nav class="top-0 left-0 w-full z-50">
             <div
               class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
@@ -236,22 +171,22 @@
 
               <div class="hidden xl:flex space-x-10">
                 <a
-                  href="/whoweare.html"
+                  href="whoweare.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Who We Are</a
                 >
                 <a
-                  href="/whatwedo.html"
+                  href="whatwedo.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >What We Do</a
                 >
                 <a
-                  href="/howwedoit.html"
+                  href="howwedoit.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >How We Do It</a
                 >
                 <a
-                  href="/changeportal.html"
+                  href="changeportal.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Change Portal</a
                 >
@@ -2598,6 +2533,19 @@
       //   }
       // }
       // window.addEventListener("DOMContentLoaded", typeText);
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Resources Dropdown Toggle (Mobile)
+      const resourcesToggle = document.getElementById("resources-toggle");
+      const resourcesDropdown = document.getElementById("resources-dropdown");
+      resourcesToggle.addEventListener("click", () => {
+        resourcesDropdown.classList.toggle("hidden");
+      });
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

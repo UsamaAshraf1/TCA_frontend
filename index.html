@@ -100,7 +100,6 @@
     </div> -->
     <!-------------------------Hero Section------------------------->
     <div>
-      <!-- <input id="menu-toggle" type="checkbox" /> -->
       <main class="h-[1024px]">
         <div class="content h-[1024px]">
           <div class="relative w-[100vw] h-[1024px]">
@@ -150,13 +149,13 @@
           </div>
         </div>
 
-        <div class="cover-wrap">
+        <!-- <div class="cover-wrap">
           <div class="cover">
             <div class="cover-inner"></div>
           </div>
-        </div>
+        </div> -->
         <div class="menu hidden xl:block">
-          <div class="menu__top">
+          <!-- <div class="menu__top">
             <div class="menu__title">
               <a href="/index.html">
                 <img
@@ -220,11 +219,352 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <nav class="top-0 left-0 w-full z-50">
+            <div
+              class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
+            >
+              <div class="flex-shrink-0">
+                <a href="/index.html">
+                  <img
+                    src="Assets/icons/new_Logo.png"
+                    alt="Change Agency Logo"
+                    class="h-10 w-auto"
+                  />
+                </a>
+              </div>
+
+              <div class="hidden xl:flex space-x-10">
+                <a
+                  href="/whoweare.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Who We Are</a
+                >
+                <a
+                  href="/whatwedo.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >What We Do</a
+                >
+                <a
+                  href="/howwedoit.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >How We Do It</a
+                >
+                <a
+                  href="/changeportal.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Change Portal</a
+                >
+
+                <div class="relative group">
+                  <button
+                    class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center"
+                  >
+                    Resources
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute left-0 w-48 bg-[#FFFFFF14] rounded-lg shadow-xl hidden group-hover:block z-10"
+                    style="backdrop-filter: blur(4px)"
+                  >
+                    <a
+                      href="Contact.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                      >Contact</a
+                    >
+                    <a
+                      href="referalpage.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                      >Tca Referal</a
+                    >
+                    <a
+                      href="resources.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                      >Resources</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+                <div
+                  class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
+                >
+                  <a
+                    class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
+                    href=""
+                    >Book a call</a
+                  >
+                </div>
+              </div>
+
+              <div class="xl:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              id="mobile-menu"
+              class="hidden xl:hidden bg-black/90 px-4 py-6"
+            >
+              <div class="flex flex-col space-y-4">
+                <a
+                  href="/whoweare.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Who We Are</a
+                >
+                <a
+                  href="/whatwedo.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >What We Do</a
+                >
+                <a
+                  href="/howwedoit.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >How We Do It</a
+                >
+                <a
+                  href="/changeportal.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Change Portal</a
+                >
+                <a
+                  href="/resources.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Resources</a
+                >
+                <a
+                  href="#"
+                  class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
+                  >Book a call</a
+                >
+              </div>
+            </div>
+          </nav>
         </div>
       </main>
     </div>
 
+    <!-- <main class="relative min-h-screen">
+      <nav class="fixed top-0 left-0 w-full z-50">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
+        >
+          <div class="flex-shrink-0">
+            <a href="/index.html">
+              <img
+                src="Assets/icons/new_Logo.png"
+                alt="Change Agency Logo"
+                class="h-10 w-auto"
+              />
+            </a>
+          </div>
+
+          <div class="hidden xl:flex space-x-6">
+            <a
+              href="/whoweare.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Who We Are</a
+            >
+            <a
+              href="/whatwedo.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >What We Do</a
+            >
+            <a
+              href="/howwedoit.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >How We Do It</a
+            >
+            <a
+              href="/changeportal.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Change Portal</a
+            >
+           
+            <div class="relative group">
+              <button
+                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center"
+              >
+                Resources
+                <svg
+                  class="ml-1 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 w-48 bg-black/70 opacity-50 rounded-lg shadow-xl hidden group-hover:block z-10"
+              >
+                <a
+                  href="/resources/blog.html"
+                  class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                  >Blog</a
+                >
+                <a
+                  href="/resources/case-studies.html"
+                  class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                  >Case Studies</a
+                >
+                <a
+                  href="/resources/whitepapers.html"
+                  class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-800 transition"
+                  >Whitepapers</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+            <div
+              class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
+            >
+              <a
+                class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
+                href=""
+                >Book a call</a
+              >
+            </div>
+          </div>
+
+          <div class="xl:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden xl:hidden bg-black/90 px-4 py-6">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="/whoweare.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Who We Are</a
+            >
+            <a
+              href="/whatwedo.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >What We Do</a
+            >
+            <a
+              href="/howwedoit.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >How We Do It</a
+            >
+            <a
+              href="/changeportal.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Change Portal</a
+            >
+            <a
+              href="/resources.html"
+              class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
+              >Book a call</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <section
+        class="relative w-full min-h-screen flex items-center justify-center"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="Assets/video/new_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+
+        <div
+          class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 md:py-24 2xl:pt-48 mx-auto"
+        >
+          <div class="text-center md:text-left">
+            <h1
+              id="typed-text"
+              class="font-bold text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl leading-tight text-white mt-10 md:mt-16"
+            >
+              <span id="line1"></span>
+              <span id="line2"></span>
+            </h1>
+            <p
+              class="text-xl sm:text-2xl font-normal leading-relaxed text-white mt-6 md:max-w-2xl"
+            >
+              70% of change efforts fail due to people, not strategy – this
+              4-minute pulse check reveals hidden misalignment in your team,
+              processes, and perceptions before it sabotages your results!
+            </p>
+            <div class="mt-10">
+              <a
+                href="#"
+                class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition"
+                >Take the assessment</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> -->
     <!-- ---------------Network of Industry Expertise & Experience------- -->
     <div class="bg-[#000000] text-white pt-[158px] pb-[137px]">
       <h1

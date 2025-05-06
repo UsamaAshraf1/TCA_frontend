@@ -50,10 +50,18 @@
         top: 0;
         bottom: 0;
         width: 2px;
-        background: #f97316; /* Orange color for the timeline */
+        /* background: #f97316; Orange color for the timeline */
+        /* border: 3.62px solid; */
+
+        background: linear-gradient(
+          90deg,
+          #ec5c35 1.19%,
+          #ffffff 100%
+        );
+
         transform: translateX(-50%);
         border: none;
-        border-left: 2px dashed #f97316;
+        border-left: 3.62px dashed #ec5c35;
       }
       .timeline-circle {
         position: absolute;
@@ -276,6 +284,7 @@
                 border-image-slice: 1;
                 border-image-width: 5.43px;
                 border-image-repeat: stretch;
+                border-radius: 15px;
               "
             ></div>
             <div class="timeline-circle" style="top: 50%">

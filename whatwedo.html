@@ -82,7 +82,6 @@
     </div> -->
     <!-------------------------Hero Section------------------------->
     <div>
-      <input id="menu-toggle" type="checkbox" />
       <main>
         <div class="content">
           <div class="relative w-[100vw] h-screen overflow-hidden">
@@ -129,7 +128,7 @@
           </div>
         </div>
 
-        <div class="cover-wrap">
+        <!-- <div class="cover-wrap">
           <div class="cover">
             <div class="cover-inner"></div>
           </div>
@@ -200,6 +199,175 @@
               </div>
             </div>
           </div>
+        </div> -->
+
+        <div class="menu hidden xl:block">
+          <nav class="top-0 left-0 w-full z-50">
+            <div
+              class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
+            >
+              <div class="flex-shrink-0">
+                <a href="/index.html">
+                  <img
+                    src="Assets/icons/new_Logo.png"
+                    alt="Change Agency Logo"
+                    class="h-10 w-auto"
+                  />
+                </a>
+              </div>
+
+              <div class="hidden xl:flex space-x-10">
+                <a
+                  href="whoweare.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Who We Are</a
+                >
+                <a
+                  href="whatwedo.html"
+                  class="text-white text-base font-normal uppercase opacity-100 transition"
+                  >What We Do</a
+                >
+                <a
+                  href="howwedoit.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >How We Do It</a
+                >
+                <a
+                  href="changeportal.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Change Portal</a
+                >
+
+                <div class="relative group">
+                  <button
+                    class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center"
+                  >
+                    Resources
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute w-48 bg-[#FFFFFF14] rounded-lg shadow-xl hidden group-hover:block z-10"
+                    style="backdrop-filter: blur(4px)"
+                  >
+                    <a
+                      href="referalpage.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >⁠⁠TCA Referral Program</a
+                    >
+                    <a
+                      href="resources.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >TCA Insights</a
+                    >
+                    <a
+                      href="resources.html#podcaseSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Podcast
+                    </a>
+
+                    <a
+                      href="resources.html#WorkshopsSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Workshops
+                    </a>
+
+                    <a
+                      href="resources.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Newsletter
+                    </a>
+                    <a
+                      href="Contact.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Contact us
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+                <div
+                  class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
+                >
+                  <a
+                    class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
+                    href=""
+                    >take The assessment</a
+                  >
+                </div>
+              </div>
+
+              <div class="xl:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              id="mobile-menu"
+              class="hidden xl:hidden bg-black/90 px-4 py-6"
+            >
+              <div class="flex flex-col space-y-4">
+                <a
+                  href="/whoweare.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Who We Are</a
+                >
+                <a
+                  href="/whatwedo.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >What We Do</a
+                >
+                <a
+                  href="/howwedoit.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >How We Do It</a
+                >
+                <a
+                  href="/changeportal.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Change Portal</a
+                >
+                <a
+                  href="/resources.html"
+                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                  >Resources</a
+                >
+                <a
+                  href="#"
+                  class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
+                  >Book a call</a
+                >
+              </div>
+            </div>
+          </nav>
         </div>
       </main>
     </div>
@@ -540,22 +708,38 @@
                 </div>
                 <!-- Back -->
                 <div
-                  class="back bg-[#D9D9D9] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[759px]"
+                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[759px]"
                 >
-                  <h2 class="text-[20px] font-bold uppercase mb-2">
-                    Frederico Compires
+                  <div
+                    class="absolute top-10 left-4"
+                  >
+                    <button
+                      class="text-[600] text-[50px] leading-[130%] text-[#FFFFFF]"
+                    >
+                      Resilience
+                    </button>
+                  </div>
+                  <h2
+                    class="text-[32px] font-[600] leading-[130%] uppercase mb-2 text-[#FFFFFF]"
+                  >
+                    Tough Times Don’t Last, But Resilient People Do
                   </h2>
-                  <p class="text-[16px] font-medium mb-4">
+                  <!-- <p class="text-[16px] font-medium mb-4">
                     Change Leader Financial Services & Banking
-                  </p>
-                  <p class="text-[14px] font-normal leading-[22px]">
-                    Frederico is passionate about helping businesses adapt,
-                    innovate, and thrive. With experience in finance, business
-                    development, and entrepreneurship, he understands how smart
-                    systems drive meaningful change. As Co-Founder of GiGzy, he
-                    empowered artists with new opportunities. Now, at The Change
-                    Agency, he applies his expertise to help organizations
-                    navigate change and unlock their full potential.
+                  </p> -->
+                  <p
+                    class="text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6]"
+                  >
+                    At The Change Agency, our passionate Change Agents and
+                    workshop experts don’t just talk about resilience they live
+                    it. This workshop cuts through the noise, tackling
+                    real-world challenges with a people-first approach. No
+                    fluff, no clichés just honest conversations and practical,
+                    actionable strategies to help you and your team navigate
+                    uncertainty with confidence. And yes, sometimes the best way
+                    to build resilience is to laugh, even when things get tough.
+                    Because the future of change is human. And we’re here to
+                    help you lead it
                   </p>
                 </div>
               </div>

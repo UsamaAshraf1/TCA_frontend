@@ -97,40 +97,40 @@ function updateTextPosition() {
 
 // Graph Carousel
 
-function toggleModal(name = "", role = "", image = "", desc = "") {
-  const modal = document.getElementById("modal");
-  const modalName = document.getElementById("modal-name");
-  const modalRole = document.getElementById("modal-role");
-  const modalImage = document.getElementById("modal-image");
-  const modalDesc = document.getElementById("modal-desc");
+// function toggleModal(name = "", role = "", image = "", desc = "") {
+//   const modal = document.getElementById("modal");
+//   const modalName = document.getElementById("modal-name");
+//   const modalRole = document.getElementById("modal-role");
+//   const modalImage = document.getElementById("modal-image");
+//   const modalDesc = document.getElementById("modal-desc");
 
-  if (name && role && image) {
-    modalName.textContent = name;
-    modalRole.textContent = role;
-    modalImage.src = image;
-    modalDesc.textContent = desc;
-  }
+//   if (name && role && image) {
+//     modalName.textContent = name;
+//     modalRole.textContent = role;
+//     modalImage.src = image;
+//     modalDesc.textContent = desc;
+//   }
 
-  if (modal.classList.contains("opacity-0")) {
-    // Remove blow-down before adding blow-up
-    modal.classList.remove("blow-down");
+//   if (modal.classList.contains("opacity-0")) {
+//     // Remove blow-down before adding blow-up
+//     modal.classList.remove("blow-down");
 
-    modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
-    modal.classList.add("opacity-100", "scale-100", "blow-up");
+//     modal.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+//     modal.classList.add("opacity-100", "scale-100", "blow-up");
 
-    document.body.classList.add("no-scroll");
-  } else {
-    // Remove blow-up and wait before adding blow-down
-    modal.classList.remove("blow-up");
+//     document.body.classList.add("no-scroll");
+//   } else {
+//     // Remove blow-up and wait before adding blow-down
+//     modal.classList.remove("blow-up");
 
-    modal.classList.add("blow-down");
+//     modal.classList.add("blow-down");
 
-    modal.classList.remove("opacity-100", "scale-100");
-    modal.classList.add("opacity-0", "scale-95", "pointer-events-none");
+//     modal.classList.remove("opacity-100", "scale-100");
+//     modal.classList.add("opacity-0", "scale-95", "pointer-events-none");
 
-    document.body.classList.remove("no-scroll");
-  }
-}
+//     document.body.classList.remove("no-scroll");
+//   }
+// }
 
 $(document).ready(function () {
   $(".graph_Carousel").slick({
@@ -327,56 +327,56 @@ $(document).ready(function () {
 // }, 1500);
 
 // -----------------Navbar-----------------
-let toggleBtn = document.querySelector("#navbar-toggle");
-let collapse = document.querySelector("#navbar-collapse");
+// let toggleBtn = document.querySelector("#navbar-toggle");
+// let collapse = document.querySelector("#navbar-collapse");
 
-toggleBtn.onclick = () => {
-  collapse.classList.toggle("hidden");
-  collapse.classList.toggle("flex");
-};
+// toggleBtn.onclick = () => {
+//   collapse.classList.toggle("hidden");
+//   collapse.classList.toggle("flex");
+// };
 
-document.addEventListener("DOMContentLoaded", function () {
-  const productButton = document.querySelector(".who-we-button");
-  const productMenu = document.querySelector(".who-we-menu");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const productButton = document.querySelector(".who-we-button");
+//   const productMenu = document.querySelector(".who-we-menu");
 
-  if (productButton && productMenu) {
-    productButton.addEventListener("click", function () {
-      productMenu.classList.toggle("hidden");
-    });
+//   if (productButton && productMenu) {
+//     productButton.addEventListener("click", function () {
+//       productMenu.classList.toggle("hidden");
+//     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener("click", function (event) {
-      if (
-        !productButton.contains(event.target) &&
-        !productMenu.contains(event.target)
-      ) {
-        productMenu.classList.add("hidden");
-      }
-    });
-  }
-});
+//     // Close dropdown when clicking outside
+//     document.addEventListener("click", function (event) {
+//       if (
+//         !productButton.contains(event.target) &&
+//         !productMenu.contains(event.target)
+//       ) {
+//         productMenu.classList.add("hidden");
+//       }
+//     });
+//   }
+// });
 
-// Mobile
-document.addEventListener("DOMContentLoaded", function () {
-  const productButtonMobile = document.querySelector(".who-we-button-mobile");
-  const productMenuMobile = document.querySelector(".who-we-menu-mobile");
+// // Mobile
+// document.addEventListener("DOMContentLoaded", function () {
+//   const productButtonMobile = document.querySelector(".who-we-button-mobile");
+//   const productMenuMobile = document.querySelector(".who-we-menu-mobile");
 
-  if (productButtonMobile && productMenuMobile) {
-    productButtonMobile.addEventListener("click", function () {
-      productMenuMobile.classList.toggle("hidden");
-    });
+//   if (productButtonMobile && productMenuMobile) {
+//     productButtonMobile.addEventListener("click", function () {
+//       productMenuMobile.classList.toggle("hidden");
+//     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener("click", function (event) {
-      if (
-        !productButtonMobile.contains(event.target) &&
-        !productMenuMobile.contains(event.target)
-      ) {
-        productMenuMobile.classList.add("hidden");
-      }
-    });
-  }
-});
+//     // Close dropdown when clicking outside
+//     document.addEventListener("click", function (event) {
+//       if (
+//         !productButtonMobile.contains(event.target) &&
+//         !productMenuMobile.contains(event.target)
+//       ) {
+//         productMenuMobile.classList.add("hidden");
+//       }
+//     });
+//   }
+// });
 
 // ------------------Mountain Text Show Hide--------------------
 // document.addEventListener("scroll", function () {
@@ -393,10 +393,10 @@ document.addEventListener("DOMContentLoaded", function () {
 //   textElement.style.transform = `translateY(-${translateY}px)`;
 // });
 
-function toggleDropdown(event, id) {
-  event.preventDefault();
-  document.getElementById(id).classList.toggle("hidden");
-}
+// function toggleDropdown(event, id) {
+//   event.preventDefault();
+//   document.getElementById(id).classList.toggle("hidden");
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.getElementById("button_carousel_two");

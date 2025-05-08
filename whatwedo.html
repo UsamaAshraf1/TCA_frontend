@@ -100,20 +100,22 @@
               <div class="relative" style="z-index: 105">
                 <h1
                   id="typed-text"
-                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                  class="font-[600] text-[30px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
                 >
-                  Human-Centered <br />
+                  Human-Centered <br class="hidden md:block" />
                   Change Management
                 </h1>
-                <p class="text-white text-[20px] font-[400] mt-[24px]">
+                <p
+                  class="text-white text-[16px] md:text-[20px] font-[400] mt-[24px]"
+                >
                   The Change Agency (TCA) helps organizations turn strategy into
-                  reality. We blend human- <br />
+                  reality. We blend human- <br class="hidden md:block" />
                   centered change management with smart tools and expert Change
-                  Agents to drive adoption, <br />
+                  Agents to drive adoption, <br class="hidden md:block" />
                   accelerate transformation, and build lasting impact.
                 </p>
-                <div class="w-full absolute top-[70vh]">
-                  <div class="flex ms-[45vw] w-[100vw]">
+                <div class="w-full absolute top-[80vh]">
+                  <div class="flex justify-center items-center">
                     <a href="#SectionTwo">
                       <img
                         src="Assets/icons/downward_img.png"
@@ -201,13 +203,13 @@
           </div>
         </div> -->
 
-        <div class="menu hidden xl:block">
+        <div class="menu">
           <nav class="top-0 left-0 w-full z-50">
             <div
               class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
             >
               <div class="flex-shrink-0">
-                <a href="/index.html">
+                <a href="index.html">
                   <img
                     src="Assets/icons/new_Logo.png"
                     alt="Change Agency Logo"
@@ -298,7 +300,7 @@
                 </div>
               </div>
 
-              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+              <div class="hidden xl:flex flex-col lg:flex-row mt-3 lg:mt-0">
                 <div
                   class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
                 >
@@ -310,56 +312,102 @@
                 </div>
               </div>
 
-              <div class="xl:hidden">
+              <div class="block xl:hidden">
                 <button id="menu-toggle" class="text-white focus:outline-none">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
+                  <img
+                    src="Assets/icons/hamburger.png"
+                    alt=""
+                    class="w-[24px] h-[24px]"
+                  />
                 </button>
               </div>
             </div>
 
             <div
               id="mobile-menu"
-              class="hidden xl:hidden bg-black/90 px-4 py-6"
+              class="hidden xl:hidden bg-[#FFFFFF1A] px-4 py-6 rounded-[6px]"
+              style="backdrop-filter: blur(10px)"
             >
               <div class="flex flex-col space-y-4">
                 <a
-                  href="/whoweare.html"
+                  href="whoweare.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Who We Are</a
                 >
                 <a
-                  href="/whatwedo.html"
+                  href="whatwedo.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >What We Do</a
                 >
                 <a
-                  href="/howwedoit.html"
+                  href="howwedoit.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >How We Do It</a
                 >
                 <a
-                  href="/changeportal.html"
+                  href="changeportal.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Change Portal</a
                 >
-                <a
-                  href="/resources.html"
-                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                  >Resources</a
-                >
+                <div>
+                  <button
+                    id="resources-toggle"
+                    class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center w-full"
+                  >
+                    Resources
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="resources-dropdown"
+                    class="hidden mt-2 w-full bg-[#FFFFFF1A] py-4 rounded-lg"
+                  >
+                    <a
+                      href="referalpage.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >⁠⁠TCA Referral Program</a
+                    >
+                    <a
+                      href="resources.html#blogSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >TCA Insights</a
+                    >
+                    <a
+                      href="resources.html#podcaseSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Podcast
+                    </a>
+
+                    <a
+                      href="resources.html#WorkshopsSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Workshops
+                    </a>
+
+                    <a
+                      href="resources.html#blogSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Newsletter
+                    </a>
+                    <a
+                      href="Contact.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Contact us
+                    </a>
+                  </div>
+                </div>
                 <a
                   href="#"
                   class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
@@ -373,13 +421,13 @@
     </div>
 
     <!-- -----------------Your Partner in Change---------------- -->
-    <div class="mt-[150px] mx-[7vw]" id="SectionTwo">
+    <div class="mt-[60px] md:mt-[150px] mx-[7vw]" id="SectionTwo">
       <h1
-        class="text-[56px] leading-[64px] font-[600] text-[#000000] text-center"
+        class="text-[24px] md:text-[56px] leading-[100%] md:leading-[64px] font-[600] text-[#000000] text-center"
       >
         Your Partner in Change
       </h1>
-      <div class="flex flex-col md:flex-row justify-between mt-[60px]">
+      <div class="flex flex-col md:flex-row justify-between mt-[24px] md:mt-[60px]">
         <div class="w-full md:w-[49%] relative">
           <img src="Assets/background_butterfly.png" alt="" class="absolute" />
           <p class="absolute inset-0 text-[#666666]">
@@ -394,7 +442,9 @@
             engagement, resilience, and innovation.
           </p>
         </div>
-        <div class="w-full md:w-[452px] overflow-y-scroll h-[700px]">
+        <div
+          class="w-full mt-[400px] md:mt-0 md:w-[452px] overflow-y-scroll h-[700px]"
+        >
           <div
             class="p-[24px] rounded-[12px] mt-[24px] md:mt-0"
             style="
@@ -522,12 +572,12 @@
     </div>
 
     <!-- ------------------------Partner Ecosystem: Co-Creating the Future of Change ----------------- -->
-    <div class="bg-[#1E1E1E] px-[7vw] my-[150px]">
+    <div class="bg-[#1E1E1E] px-[7vw] my-[60px] md:my-[150px]">
       <div class="py-[150px]">
         <h1
-          class="text-[56px] font-[600] leading-[64px] text-center text-white"
+          class="text-[24px] md:text-[56px] font-[600] leading-[100%] md:leading-[64px] text-center text-white"
         >
-          Partner Ecosystem: <br />
+          Partner Ecosystem: <br class="hidden md:block"/>
           Co-Creating the Future of Change
         </h1>
 
@@ -540,20 +590,20 @@
             ></div>
 
             <div
-              class="relative flex items-end pb-10 px-[42px] h-full text-white"
+              class="relative flex items-end pb-10 px-4 md:px-[42px] h-full text-white"
             >
               <div class="text-[#DADADA]">
                 <p
-                  class="text-[#EC5C35] font-[600] text-[16px] leading-[27.17px]"
+                  class="text-center md:text-start text-[#EC5C35] font-[600] text-[16px] leading-[27.17px]"
                 >
                   Powering Change Through Collaboration
                 </p>
-                <p class="mt-[24px] font-[400] text-[16px] leading-[130%]">
+                <p class="text-center md:text-start mt-[16px] md:mt-[24px] font-[400] text-[16px] leading-[130%]">
                   At The Change Agency, we believe that real transformation
                   happens through collaboration. That’s why we’ve built a
                   dynamic Partner Ecosystem—a network of organizations,
                   innovators, and experts united by a shared commitment to
-                  making change work for people. <br />
+                  making change work for people. <br class="hidden md:block"/>
                   Our ecosystem isn’t just about connection—it’s about access.
                   We partner with leading-edge technology providers and industry
                   pioneers to ensure the organizations we work with stay ahead
@@ -572,19 +622,22 @@
     <!-- ---------------------------Public Speaking for Impactful Change--------------- -->
     <div class="mx-[7vw]">
       <h1
-        class="text-[54px] leading-[64px] font-[600] text-center text-[#000000]"
+        class="text-[24px] md:text-[54px] leading-[64px] font-[600] text-center text-[#000000]"
       >
-        Public Speaking for <br />
+        Public Speaking for <br class="hidden md:block" />
         Impactful Change
       </h1>
       <p
-        class="mt-[24px] text-[20px] font-[400] leading-[130%] text-center text-[#666666]"
+        class="mt-[16px] md:mt-[24px] text-[16px] md:text-[20px] font-[400] leading-[100%] md:leading-[130%] text-center text-[#666666]"
       >
-        See how we turn bold ideas into measurable impact through <br />
+        See how we turn bold ideas into measurable impact through
+        <br class="hidden md:block" />
         strategy, storytelling, and action.
       </p>
 
-      <div class="mt-[60px] grid grid-cols-3 gap-6">
+      <div
+        class="mt-[60px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+      >
         <div
           class="p-[32px]"
           style="
@@ -656,15 +709,15 @@
       </div>
     </div>
     <!-- ---------------------------Change Training & Workshops--------------- -->
-    <div class="mt-[150px] bg-[#000000]">
-      <div class="px-[7vw] py-[150px]">
+    <div class="mt-[60px] md:mt-[150px] bg-[#000000]">
+      <div class="px-[7vw] py-[60px] md:py-[150px]">
         <h1
-          class="text-[54px] font-[600] leading-[64px] text-center text-white"
+          class="text-[16px] md:text-[54px] font-[600] leading-[64px] text-center text-white"
         >
           Change Training & Workshops
         </h1>
         <p
-          class="text-[20px] font-[400] leading-[130%] text-center text-[#FFFFFFB5] mt-[24px] px-[10vw]"
+          class="text-[16px] md:text-[20px] font-[400] leading-[130%] text-center text-[#FFFFFFB5] mt-[16px] md:mt-[24px] px-4 md:px-[10vw]"
         >
           The Change Agency provides change training and workshops that are
           appropriate and crucial for any organization undergoing change and
@@ -673,7 +726,9 @@
           professional development you are seeking.
         </p>
 
-        <div class="grid grid-cols-2 mt-[60px] gap-[50px] h-[1400px]">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 mt-[60px] gap-[50px] h-[1870px] lg:h-[1400px]"
+        >
           <div>
             <div class="flip-container" onclick="toggleFlipped(this)">
               <div class="flipper">
@@ -692,23 +747,31 @@
                     <img
                       src="Assets/training_workshop1.jpg"
                       alt=""
-                      class="h-[759px] w-full object-cover rounded-[12px]"
+                      class="h-[432px] lg:h-[759px] w-full object-cover rounded-[12px]"
                     />
 
                     <div
                       class="absolute inset-0 flex justify-center items-center"
                     >
                       <h1
-                        class="text-[600] text-[50px] leading-[130%] text-[#FFFFFF]"
+                        class="text-[600] text-[22px] lg:text-[50px] leading-[130%] text-[#FFFFFF]"
                       >
-                        Resilience
+                        <span class="flex">
+                          Resilience
+                          <span class="block lg:hidden"
+                            ><img
+                              src="Assets/icons/ArrowUpRight.png"
+                              alt=""
+                              class="ms-4 w-[24px] h-[24px]"
+                          /></span>
+                        </span>
                       </h1>
                     </div>
                   </div>
                 </div>
                 <!-- Back -->
                 <div
-                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[759px]"
+                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[432px] lg:h-[759px]"
                 >
                   <div class="absolute top-[32px] left-[32px]">
                     <button
@@ -718,13 +781,13 @@
                     </button>
                   </div>
                   <h2
-                    class="text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
                   >
                     Tough Times Don’t Last, But Resilient People Do
                   </h2>
 
                   <p
-                    class="text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
                   >
                     At The Change Agency, our passionate Change Agents and
                     workshop experts don’t just talk about resilience they live
@@ -742,7 +805,7 @@
             </div>
 
             <div
-              class="flip-container mt-[809px]"
+              class="flip-container mt-[480px] lg:mt-[809px]"
               onclick="toggleFlipped(this)"
             >
               <div class="flipper">
@@ -761,23 +824,31 @@
                     <img
                       src="Assets/training_workshop3.jpg"
                       alt=""
-                      class="h-[635px] w-full object-cover rounded-[12px]"
+                      class="h-[432px] lg:h-[635px] w-full object-cover rounded-[12px]"
                     />
 
                     <div
                       class="absolute inset-0 flex justify-center items-center"
                     >
                       <h1
-                        class="text-[600] text-[50px] leading-[130%] text-[#FFFFFF]"
+                        class="text-[600] text-[22px] lg:text-[50px] leading-[130%] text-[#FFFFFF]"
                       >
-                        Process Improvement
+                        <span class="flex">
+                          Process Improvement
+                          <span class="block lg:hidden"
+                            ><img
+                              src="Assets/icons/ArrowUpRight.png"
+                              alt=""
+                              class="ms-4 w-[24px] h-[24px]"
+                          /></span>
+                        </span>
                       </h1>
                     </div>
                   </div>
                 </div>
                 <!-- Back -->
                 <div
-                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[635px]"
+                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[432px] lg:h-[635px]"
                 >
                   <div class="absolute top-[32px] left-[32px]">
                     <button
@@ -787,13 +858,13 @@
                     </button>
                   </div>
                   <h2
-                    class="text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
                   >
                     Cut the Waste. Maximize Impact.
                   </h2>
 
                   <p
-                    class="text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
                   >
                     At TCA our passionate Change Agents and workshop experts
                     help organizations break free from these bottlenecks. We
@@ -827,23 +898,32 @@
                     <img
                       src="Assets/training_workshop2.jpg"
                       alt=""
-                      class="h-[635px] w-full object-cover rounded-[12px]"
+                      class="h-[432px] lg:h-[635px] w-full object-cover rounded-[12px]"
                     />
 
                     <div
                       class="absolute inset-0 flex justify-center items-center"
                     >
                       <h1
-                        class="text-[600] text-[50px] leading-[130%] text-[#FFFFFF]"
+                        class="text-[600] text-[22px] lg:text-[50px] leading-[130%] text-[#FFFFFF]"
                       >
-                        Productivity
+                        <!-- Productivity -->
+                        <span class="flex">
+                          Productivity
+                          <span class="block lg:hidden"
+                            ><img
+                              src="Assets/icons/ArrowUpRight.png"
+                              alt=""
+                              class="ms-4 w-[24px] h-[24px]"
+                          /></span>
+                        </span>
                       </h1>
                     </div>
                   </div>
                 </div>
                 <!-- Back -->
                 <div
-                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[635px]"
+                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[432px] lg:h-[635px]"
                 >
                   <div class="absolute top-[32px] left-[32px]">
                     <button
@@ -853,13 +933,13 @@
                     </button>
                   </div>
                   <h2
-                    class="text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
                   >
                     It’s Time to Work Smarter
                   </h2>
 
                   <p
-                    class="text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
                   >
                     At The Change Agency,  our passionate Change Agents and
                     workshop experts help professionals reclaim their time by
@@ -875,7 +955,7 @@
             </div>
 
             <div
-              class="flip-container mt-[685px]"
+              class="flip-container mt-[480px] lg:mt-[685px]"
               onclick="toggleFlipped(this)"
             >
               <div class="flipper">
@@ -894,23 +974,32 @@
                     <img
                       src="Assets/training_workshop4.jpg"
                       alt=""
-                      class="h-[759px] w-full object-cover rounded-[12px]"
+                      class="h-[432px] lg:h-[759px] w-full object-cover rounded-[12px]"
                     />
 
                     <div
                       class="absolute inset-0 flex justify-center items-center"
                     >
                       <h1
-                        class="text-[600] text-[50px] leading-[130%] text-[#FFFFFF]"
+                        class="text-[600] text-[22px] lg:text-[50px] leading-[130%] text-[#FFFFFF]"
                       >
-                        New Leadership
+                        <!-- New Leadership -->
+                        <span class="flex">
+                          New Leadership
+                          <span class="block lg:hidden"
+                            ><img
+                              src="Assets/icons/ArrowUpRight.png"
+                              alt=""
+                              class="ms-4 w-[24px] h-[24px]"
+                          /></span>
+                        </span>
                       </h1>
                     </div>
                   </div>
                 </div>
                 <!-- Back -->
                 <div
-                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[759px]"
+                  class="back bg-[#2A2A2A] text-black rounded-[12px] p-6 flex flex-col justify-center items-center text-center h-[432px] lg:h-[759px]"
                 >
                   <div class="absolute top-[32px] left-[32px]">
                     <button
@@ -920,13 +1009,13 @@
                     </button>
                   </div>
                   <h2
-                    class="text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
                   >
                     Are You Old School? Leadership for a New Era
                   </h2>
 
                   <p
-                    class="text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
                   >
                     At The Change Agency,  our passionate Change Agents and
                     workshop experts help leaders bridge the gap between past

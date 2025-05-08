@@ -111,13 +111,13 @@
         </div>
       </div> -->
 
-      <div class="menu hidden xl:block">
+      <div class="menu">
         <nav class="top-0 left-0 w-full z-50">
           <div
             class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
           >
             <div class="flex-shrink-0">
-              <a href="/index.html">
+              <a href="index.html">
                 <img
                   src="Assets/icons/new_black_logo.png"
                   alt="Change Agency Logo"
@@ -208,7 +208,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+            <div class="hidden xl:flex flex-col lg:flex-row mt-3 lg:mt-0">
               <div
                 class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
               >
@@ -220,10 +220,51 @@
               </div>
             </div>
 
-            <div class="xl:hidden">
+            <div class="block xl:hidden">
               <button id="menu-toggle" class="text-white focus:outline-none">
+                <img
+                  src="Assets/icons/black_hamburger.png"
+                  alt=""
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div
+          id="mobile-menu"
+          class="hidden xl:hidden bg-[#FFFFFF1A] px-4 py-6 rounded-[6px]"
+          style="backdrop-filter: blur(10px)"
+        >
+          <div class="flex flex-col space-y-4">
+            <a
+              href="whoweare.html"
+              class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Who We Are</a
+            >
+            <a
+              href="whatwedo.html"
+              class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >What We Do</a
+            >
+            <a
+              href="howwedoit.html"
+              class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >How We Do It</a
+            >
+            <a
+              href="changeportal.html"
+              class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+              >Change Portal</a
+            >
+            <div>
+              <button
+                id="resources-toggle"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center w-full"
+              >
+                Resources
                 <svg
-                  class="h-6 w-6"
+                  class="ml-1 w-4 h-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -233,55 +274,63 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
+                    d="M19 9l-7 7-7-7"
                   ></path>
                 </svg>
               </button>
-            </div>
-          </div>
+              <div
+                id="resources-dropdown"
+                class="hidden mt-2 w-full bg-[#FFFFFF1A] py-4 rounded-lg"
+              >
+                <a
+                  href="referalpage.html"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >⁠⁠TCA Referral Program</a
+                >
+                <a
+                  href="resources.html#blogSection"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >TCA Insights</a
+                >
+                <a
+                  href="resources.html#podcaseSection"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >Podcast
+                </a>
 
-          <div id="mobile-menu" class="hidden xl:hidden bg-black/90 px-4 py-6">
-            <div class="flex flex-col space-y-4">
-              <a
-                href="/whoweare.html"
-                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                >Who We Are</a
-              >
-              <a
-                href="/whatwedo.html"
-                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                >What We Do</a
-              >
-              <a
-                href="/howwedoit.html"
-                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                >How We Do It</a
-              >
-              <a
-                href="/changeportal.html"
-                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                >Change Portal</a
-              >
-              <a
-                href="/resources.html"
-                class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                >Resources</a
-              >
-              <a
-                href="#"
-                class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
-                >Book a call</a
-              >
+                <a
+                  href="resources.html#WorkshopsSection"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >Workshops
+                </a>
+
+                <a
+                  href="resources.html#blogSection"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >Newsletter
+                </a>
+                <a
+                  href="Contact.html"
+                  class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                  >Contact us
+                </a>
+              </div>
             </div>
+            <a
+              href="#"
+              class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
+              >take The assessment</a
+            >
           </div>
+        </div>
         </nav>
       </div>
     </div>
 
     <!-- --------------------------Change Readiness Pulse Check----------------------- -->
-    <div class="mt-[150px] mx-4 md:mx-[7vw] pb-10">
+    <div class="mt-[100px] md:mt-[150px] mx-4 md:mx-[7vw] pb-10">
       <h1
-        class="text-center font-[600] text-[36px] md:text-[54px] leading-[64px]"
+        class="text-center font-[600] text-[30px] md:text-[54px] leading-[100%] md:leading-[64px]"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -291,7 +340,7 @@
     </div>
 
     <div
-      class="mt-[60px] mx-[7vw] p-[40px]"
+      class="mt-[30px] md:mt-[60px] mx-[7vw] p-[30px] md:p-[40px]"
       style="
         background: linear-gradient(
           180deg,
@@ -307,7 +356,7 @@
         Is Your Organization Ready for Change?
       </p>
       <p
-        class="mt-[16px] text-[24px] font-[400] leading-[130%] text-[#595959] text-center mx-[10vw]"
+        class="mt-[16px] text-[16px] md:text-[24px] font-[400] leading-[130%] text-[#595959] text-center md:mx-[10vw]"
       >
         Take our quick Change Readiness Pulse Check to see how prepared your
         team is for transformation. In just a few minutes, get insights that
@@ -322,9 +371,9 @@
       </div>
     </div>
     <!-- --------------Ready to Transform? We’re Here to Help.---------- -->
-    <div class="mt-[150px] mx-[7vw]">
-      <h1 class="text-[54px] leading-[64px] font-[600] text-center text-[]">
-        Ready to Transform? <br />
+    <div class="mt-[60px] md:mt-[150px] mx-[7vw]">
+      <h1 class="text-[24px] md:text-[54px] leading-[100%] md:leading-[64px] font-[600] text-center">
+        Ready to Transform? <br class="hidden md:block"/>
         We’re Here to Help.
       </h1>
 
@@ -523,31 +572,31 @@
     </div> -->
 
     <div
-      class="mt-[150px] bg-[url(Assets/new_CTA_section.png)] h-[620px] bg-cover bg-center"
+    class="mt-[60px] md:mt-[150px] bg-[url(Assets/new_CTA_section.png)] h-[620px] bg-cover bg-center"
+  >
+    <div
+      class="text-white flex justify-center items-center flex-col text-center pt-[150px]"
     >
+      <h1 class="font-[600] text-[24px] md:text-[56px]  leading-[130%]">
+        The Future of Change - Powered <br class="hidden md:block"/>
+        by People, Enabled by Innovation
+      </h1>
+      <p class="font-[400] text-[16px] md:text-[22px] leading-[130%] mt-[16px] md:mt-[24px]">
+        Whether you’re a past client, trusted partner, or industry connection,
+        <br class="hidden md:block"/>
+        your referrals fuel our mission to drive people-first change.
+      </p>
       <div
-        class="text-white flex justify-center items-center flex-col text-center pt-[150px]"
+        class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button mt-[44px]"
       >
-        <h1 class="font-[600] text-[56px] leading-[130%]">
-          The Future of Change - Powered <br />
-          by People, Enabled by Innovation
-        </h1>
-        <p class="font-[400] text-[22px] leading-[130%] mt-[24px]">
-          Whether you’re a past client, trusted partner, or industry connection,
-          <br />
-          your referrals fuel our mission to drive people-first change.
-        </p>
-        <div
-          class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button mt-[44px]"
+        <a
+          class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase text-[#06071A]"
+          href="Contact.html"
+          >Let’s Talk</a
         >
-          <a
-            class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase text-[#06071A]"
-            href=""
-            >Let’s Talk</a
-          >
-        </div>
       </div>
     </div>
+  </div>
     <!-------------------------Footer---------------------->
     <div class="bg-[#1F2328] footer">
       <div class="bg-[#1F2328] rounded-b-2xl mx-2">

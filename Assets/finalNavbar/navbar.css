@@ -78,6 +78,24 @@ main {
   height: 200px;
 }
 
+
+@media (max-width: 768px){
+  .menu {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+    display: grid;
+    grid-template-areas:
+      "top"
+      "content";
+    grid-template-rows: 3rem 1fr;
+    z-index: 110;
+    font-family: "JetBrains Mono";
+    height: 200px;
+  }
+}
 .menu__top,
 .menu__content {
   display: grid;
@@ -95,10 +113,10 @@ main {
   transition: border-radius 1s ease-in-out;
 }
 
-#menu-toggle:checked + main .menu__top {
+/* #menu-toggle:checked + main .menu__top {
   border-radius: 2rem 2rem 0rem 0rem;
   transition: border-radius 0.7s ease-in-out;
-}
+} */
 .menu__nav-top {
   height: calc(1rem + 4px);
   overflow: hidden;
@@ -230,10 +248,10 @@ main {
   background-size: cover;
 }
 
-#menu-toggle {
+/* #menu-toggle {
   position: fixed;
   visibility: hidden;
-}
+} */
 
 /* Start of Animations */
 .cover-wrap {
@@ -252,15 +270,15 @@ main {
   transition: all 0.5s ease 0.4s;
 }
 
-#menu-toggle:checked + main .cover-wrap {
+/* #menu-toggle:checked + main .cover-wrap {
   transform: scale(1);
-}
+} */
 
-#menu-toggle:checked + main .cover,
+/* #menu-toggle:checked + main .cover,
 #menu-toggle:checked + main .cover-inner {
   transform: translateY(0);
   transition: all 0.5s ease 0s;
-}
+} */
 
 .content__img {
   transform: translateY(0);
@@ -277,20 +295,20 @@ main {
   transition: all 0.5s ease 0s;
 }
 
-#menu-toggle:checked + main .menu__content {
+/* #menu-toggle:checked + main .menu__content {
   transform: translateY(0);
   transition: all 0.5s ease 0.4s;
-}
+} */
 
 .content__title {
   transform: translateY(0);
   transition: all 0.5s ease;
 }
 
-#menu-toggle:checked + main .content__title--left,
+/* #menu-toggle:checked + main .content__title--left,
 #menu-toggle:checked + main .content__title--right {
   transform: translateY(10rem);
-}
+} */
 
 .back_button {
   opacity: 0;
@@ -298,8 +316,8 @@ main {
   transition: all 0.5s ease;
 }
 
-#menu-toggle:checked + main .back_button {
+/* #menu-toggle:checked + main .back_button {
   opacity: 1;
   transform: translateY(0);
   transition: all 1s ease;
-}
+} */

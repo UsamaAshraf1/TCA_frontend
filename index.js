@@ -1,5 +1,17 @@
 AOS.init();
 
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Resources Dropdown Toggle (Mobile)
+const resourcesToggle = document.getElementById("resources-toggle");
+const resourcesDropdown = document.getElementById("resources-dropdown");
+resourcesToggle.addEventListener("click", () => {
+  resourcesDropdown.classList.toggle("hidden");
+});
 // window.addEventListener("scroll", () => {
 //   AOS.refresh();
 // });

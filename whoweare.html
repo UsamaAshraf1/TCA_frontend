@@ -101,14 +101,14 @@
               <div class="relative">
                 <h1
                   id="typed-text"
-                  class="font-[600] text-[42px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                  class="font-[600] text-[30px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[20vh] md:mt-[15vh]"
                 >
-                  Driven by Passion, <br />
+                  Driven by Passion, <br class="hidden md:block" />
                   Backed by Expertise
                 </h1>
 
                 <div
-                  class="button_carousel_one_wrapper overflow-hidden relative w-[90vw] mt-[30vh]"
+                  class="button_carousel_one_wrapper overflow-x-scroll relative w-[75vw] md:w-[90vw] mt-[30vh]"
                 >
                   <div class="flex justify-between text-white">
                     <button
@@ -226,13 +226,13 @@
             </div>
           </div>
         </div> -->
-        <div class="menu hidden xl:block">
+        <div class="menu">
           <nav class="top-0 left-0 w-full z-50">
             <div
               class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
             >
               <div class="flex-shrink-0">
-                <a href="/index.html">
+                <a href="index.html">
                   <img
                     src="Assets/icons/new_Logo.png"
                     alt="Change Agency Logo"
@@ -323,7 +323,7 @@
                 </div>
               </div>
 
-              <div class="flex flex-col lg:flex-row mt-3 lg:mt-0">
+              <div class="hidden xl:flex flex-col lg:flex-row mt-3 lg:mt-0">
                 <div
                   class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
                 >
@@ -335,60 +335,106 @@
                 </div>
               </div>
 
-              <div class="xl:hidden">
+              <div class="block xl:hidden">
                 <button id="menu-toggle" class="text-white focus:outline-none">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
+                  <img
+                    src="Assets/icons/hamburger.png"
+                    alt=""
+                    class="w-[24px] h-[24px]"
+                  />
                 </button>
               </div>
             </div>
 
             <div
               id="mobile-menu"
-              class="hidden xl:hidden bg-black/90 px-4 py-6"
+              class="hidden xl:hidden bg-[#FFFFFF1A] px-4 py-6 rounded-[6px]"
+              style="backdrop-filter: blur(10px)"
             >
               <div class="flex flex-col space-y-4">
                 <a
-                  href="/whoweare.html"
+                  href="whoweare.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Who We Are</a
                 >
                 <a
-                  href="/whatwedo.html"
+                  href="whatwedo.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >What We Do</a
                 >
                 <a
-                  href="/howwedoit.html"
+                  href="howwedoit.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >How We Do It</a
                 >
                 <a
-                  href="/changeportal.html"
+                  href="changeportal.html"
                   class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
                   >Change Portal</a
                 >
-                <a
-                  href="/resources.html"
-                  class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
-                  >Resources</a
-                >
+                <div>
+                  <button
+                    id="resources-toggle"
+                    class="text-white text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center w-full"
+                  >
+                    Resources
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="resources-dropdown"
+                    class="hidden mt-2 w-full bg-[#FFFFFF1A] py-4 rounded-lg"
+                  >
+                    <a
+                      href="referalpage.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >⁠⁠TCA Referral Program</a
+                    >
+                    <a
+                      href="resources.html#blogSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >TCA Insights</a
+                    >
+                    <a
+                      href="resources.html#podcaseSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Podcast
+                    </a>
+
+                    <a
+                      href="resources.html#WorkshopsSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Workshops
+                    </a>
+
+                    <a
+                      href="resources.html#blogSection"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Newsletter
+                    </a>
+                    <a
+                      href="Contact.html"
+                      class="block px-4 py-2 text-white text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                      >Contact us
+                    </a>
+                  </div>
+                </div>
                 <a
                   href="#"
                   class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
-                  >Book a call</a
+                  >take The assessment</a
                 >
               </div>
             </div>
@@ -398,9 +444,9 @@
     </div>
 
     <!-- -------------------------Text Section-------------------- -->
-    <div class="my-[150px] px-[8vw]">
+    <div class="my-[60px] md:my-[150px] px-[8vw]">
       <p
-        class="text-center text-[32px] font-[500] leading-[130%] text-[#34373C]"
+        class="text-center text-[24px] md:text-[32px] font-[500] leading-[130%] text-[#34373C]"
       >
         The Change Agency (TCA) is a human-centered change consultancy dedicated
         to making transformations seamless, strategic, and sustainable. We go
@@ -498,23 +544,23 @@
 
     <!-- -------------------------Our Purpose, Vision & Mission----------------- -->
     <div class="bg-[#1E1E1E] px-[7vw]">
-      <div class="py-[150px]">
+      <div class="py-[60px] md:py-[150px]">
         <h1
-          class="text-[56px] font-[600] leading-[64px] text-center text-white"
+          class="text-[24px] md:text-[56px] font-[600] leading-[64px] text-center text-white"
         >
           Our Purpose, Vision & Mission
         </h1>
 
         <div>
           <div
-            class="relative bg-[url(Assets/mission_img4.jpg)] h-[610px] bg-cover bg-center mt-[60px] rounded-[12px]"
+            class="relative bg-[url(Assets/mission_img4.jpg)] h-[810px] md:h-[610px] bg-cover bg-center mt-[60px] rounded-[12px]"
           >
             <div
               class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
             ></div>
 
             <div
-              class="relative flex items-end pb-10 px-[42px] h-full text-white"
+              class="relative flex items-end pb-10 px-4 md:px-[42px] h-full text-white"
             >
               <div class="text-[#DADADA]">
                 <p
@@ -536,15 +582,16 @@
                   embrace change with confidence turning challenges into
                   opportunities for lasting success.
                 </p>
-                <div class="mt-[24px] flex md:justify-between items-center">
+                <div
+                  class="mt-[24px] flex flex-col md:flex-row md:justify-between items-center"
+                >
                   <div class="font-[400] text-[16px] leading-[130%]">
                     <div class="flex flex-col flex-wrap md:justify-between">
                       <div class="flex">
                         <img
                           src="Assets/icons/CheckCircle.png"
                           alt=""
-                          width="20px"
-                          height="20px"
+                          class="w-[20px] h-[20px] object-cover"
                         />
                         <span class="ms-[16px]"
                           >Tailored Stage-Specific Solutions.</span
@@ -554,8 +601,7 @@
                         <img
                           src="Assets/icons/CheckCircle.png"
                           alt=""
-                          width="20px"
-                          height="20px"
+                          class="w-[20px] h-[20px] object-cover"
                         />
                         <span class="ms-[16px]"
                           >AI-Powered tools and data-driven solutions.</span
@@ -565,12 +611,11 @@
                   </div>
                   <div class="font-[400] text-[16px] leading-[130%]">
                     <div class="flex flex-col flex-wrap md:justify-between">
-                      <div class="flex">
+                      <div class="flex mt-[16px] md:mt-0">
                         <img
                           src="Assets/icons/CheckCircle.png"
                           alt=""
-                          width="20px"
-                          height="20px"
+                          class="w-[20px] h-[20px] object-cover"
                         />
                         <span class="ms-[16px]"
                           >Passionate Change Agent with Industry
@@ -581,8 +626,7 @@
                         <img
                           src="Assets/icons/CheckCircle.png"
                           alt=""
-                          width="20px"
-                          height="20px"
+                          class="w-[20px] h-[20px] object-cover"
                         />
                         <span class="ms-[16px]"
                           >Seamless, sustainable, and impactful.</span
@@ -595,16 +639,16 @@
             </div>
           </div>
 
-          <div class="flex justify-between mt-[32px]">
+          <div class="flex flex-col md:flex-row justify-between mt-[32px]">
             <div
-              class="relative bg-[url(Assets/mission_img5.jpg)] h-[610px] bg-cover bg-center w-[49%] rounded-[12px]"
+              class="relative bg-[url(Assets/mission_img5.jpg)] h-[710px] md:h-[610px] bg-cover bg-center w-full md:w-[49%] rounded-[12px]"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
               ></div>
 
               <div
-                class="relative flex items-end pb-10 px-[32px] h-full text-white"
+                class="relative flex items-end pb-10 px-4 md:px-[32px] h-full text-white"
               >
                 <div class="text-[#DADADA]">
                   <p
@@ -629,14 +673,14 @@
             </div>
 
             <div
-              class="relative bg-[url(Assets/mission_img3.jpg)] h-[610px] bg-cover bg-center w-[49%] rounded-[12px]"
+              class="relative bg-[url(Assets/mission_img3.jpg)] h-[710px] md:h-[610px] bg-cover bg-center w-full md:w-[49%] rounded-[12px] mt-[32px] md:mt-0"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
               ></div>
 
               <div
-                class="relative flex items-end pb-10 px-[32px] h-full text-white"
+                class="relative flex items-end pb-10 px-4 md:px-[32px] h-full text-white"
               >
                 <div class="text-[#DADADA]">
                   <p
@@ -669,8 +713,8 @@
             <p class="text-[#EC5C35] font-[600] text-[16px] leading-[27.17px]">
               Core Values
             </p>
-            <div class="mt-[40px] flex justify-between">
-              <div>
+            <div class="mt-[40px] flex flex-col md:flex-row justify-between">
+              <div class="mt-[20px] md:mt-0">
                 <img
                   src="Assets/icons/core_value_icon1.png"
                   alt=""
@@ -689,7 +733,7 @@
                 </p>
               </div>
               <!-- 2 -->
-              <div>
+              <div class="mt-[20px] md:mt-0">
                 <img
                   src="Assets/icons/core_value_icon2.png"
                   alt=""
@@ -709,7 +753,7 @@
               </div>
 
               <!-- 3 -->
-              <div>
+              <div class="mt-[20px] md:mt-0">
                 <img
                   src="Assets/icons/core_value_icon3.png"
                   alt=""
@@ -729,7 +773,7 @@
               </div>
 
               <!-- 4 -->
-              <div>
+              <div class="mt-[20px] md:mt-0">
                 <img
                   src="Assets/icons/core_value_icon4.png"
                   alt=""
@@ -754,9 +798,9 @@
     </div>
 
     <!-- ----------------------------------Board Members -->
-    <div class="mt-[150px]">
+    <div class="mt-[60px] md:mt-[150px]">
       <h1
-        class="font-[600] text-[56px] leading-[64px] text-[#000000] text-center"
+        class="font-[600] text-[24px] md:text-[56px] leading-[100%] md:leading-[64px] text-[#000000] text-center"
       >
         Meet our team
       </h1>
@@ -1516,8 +1560,10 @@
     </div>
 
     <!-- --------------------------Partner Carousel---------------------- -->
-    <div class="py-[150px] mx-[2vw] md:mx-[7vw]">
-      <h1 class="font-[600] text-[56px] leading-[64px] text-center">
+    <div class="py-[60px] md:py-[150px] mx-[7vw]">
+      <h1
+        class="font-[600] text-[24px] md:text-[56px] leading-[100%] md:leading-[64px] text-center"
+      >
         Partners
       </h1>
       <p
@@ -1833,13 +1879,15 @@
       <div
         class="text-white flex justify-center items-center flex-col text-center pt-[150px]"
       >
-        <h1 class="font-[600] text-[56px] leading-[130%]">
-          The Future of Change - Powered <br />
+        <h1 class="font-[600] text-[24px] md:text-[56px] leading-[130%]">
+          The Future of Change - Powered <br class="hidden md:block" />
           by People, Enabled by Innovation
         </h1>
-        <p class="font-[400] text-[22px] leading-[130%] mt-[24px]">
+        <p
+          class="font-[400] text-[16px] md:text-[22px] leading-[130%] mt-[16px] md:mt-[24px]"
+        >
           Whether you’re a past client, trusted partner, or industry connection,
-          <br />
+          <br class="hidden md:block" />
           your referrals fuel our mission to drive people-first change.
         </p>
         <div

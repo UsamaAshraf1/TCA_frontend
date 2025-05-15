@@ -28,6 +28,12 @@ main {
   overflow: hidden;
 }
 
+/* @media (max-width: 768px) {
+  main {
+    height: 500px;
+  }
+} */
+
 .content {
   display: grid;
   column-gap: 7vw;
@@ -78,8 +84,7 @@ main {
   height: 200px;
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .menu {
     position: absolute;
     top: 1rem;

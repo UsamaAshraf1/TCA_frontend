@@ -94,6 +94,9 @@
           margin-top: 40px;
         }
       }
+      #typed-text span {
+        display: block;
+      }
     </style>
   </head>
 
@@ -118,10 +121,12 @@
               <div class="relative">
                 <h1
                   id="typed-text"
-                  class="font-[600] text-[30px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
+                  class="font-[600] md:h-[195px] text-[30px] md:text-[82px] 2xl:text-[82px] leading-[100%] text-white mt-[10vh] md:mt-[15vh]"
                 >
-                  Change Led by People, <br class="hidden md:block" />
-                  Enhanced by Technology
+                  <!-- Change Led by People, <br class="hidden md:block" />
+                  Enhanced by Technology -->
+                  <span id="line1"></span> 
+                  <span id="line2"></span>
                 </h1>
                 <p
                   class="text-white text-[16px] md:text-[20px] font-[400] mt-[24px]"
@@ -1028,6 +1033,33 @@
       </div>
     </div>
 
+    <script>
+       const textLines = ["Change Led by People,", "Enhanced by Technology"];
+      const line1El = document.getElementById("line1");
+      const line2El = document.getElementById("line2");
+      let lineIndex = 0;
+      let charIndex = 0;
+
+      function typeText() {
+        if (lineIndex < textLines.length) {
+          const currentLine = textLines[lineIndex];
+          const targetEl = lineIndex === 0 ? line1El : line2El;
+
+          if (charIndex < currentLine.length) {
+            targetEl.textContent += currentLine.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100); // Speed of typing
+          } else {
+            // Move to the next line
+            lineIndex++;
+            charIndex = 0;
+            setTimeout(typeText, 100); // Small delay before starting next line
+          }
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", typeText);
+    </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>

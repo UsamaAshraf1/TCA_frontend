@@ -96,11 +96,26 @@
         margin-left: auto;
         margin-right: 0;
       }
+
+      @media (max-width: 768px) {
+        .timeline-item:nth-child(even) .timeline-content {
+          margin-left: auto;
+          margin-right: 0;
+        }
+        .timeline-line {
+          left: 5%;
+        }
+        .timeline-circle {
+          left: 5%;
+        }
+        .timeline-content {
+          width: 90%;
+        }
+      }
     </style>
   </head>
 
   <body>
-
     <!-------------------------Hero Section------------------------->
     <div>
       <main>
@@ -141,7 +156,7 @@
                   done right—your network <br class="hidden md:block" />
                   gains real value, and your seen as a trusted connector.
                 </p>
-           
+
                 <div class="w-full absolute top-[80vh] md:top-[70vh]">
                   <div
                     class="flex justify-center items-center ms-0 md:ms-[30vw]"
@@ -451,7 +466,7 @@
     </div>
 
     <!-- -------------------How it Works-------------------- -->
-    <div class="mt-[60px] md:mt-[150px] mx-[7vw] hidden md:block" id="howwork">
+    <div class="mt-[60px] md:mt-[150px] mx-[7vw]" id="howwork">
       <h1 class="text-[54px] font-[600] leading-[64px] text-center">
         How it Works
       </h1>
@@ -462,7 +477,7 @@
 
           <!-- Step 1 -->
           <div class="timeline-item">
-            <div class="timeline-content inset-0 pe-[60px]">
+            <div class="timeline-content inset-0 md:pe-[60px]">
               <p
                 class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
               >
@@ -482,7 +497,7 @@
               </ul>
             </div>
             <div
-              class="absolute inset-0 w-[20%] ms-[23%]"
+              class="absolute inset-0 w-[20%] ms-[81%] md:ms-[23%]"
               style="
                 border: 5.43px solid;
 
@@ -512,7 +527,7 @@
 
           <!-- Step 2 -->
           <div class="timeline-item">
-            <div class="timeline-content pe-[60px]">
+            <div class="timeline-content md:pe-[60px]">
               <p
                 class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
               >
@@ -564,7 +579,7 @@
 
           <!-- Step 3 -->
           <div class="timeline-item">
-            <div class="timeline-content pe-[60px]">
+            <div class="timeline-content md:pe-[60px]">
               <p
                 class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
               >
@@ -590,7 +605,7 @@
               </ul>
             </div>
             <div
-              class="absolute inset-0 w-[20%] ms-[23%]"
+              class="absolute inset-0 w-[20%] ms-[81%] md:ms-[23%]"
               style="
                 border: 5.43px solid;
 
@@ -620,7 +635,7 @@
 
           <!-- Step 4 -->
           <div class="timeline-item">
-            <div class="timeline-content pe-[60px]">
+            <div class="timeline-content md:pe-[60px]">
               <p
                 class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
               >
@@ -668,7 +683,7 @@
 
           <!-- Step 5 -->
           <div class="timeline-item">
-            <div class="timeline-content pe-[60px]">
+            <div class="timeline-content md:pe-[60px]">
               <p
                 class="text-[#EC5C35] text-[16px] font-[600] leading-[27.17px] mb-[16px]"
               >
@@ -685,7 +700,7 @@
               </p>
             </div>
             <div
-              class="absolute inset-0 w-[20%] ms-[23%]"
+              class="absolute inset-0 w-[20%] ms-[81%] md:ms-[23%]"
               style="
                 border: 5.43px solid;
 

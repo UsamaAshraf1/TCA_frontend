@@ -422,3 +422,24 @@ document.addEventListener("DOMContentLoaded", function () {
     track_three.appendChild(clone);
   });
 });
+
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
+
+// Open modal
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+// Close modal
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// Close modal when clicking outside
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});

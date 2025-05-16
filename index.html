@@ -115,9 +115,10 @@
                 >
                   <span id="line1"></span>
                   <span id="line2"></span>
+                  <span id="line3" class="block md:hidden"></span>
                 </h1>
                 <p
-                  class="text-[24px] md:text-[24px] font-[400] leading-[130%] text-white mt-[24px] md:w-[60vw]"
+                  class="text-[20px] md:text-[24px] font-[400] leading-[130%] text-white mt-[24px] md:w-[60vw]"
                 >
                   <!-- 70% of change efforts fail due to people, not strategy – this
                   4-minute pulse check reveals hidden misalignment in your team,
@@ -2706,16 +2707,66 @@
         }
       }
 
+      // const textLines = ["YOUR", "IMPLEMENTATION PARTNER"];
+      // const NewtextLines = ["YOUR", "IMPLEMENTATION", "PARTNER"];
+      // const line1El = document.getElementById("line1");
+      // const line2El = document.getElementById("line2");
+      // const line3El = document.getElementById("line3");
+      // let lineIndex = 0;
+      // let charIndex = 0;
+
+      // function typeText() {
+      //   if (lineIndex < textLines.length) {
+      //     const currentLine = textLines[lineIndex];
+      //     const targetEl = lineIndex === 0 ? line1El : line2El;
+
+      //     if (charIndex < currentLine.length) {
+      //       targetEl.textContent += currentLine.charAt(charIndex);
+      //       charIndex++;
+      //       setTimeout(typeText, 100); // Speed of typing
+      //     } else {
+      //       // Move to the next line
+      //       lineIndex++;
+      //       charIndex = 0;
+      //       setTimeout(typeText, 100); // Small delay before starting next line
+      //     }
+      //   }
+      // }
+
+      // window.addEventListener("DOMContentLoaded", typeText);
+
       const textLines = ["YOUR", "IMPLEMENTATION PARTNER"];
+      const NewtextLines = ["YOUR", "IMPLEMENTATION", "PARTNER"];
       const line1El = document.getElementById("line1");
       const line2El = document.getElementById("line2");
+      const line3El = document.getElementById("line3");
       let lineIndex = 0;
       let charIndex = 0;
+      let activeLines = [];
+
+      function resetAnimation() {
+        // Clear text and reset indices
+        line1El.textContent = "";
+        line2El.textContent = "";
+        line3El.textContent = "";
+        lineIndex = 0;
+        charIndex = 0;
+      }
 
       function typeText() {
-        if (lineIndex < textLines.length) {
-          const currentLine = textLines[lineIndex];
-          const targetEl = lineIndex === 0 ? line1El : line2El;
+        // Check screen width and select appropriate text lines
+        activeLines = window.innerWidth < 768 ? NewtextLines : textLines;
+
+        if (lineIndex < activeLines.length) {
+          const currentLine = activeLines[lineIndex];
+          // Assign target element based on line index
+          let targetEl;
+          if (activeLines === NewtextLines) {
+            targetEl =
+              lineIndex === 0 ? line1El : lineIndex === 1 ? line2El : line3El;
+          } else {
+            targetEl = lineIndex === 0 ? line1El : line2El;
+          }
 
           if (charIndex < currentLine.length) {
             targetEl.textContent += currentLine.charAt(charIndex);
@@ -2730,20 +2781,17 @@
         }
       }
 
-      window.addEventListener("DOMContentLoaded", typeText);
+      // Run animation on page load
+      window.addEventListener("DOMContentLoaded", () => {
+        resetAnimation();
+        typeText();
+      });
 
-      // const fullText = "Your Partner in Change";
-      // const typedTextEl = document.getElementById("typed-text");
-      // let index = 0;
-
-      // function typeText() {
-      //   if (index < fullText.length) {
-      //     typedTextEl.textContent += fullText.charAt(index);
-      //     index++;
-      //     setTimeout(typeText, 100);
-      //   }
-      // }
-      // window.addEventListener("DOMContentLoaded", typeText);
+      // Re-run animation on window resize
+      window.addEventListener("resize", () => {
+        resetAnimation();
+        typeText();
+      });
     </script>
     <!-- Slide js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

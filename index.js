@@ -423,23 +423,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const openModalBtn = document.getElementById("openModalBtn");
-const closeModalBtn = document.getElementById("closeModalBtn");
-const modal = document.getElementById("modal");
 
-// Open modal
-openModalBtn.addEventListener("click", () => {
-  modal.classList.remove("hidden");
-});
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
 
-// Close modal
-closeModalBtn.addEventListener("click", () => {
-  modal.classList.add("hidden");
-});
+    // Open modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
 
-// Close modal when clicking outside
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.add("hidden");
-  }
-});
+    // Close modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });

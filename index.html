@@ -2754,12 +2754,10 @@
       }
 
       function typeText() {
-        // Check screen width and select appropriate text lines
         activeLines = window.innerWidth < 768 ? NewtextLines : textLines;
 
         if (lineIndex < activeLines.length) {
           const currentLine = activeLines[lineIndex];
-          // Assign target element based on line index
           let targetEl;
           if (activeLines === NewtextLines) {
             targetEl =
@@ -2771,12 +2769,11 @@
           if (charIndex < currentLine.length) {
             targetEl.textContent += currentLine.charAt(charIndex);
             charIndex++;
-            setTimeout(typeText, 100); // Speed of typing
+            setTimeout(typeText, 100);
           } else {
-            // Move to the next line
             lineIndex++;
             charIndex = 0;
-            setTimeout(typeText, 100); // Small delay before starting next line
+            setTimeout(typeText, 100);
           }
         }
       }

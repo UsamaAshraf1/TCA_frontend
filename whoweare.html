@@ -69,6 +69,33 @@
       #typed-text span {
         display: block;
       }
+
+      /* ------------------Card Filpper-------------- */
+      .flip-container {
+        perspective: 1000px;
+      }
+      .flip-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+      .flip-container:hover .flip-card {
+        transform: rotateY(180deg);
+      }
+      .flip-front,
+      .flip-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 12px;
+      }
+      .flip-back {
+        transform: rotateY(180deg);
+        background: linear-gradient(to bottom, transparent, #242424);
+      }
     </style>
   </head>
 
@@ -835,7 +862,7 @@
         </h1>
 
         <div>
-          <div
+          <!-- <div
             class="relative bg-[url(Assets/mission_img4.jpg)] h-[810px] md:h-[610px] bg-cover bg-center mt-[60px] rounded-[12px]"
           >
             <div
@@ -860,11 +887,7 @@
                   and support needed to deliver measurable results and long-term
                   success.
                 </p>
-                <!-- <p class="mt-[24px] font-[400] text-[16px] leading-[130%]">
-                  With The Change Agency, organizations don’t just adapt; they
-                  embrace change with confidence turning challenges into
-                  opportunities for lasting success.
-                </p> -->
+              
                 <div
                   class="mt-[24px] flex flex-col md:flex-row md:justify-between items-center"
                 >
@@ -980,6 +1003,199 @@
                     change isn’t just planned—it’s adopted, sustained, and
                     successful.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div
+            class="relative bg-[url('Assets/mission_img4.jpg')] h-[810px] md:h-[610px] bg-cover bg-center mt-[60px] rounded-[12px]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
+            ></div>
+            <div
+              class="relative flex items-end pb-10 px-4 md:px-[42px] h-full text-white"
+            >
+              <div class="text-[#DADADA]">
+                <p
+                  class="text-[#EC5C35] font-semibold text-[16px] leading-[27.17px]"
+                >
+                  Our Value Proposition
+                </p>
+                <p class="mt-[24px] font-normal text-[18px] leading-[130%]">
+                  The Change Agency bridges the gap between vision and
+                  execution. We embed implementation partners into your teams to
+                  accelerate adoption, reduce resistance, and make real change
+                  happen. With real-time dashboards, AI-powered insights, and a
+                  hands-on delivery model, we provide the clarity, alignment,
+                  and support needed to deliver measurable results and long-term
+                  success.
+                </p>
+                <div
+                  class="mt-[24px] flex flex-col md:flex-row md:justify-between items-center"
+                >
+                  <div class="font-normal text-[17px] leading-[130%]">
+                    <div
+                      class="flex flex-col flex-wrap mdعلى النحو التالي: justify-between"
+                    >
+                      <div class="flex">
+                        <img
+                          src="Assets/icons/CheckCircle.png"
+                          alt=""
+                          class="w-[20px] h-[20px] object-cover"
+                        />
+                        <span class="ms-[16px]"
+                          >Tailored Stage-Specific Solutions.</span
+                        >
+                      </div>
+                      <div class="flex mt-[16px]">
+                        <img
+                          src="Assets/icons/CheckCircle.png"
+                          alt=""
+                          class="w-[20px] h-[20px] object-cover"
+                        />
+                        <span class="ms-[16px]"
+                          >Passionate Change Agent with Industry
+                          Expertise.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="font-normal text-[17px] leading-[130%]">
+                    <div class="flex flex-col flex-wrap md:justify-between">
+                      <div class="flex mt-[16px] md:mt-0">
+                        <img
+                          src="Assets/icons/CheckCircle.png"
+                          alt=""
+                          class="w-[20px] h-[20px] object-cover"
+                        />
+                        <span class="ms-[16px]"
+                          >AI-Powered Tools and Data-Driven Solutions.</span
+                        >
+                      </div>
+                      <div class="flex mt-[16px]">
+                        <img
+                          src="Assets/icons/CheckCircle.png"
+                          alt=""
+                          class="w-[20px] h-[20px] object-cover"
+                        />
+                        <span class="ms-[16px]"
+                          >Your Trusted Implementation Partner.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Cards with Flip Effect -->
+          <div class="flex flex-col md:flex-row justify-between mt-[32px]">
+            <!-- Vision Card (with Flip) -->
+            <div
+              class="flip-container h-[710px] md:h-[610px] w-full md:w-[49%] rounded-[12px]"
+            >
+              <div class="flip-card">
+                <!-- Front Side -->
+                <div
+                  class="flip-front bg-[url('Assets/mission_img5.jpg')] bg-cover bg-center rounded-[12px]"
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
+                  ></div>
+                  <div
+                    class="relative flex justify-center items-center px-4 md:px-[32px] h-full text-white"
+                  >
+                    <div class="text-[#DADADA]">
+                      <p
+                        class="text-[#EC5C35] font-semibold text-[32px] leading-[27.17px]"
+                      >
+                        Vision
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Back Side -->
+                <div
+                  class="flip-back bg-[#2A2A2A] flex p-[24px] h-full text-white rounded-[12px]"
+                >
+                  <div class="text-[#DADADA]">
+                    <p
+                      class="text-[#EC5C35] font-semibold text-[16px] leading-[27.17px]"
+                    >
+                      Version:
+                    </p>
+                    <h2
+                      class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    >
+                      “The future of change—where expertise meets innovation to
+                      drive implementation”
+                    </h2>
+                    <p
+                      class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    >
+                      To be the trusted implementation partner for organizations
+                      undergoing transformation—where people, strategy, and
+                      innovation come together to create lasting impact.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mission Card (with Flip) -->
+            <div
+              class="flip-container h-[710px] md:h-[610px] w-full md:w-[49%] rounded-[12px] mt-[32px] md:mt-0"
+            >
+              <div class="flip-card">
+                <!-- Front Side -->
+                <div
+                  class="flip-front bg-[url('Assets/mission_img3.jpg')] bg-cover bg-center rounded-[12px]"
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent to-[#242424] rounded-[12px]"
+                  ></div>
+                  <div
+                    class="relative flex justify-center items-center pb-10 px-4 md:px-[32px] h-full text-white"
+                  >
+                    <div class="text-[#DADADA]">
+                      <p
+                        class="text-[#EC5C35] font-semibold text-[32px] leading-[27.17px]"
+                      >
+                        Mission
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Back Side -->
+                <div
+                  class="flip-back bg-[#2A2A2A] flex p-[24px] h-full text-white rounded-[12px]"
+                >
+                  <div class="text-[#DADADA]">
+                    <p
+                      class="text-[#EC5C35] font-semibold text-[16px] leading-[27.17px]"
+                    >
+                      Mission
+                    </p>
+                    <h2
+                      class="text-[20px] lg:text-[32px] font-[600] leading-[130%] text-[#FFFFFF] text-center mt-[50px]"
+                    >
+                      “Your Trusted Implementation Partner”
+                    </h2>
+                    <p
+                      class="text-[12px] lg:text-[26px] font-[400] leading-[130%] text-[#FFFFFFA6] mt-[24px] text-center"
+                    >
+                      We help organizations execute their most critical
+                      transformations—by turning strategy into action, aligning
+                      people around purpose, and embedding expert partners to
+                      drive implementation from within. Powered by AI-enabled
+                      insights and a proven delivery framework, we ensure that
+                      change isn’t just planned—it’s adopted, sustained, and
+                      successful.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

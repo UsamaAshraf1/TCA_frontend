@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/finalNavbar/navbar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+
+    <!-- aos animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cal-sans@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="./fonts/CalSans-SemiBold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+  </head>
+
+  <body>
+    <!-------------------------Hero Section------------------------->
+    <div>
+      <div class="menu">
+        <nav class="top-0 left-0 w-full z-50">
+          <div
+            class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
+          >
+            <div class="flex-shrink-0">
+              <a href="index.html">
+                <img
+                  src="Assets/icons/new_black_logo.png"
+                  alt="Change Agency Logo"
+                  class="h-10 w-auto"
+                />
+              </a>
+            </div>
+
+            <div class="hidden xl:flex space-x-10">
+              <a
+                href="whoweare.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >Who We Are</a
+              >
+              <a
+                href="whatwedo.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >What We Do</a
+              >
+              <a
+                href="howwedoit.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >How We Do It</a
+              >
+              <a
+                href="changeportal.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >Change Portal</a
+              >
+
+              <div class="relative group">
+                <button
+                  class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center"
+                >
+                  Resources
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute w-48 bg-[#FFFFFF14] rounded-lg shadow-xl hidden group-hover:block z-10"
+                  style="backdrop-filter: blur(4px)"
+                >
+                  <a
+                    href="referalpage.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >⁠⁠Referral Program</a
+                  >
+                  <a
+                    href="resources.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >Insights</a
+                  >
+                  <a
+                    href="resources.html#podcaseSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >Podcast
+                  </a>
+
+                  <a
+                    href="resources.html#WorkshopsSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >Workshops
+                  </a>
+
+                  <a
+                    href="resources.html#blogSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >Newsletter
+                  </a>
+                  <a
+                    href="Contact.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-gray-300 transition"
+                    >Contact us
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden xl:flex flex-col lg:flex-row mt-3 lg:mt-0">
+              <div
+                class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
+              >
+                <a
+                  class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
+                  href=""
+                  >take The assessment</a
+                >
+              </div>
+            </div>
+
+            <div class="block xl:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <img
+                  src="Assets/icons/black_hamburger.png"
+                  alt=""
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="mobile-menu"
+            class="hidden xl:hidden bg-[#FFFFFF1A] px-4 py-6 rounded-[6px]"
+            style="backdrop-filter: blur(10px)"
+          >
+            <div class="flex flex-col space-y-4">
+              <a
+                href="whoweare.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >Who We Are</a
+              >
+              <a
+                href="whatwedo.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >What We Do</a
+              >
+              <a
+                href="howwedoit.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >How We Do It</a
+              >
+              <a
+                href="changeportal.html"
+                class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition"
+                >Change Portal</a
+              >
+              <div>
+                <button
+                  id="resources-toggle"
+                  class="text-black text-base font-normal uppercase opacity-75 hover:opacity-100 transition flex items-center w-full"
+                >
+                  Resources
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  id="resources-dropdown"
+                  class="hidden mt-2 w-full bg-[#FFFFFF1A] py-4 rounded-lg"
+                >
+                  <a
+                    href="referalpage.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >⁠⁠Referral Program</a
+                  >
+                  <a
+                    href="resources.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >Insights</a
+                  >
+                  <a
+                    href="resources.html#podcaseSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >Podcast
+                  </a>
+
+                  <a
+                    href="resources.html#WorkshopsSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >Workshops
+                  </a>
+
+                  <a
+                    href="resources.html#blogSection"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >Newsletter
+                  </a>
+                  <a
+                    href="Contact.html"
+                    class="block px-4 py-2 text-black text-sm font-normal uppercase opacity-75 hover:opacity-100 hover:bg-[#F9FAFB21] transition"
+                    >Contact us
+                  </a>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
+                >take The assessment</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="mx-[7vw] mt-[150px]">
+      <h2 class="text-[44px] font-[600]">
+        Why Change Feels Different in the Middle East (And What to Do About It)
+      </h2>
+      <p class="text-[16px] font-[400] leading-[130%] text-[#5D6161] mt-[16px]">
+        April 23, 2025
+      </p>
+      <div class="h-[400] mt-[24px]">
+        <img
+          src="Assets/member/blog1.png"
+          alt=""
+          class="w-full h-[600px] object-cover rounded-[12px]"
+        />
+      </div>
+
+      <div class="my-[150px]">
+        <p class="text-[24px] leading-[44px]">
+          Let’s be honest—change management anywhere is hard. But in the Middle
+          East, it comes with a unique set of dynamics that many global
+          playbooks just don’t address.  <br />
+          <br />
+          When I first started consulting in the region, I expected resistance,
+          but not the kind that’s rooted in silence. Silence in the Middle East
+          doesn’t mean agreement. It often means caution, hierarchy, or
+          deferral. In Western cultures, people might challenge openly. Here,
+          it’s often wrapped in politeness, respect for authority, or simply not
+          wanting to speak out of turn. But make no mistake: if people aren't
+          bought in, the change won’t stick.
+          <br />
+          <br />
+          Another challenge is
+          <span class="font-[600]">pace versus preparedness</span>. There’s no
+          shortage of ambition here—Saudi Vision 2030, Dubai’s digital
+          transformation, and AI adoption across sectors. Leaders are moving
+          fast. But teams? Often, they haven’t been brought along for the ride.
+          There's a gap between vision and readiness, and that’s where change
+          either gains traction or completely derails. <br />
+          <br />
+          <span class="font-[600]"
+            >Decision-making is also deeply relationship-based</span
+          >. You can’t drop in with a toolkit and expect influence. You earn it
+          through trust, context, and presence. I’ve seen projects get
+          delayed—not for lack of strategy—but because the right person wasn’t
+          consulted early on. Navigating power structures, formal and informal,
+          is just as important as the framework you’re using. <br />
+          <br />
+          And then there's culture—rich, collective, and deeply values-driven.
+          If you don’t take time to understand the cultural anchors (family,
+          tradition, identity), you’ll miss the very heartbeat of the people
+          you’re trying to engage. Change isn't just about systems; it's about
+          belonging. <br />
+          <br />
+          So what works? <br />
+          <br />
+          <span class="font-[600]">Start with people. Always</span>. Listen more
+          than you speak. Localize your language and approach. And focus less on
+          pushing change, and more on unlocking momentum from within. The Change
+          Agency was built to embed—not impose. We partner from the inside,
+          blending change strategy with cultural fluency and emotional
+          intelligence. <br /><br />
+          Because here’s the truth: change in the Middle East isn’t impossible.
+          It’s just deeply human. And when you respect that, it’s incredibly
+          powerful.
+        </p>
+      </div>
+    </div>
+
+    <!-------------------------Footer---------------------->
+    <div class="bg-[#000000] footer">
+      <div class="bg-[#000000] rounded-b-2xl mx-2">
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-[64px] justify-between"
+          >
+            <div class="col-span-2 md:col-span-3 lg:col-span-3 pt-4 px-10">
+              <div class="flex">
+                <img
+                  src="Assets/icons/white_Logo.png"
+                  alt=""
+                  height="52px"
+                  width="185px"
+                />
+              </div>
+              <p
+                class="text-[#535862] text-[16px] font-[400] leading-[24px] mt-[32px] md:w-[350px]"
+              >
+                TCA is a tech-enabled implementation partner, helping
+                organizations lead and sustain change through human-centered
+                strategies and real-time insight.
+              </p>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#FFFFFF]"
+              >
+                Company
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Who We Are</li>
+                <li>What We Do</li>
+                <li>How We Do It</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                Resources
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div
+              class="ps-4 md:ps-10 text-[#535862] font-semibold mt-[45px] md:mt-0"
+            >
+              <p
+                class="text-[14px] font-[600] mt-[16px] leading-[20px] text-[#ffffff]"
+              >
+                LEGAL
+              </p>
+              <ul class="text-[16px] font-[600] mt-[16px] leading-loose">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+
+      <div class="container mx-auto py-[64px]">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between rounded-full px-10"
+        >
+          <div>
+            <p class="font-[600] text-[20px] leading-[30px] text-white">
+              Join our newsletter
+            </p>
+            <p
+              class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
+            >
+              We will send you a letter once a week to keep you up to date on
+              <br class="hidden lg:block" />
+              the best practices in change management. No spam.
+            </p>
+          </div>
+          <div class="flex">
+            <form
+              class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#000000]"
+              />
+
+              <!-- <div
+                class="bg-[#EC5C35] pt-3 pb-3 w-[158px] h-[57px] rounded-lg border-4 border-[#FFFFFF1F] ml-[16px]"
+              > -->
+              <a
+                class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                href=""
+                >Subscribe</a
+              >
+              <!-- </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-12 py-[32px]">
+          <p
+            class="col-span-12 md:col-span-11 text-[#535862] text-[16px] font-[400] leading-[24px] text-center md:text-start"
+          >
+            © 2025 The Change Agency. All rights reserved.
+          </p>
+          <span
+            class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
+          >
+            <a href="">
+              <img
+                src="Assets/footer_linkdln.png"
+                alt=""
+                height="24px"
+                width="24px"
+              />
+            </a>
+            <a href="">
+              <img
+                src="Assets/footer_facebook.png"
+                alt=""
+                height="24px"
+                width="24px"
+                class="ms-[24px]"
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

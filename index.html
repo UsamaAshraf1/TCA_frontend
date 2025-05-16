@@ -2584,6 +2584,12 @@
                 />
               </div>
               <button
+                id="ModalOpenSubscribeBtn"
+                class="hidden change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+              >
+                Subscribe
+              </button>
+              <button
                 id="toggle-button"
                 class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
                 onclick="toggleFields()"
@@ -2627,10 +2633,37 @@
       </div>
     </div>
 
+    <!-- <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+        fnames[6] = "COMPANY";
+        ftypes[6] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+        fnames[5] = "BIRTHDAY";
+        ftypes[5] = "birthday";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script> -->
+
     <script>
       function toggleFields() {
         const fields = document.getElementById("subscription-fields");
         const button = document.getElementById("toggle-button");
+        const newbutton = document.getElementById("ModalOpenSubscribeBtn");
 
         if (fields.style.visibility === "visible") {
           fields.style.visibility = "hidden";

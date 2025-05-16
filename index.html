@@ -2583,10 +2583,10 @@
                   class="mt-1 border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#000000]"
                 />
               </div>
-
               <button
+                id="toggle-button"
                 class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
-                onclick="document.getElementById('subscription-fields').style.visibility = 'visible';"
+                onclick="toggleFields()"
               >
                 Subscribe
               </button>
@@ -2628,6 +2628,19 @@
     </div>
 
     <script>
+      function toggleFields() {
+        const fields = document.getElementById("subscription-fields");
+        const button = document.getElementById("toggle-button");
+
+        if (fields.style.visibility === "visible") {
+          fields.style.visibility = "hidden";
+          button.textContent = "Subscribe";
+        } else {
+          fields.style.visibility = "visible";
+          button.textContent = "Close";
+        }
+      }
+
       const card1 = document.getElementById("card1");
       const card2 = document.getElementById("card2");
       function adjustHeights() {

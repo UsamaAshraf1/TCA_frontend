@@ -269,16 +269,21 @@ html {
 
 .animate-scroll {
   display: flex;
-  animation: scroll 50s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .animate-scroll-one {
+  display: flex;
+  animation: Newscroll 40s linear infinite;
+}
+
+.animate-scroll-four {
   display: flex;
   animation: Newscroll 30s linear infinite;
 }
 .animate-scroll-three {
   display: flex;
-  animation: Newscroll 50s linear infinite;
+  animation: Newscroll 40s linear infinite;
 }
 
 /* -------------------------- */

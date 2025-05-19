@@ -402,9 +402,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const track = document.getElementById("button_carousel_two");
   const track_one = document.getElementById("button_carousel_one");
   const track_three = document.getElementById("button_carousel_three");
+  const track_four = document.getElementById("button_carousel_four");
   const items = Array.from(track.children);
   const itemsOne = Array.from(track_one.children);
   const itemsThree = Array.from(track_three.children);
+  const itemsFour = Array.from(track_four.children);
 
   // Clone items to make an infinite scrolling effect
   items.forEach((item) => {
@@ -421,26 +423,30 @@ document.addEventListener("DOMContentLoaded", function () {
     let clone = item.cloneNode(true);
     track_three.appendChild(clone);
   });
+
+   itemsFour.forEach((item) => {
+    let clone = item.cloneNode(true);
+    track_four.appendChild(clone);
+  });
 });
 
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
 
-    const openModalBtn = document.getElementById('openModalBtn');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    const modal = document.getElementById('modal');
+// Open modal
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
 
-    // Open modal
-    openModalBtn.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-    });
+// Close modal
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
 
-    // Close modal
-    closeModalBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-
-    // Close modal when clicking outside
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
+// Close modal when clicking outside
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});

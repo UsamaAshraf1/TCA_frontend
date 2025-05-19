@@ -392,9 +392,8 @@
           box-shadow: 0px 0px 0px 1px #0c002014;
         "
       >
-        <form class="">
+        <!-- <form  action="https://formspree.io/f/mldbveka" method="POST">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Left Column -->
             <div>
               <label
                 for="name"
@@ -513,7 +512,150 @@
           </div>
 
           <div class="flex justify-end">
+            <button type="submit"
+              class="font-[600] text-[16px] leading-[24px] bg-black text-white uppercase px-[16px] py-[10px] rounded-[8px] mt-[40px]"
+            >
+              LET’S TALK
+            </button>
+          </div>
+        </form> -->
+
+        <form action="https://formspree.io/f/mldbveka" method="POST">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Left Column -->
+            <div>
+              <label
+                for="name"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter full name"
+                required
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="company"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Company</label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Enter company name"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+                required
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="industry"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Industry</label
+              >
+              <input
+                type="text"
+                id="industry"
+                name="industry"
+                placeholder="Enter industry"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="phone"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Phone</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="role"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Role</label
+              >
+              <input
+                type="text"
+                id="role"
+                name="role"
+                placeholder="Enter role"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              />
+            </div>
+            <div>
+              <label
+                for="contact-method"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >Preferred contact method</label
+              >
+              <select
+                id="contact-method"
+                name="contact_method"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              >
+                <option value="">Choose contact method</option>
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Text">Text</option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="source"
+                class="block font-[500] text-[14px] leading-[20px] text-[#595959] mb-[6px]"
+                >How did you hear about us?</label
+              >
+              <select
+                id="source"
+                name="source"
+                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#6666669E]"
+              >
+                <option value="">Choose a source</option>
+                <option value="Referred">Referred</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Podcast">Podcast</option>
+                <option value="Event">Event</option>
+                <option value="Network">Network</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <!-- Hidden field for redirect after submission -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://your-site.com/thank-you"
+          />
+          <div class="flex justify-end">
             <button
+              type="submit"
               class="font-[600] text-[16px] leading-[24px] bg-black text-white uppercase px-[16px] py-[10px] rounded-[8px] mt-[40px]"
             >
               LET’S TALK
@@ -757,10 +899,10 @@
           >
             © 2025 The Change Agency. All rights reserved.
           </p>
-          <span
+         <span
             class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
           >
-            <a href="">
+            <a href="https://www.linkedin.com/company/thechangeagencytca/?viewAsMember=true" target="_blank">
               <img
                 src="Assets/footer_linkdln.png"
                 alt=""
@@ -768,9 +910,18 @@
                 width="24px"
               />
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/@thechangeagencytca" target="_blank">
               <img
-                src="Assets/footer_facebook.png"
+                src="Assets/youtube.png"
+                alt=""
+                height="24px"
+                width="24px"
+                class="ms-[24px]"
+              />
+            </a>
+            <a href="https://www.instagram.com/thechangeagencytca/" target="_blank">
+              <img
+                src="Assets/instagram.png"
                 alt=""
                 height="24px"
                 width="24px"

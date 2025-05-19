@@ -1091,12 +1091,12 @@
           if (charIndex < currentLine.length) {
             targetEl.textContent += currentLine.charAt(charIndex);
             charIndex++;
-            setTimeout(typeText, 100); // Speed of typing
+            setTimeout(typeText, 70); // Speed of typing
           } else {
             // Move to the next line
             lineIndex++;
             charIndex = 0;
-            setTimeout(typeText, 100); // Small delay before starting next line
+            setTimeout(typeText, 70); // Small delay before starting next line
           }
         }
       }

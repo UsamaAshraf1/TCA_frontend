@@ -2578,7 +2578,8 @@
             <p
               class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
             >
-              Subscribe to our monthly newsletter—and if you'd like, you can  <br class="hidden md:block">
+              Subscribe to our monthly newsletter—and if you'd like, you can
+              <br class="hidden md:block" />
               also opt in to receive exclusive event and insider updates!
             </p>
           </div>
@@ -2592,6 +2593,7 @@
                 required
                 placeholder="Enter your email"
                 class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#000000]"
+                id="email-input"
               />
 
               <button
@@ -2658,8 +2660,10 @@
 
     <script>
       function handleSubscribe(event) {
-        event.preventDefault(); // Prevent actual form submission
-        window.location.href = "Newsletter.html"; // Redirect to newsletter page
+        event.preventDefault();
+        const emailInput = document.getElementById("email-input").value;
+        const encodedEmail = encodeURIComponent(emailInput);
+        window.location.href = `Newsletter.html?email=${encodedEmail}`;
       }
 
       const card1 = document.getElementById("card1");

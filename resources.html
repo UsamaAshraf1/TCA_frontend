@@ -112,9 +112,7 @@
                 </p>
 
                 <div class="w-[95vw] absolute top-[310px] md:top-[70vh]">
-                  <div
-                    class="flex justify-center items-center"
-                  >
+                  <div class="flex justify-center items-center">
                     <a href="#podcaseSection">
                       <img
                         src="Assets/icons/downward_img.png"
@@ -305,7 +303,7 @@
                 >
                   <a
                     class="bg-white py-3 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
-                   href="AssessmentPage.html"
+                    href="AssessmentPage.html"
                     target="_blank"
                     >take The assessment</a
                   >
@@ -410,7 +408,7 @@
                 </div>
                 <a
                   href="AssessmentPage.html"
-                    target="_blank"
+                  target="_blank"
                   class="inline-block bg-white text-black font-bold text-base uppercase py-3 px-8 rounded-xl border-4 border-gray-200 shadow-xl hover:bg-gray-100 transition text-center"
                   >take The assessment</a
                 >
@@ -2096,29 +2094,31 @@
             <p
               class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
             >
-               Subscribe to our monthly newsletter—and if you'd like, you can  <br class="hidden md:block">
+              Subscribe to our monthly newsletter—and if you'd like, you can
+              <br class="hidden md:block" />
               also opt in to receive exclusive event and insider updates!
             </p>
           </div>
           <div class="flex">
             <form
+              onsubmit="handleSubscribe(event)"
               class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
             >
               <input
-                type="text"
+                type="email"
+                required
                 placeholder="Enter your email"
                 class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#000000]"
+                id="email-input"
               />
 
-              <!-- <div
-                class="bg-[#EC5C35] pt-3 pb-3 w-[158px] h-[57px] rounded-lg border-4 border-[#FFFFFF1F] ml-[16px]"
-              > -->
-              <a
+              <button
+                type="submit"
                 class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
                 href=""
-                >Subscribe</a
               >
-              <!-- </div> -->
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -2134,7 +2134,10 @@
           <span
             class="col-span-12 md:col-span-1 flex justify-center md:justify-end mt-[30px] md:mt-0"
           >
-            <a href="https://www.linkedin.com/company/thechangeagencytca/?viewAsMember=true" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/thechangeagencytca/?viewAsMember=true"
+              target="_blank"
+            >
               <img
                 src="Assets/footer_linkdln.png"
                 alt=""
@@ -2142,7 +2145,10 @@
                 width="24px"
               />
             </a>
-            <a href="https://www.youtube.com/@thechangeagencytca" target="_blank">
+            <a
+              href="https://www.youtube.com/@thechangeagencytca"
+              target="_blank"
+            >
               <img
                 src="Assets/youtube.png"
                 alt=""
@@ -2151,7 +2157,10 @@
                 class="ms-[24px]"
               />
             </a>
-            <a href="https://www.instagram.com/thechangeagencytca/" target="_blank">
+            <a
+              href="https://www.instagram.com/thechangeagencytca/"
+              target="_blank"
+            >
               <img
                 src="Assets/instagram.png"
                 alt=""
@@ -2166,6 +2175,13 @@
     </div>
 
     <script>
+      function handleSubscribe(event) {
+        event.preventDefault();
+        const emailInput = document.getElementById("email-input").value;
+        const encodedEmail = encodeURIComponent(emailInput);
+        window.location.href = `Newsletter.html?email=${encodedEmail}`;
+      }
+
       function toggleFlipped(element) {
         element.classList.toggle("flipped");
         const absoluteDiv = element.querySelector(".front .absolute");

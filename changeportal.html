@@ -739,29 +739,31 @@
             <p
               class="text-[16px] font-[400] leading-[24px] pt-[8px] text-[#535862]"
             >
-              Subscribe to our monthly newsletter—and if you'd like, you can  <br class="hidden md:block">
+              Subscribe to our monthly newsletter—and if you'd like, you can
+              <br class="hidden md:block" />
               also opt in to receive exclusive event and insider updates!
             </p>
           </div>
           <div class="flex">
             <form
+              onsubmit="handleSubscribe(event)"
               class="flex flex-col md:flex-row justify-center lg:justify-end mt-4 md:mt-0"
             >
               <input
-                type="text"
+                type="email"
+                required
                 placeholder="Enter your email"
                 class="border border-1 border-[#D0D5DD29] px-4 rounded-lg outline-none text-[#535862] mt-[1px] h-[44px] w-[280px] bg-[#000000]"
+                id="email-input"
               />
 
-              <!-- <div
-                class="bg-[#EC5C35] pt-3 pb-3 w-[158px] h-[57px] rounded-lg border-4 border-[#FFFFFF1F] ml-[16px]"
-              > -->
-              <a
+              <button
+                type="submit"
                 class="change-agent-button mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[16px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
                 href=""
-                >Subscribe</a
               >
-              <!-- </div> -->
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -818,6 +820,13 @@
     </div>
 
     <script>
+      function handleSubscribe(event) {
+        event.preventDefault();
+        const emailInput = document.getElementById("email-input").value;
+        const encodedEmail = encodeURIComponent(emailInput);
+        window.location.href = `Newsletter.html?email=${encodedEmail}`;
+      }
+
       const textLines = ["AI and Data-Driven", "Insights"];
       const line1El = document.getElementById("line1");
       const line2El = document.getElementById("line2");

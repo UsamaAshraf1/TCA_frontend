@@ -133,15 +133,6 @@
                   your organization is in the face of change
                 </p>
 
-                <!-- <div
-                  class="pb-[18px] pt-[20px] w-[324px] mt-[40px] rounded-[15px] text-black tca_button"
-                >
-                  <a
-                    class="bg-white py-3 ms-2 px-8 rounded-[12px] text-black border-4 border-[#ECECEC] shadow-xl font-[700] text-[16px] uppercase"
-                    href=""
-                    >Take Readiness Assessment</a
-                  >
-                </div> -->
                 <div class="flex flex-row mt-[40px]">
                   <div
                     class="pb-[18px] pt-[19px] px-[4px] rounded-[15px] text-black tca_button"
@@ -153,6 +144,23 @@
                       >Take Readiness Assessment</a
                     >
                   </div>
+                </div>
+
+                <div
+                  id="popup"
+                  class="fixed bottom-4 right-4 w-[300px] md:w-[350px] bg-white rounded-[15px] shadow-xl p-6 z-[200] hidden"
+                >
+                  <h1>Join Our Newsletter</h1>
+                  <a   href="index.html#Sunscribe">
+                  <button
+                    id="popup-change-agent-button"
+                    type="submit"
+                    class="mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[126px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                  
+                  >
+                    Subscribe
+                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -2433,7 +2441,7 @@
 
       <hr class="mx-[6vw] text-[#e4e7ec12] opacity-25" />
 
-      <div class="container mx-auto py-[64px]">
+      <div class="container mx-auto py-[64px]" id="Sunscribe">
         <div
           class="flex flex-col lg:flex-row justify-center lg:justify-between rounded-full px-10"
         >
@@ -2526,6 +2534,33 @@
     </div>
 
     <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const popup = document.getElementById("popup");
+      //   const button = document.getElementById("popup-change-agent-button");
+      //   popup.classList.remove("hidden");
+      //   changeAgentButton.addEventListener("click", () => {
+      //     popup.classList.add("hidden");
+      //     localStorage.setItem("ModalClicked", true);
+      //   });
+      // });
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("popup");
+        const button = document.getElementById("popup-change-agent-button");
+        const LocalData = localStorage.getItem("ModalClicked");
+        console.log(LocalData)
+
+        if (LocalData) {
+          popup.classList.add("");
+        } else {
+          popup.classList.remove("hidden");
+        }
+        button.addEventListener("click", () => {
+          
+          popup.classList.add("hidden");
+          localStorage.setItem("ModalClicked", true);
+        });
+      });
+
       function handleSubscribe(event) {
         event.preventDefault();
         const emailInput = document.getElementById("email-input").value;
@@ -2564,34 +2599,6 @@
           }, 300);
         }
       }
-
-      // const textLines = ["YOUR", "IMPLEMENTATION PARTNER"];
-      // const NewtextLines = ["YOUR", "IMPLEMENTATION", "PARTNER"];
-      // const line1El = document.getElementById("line1");
-      // const line2El = document.getElementById("line2");
-      // const line3El = document.getElementById("line3");
-      // let lineIndex = 0;
-      // let charIndex = 0;
-
-      // function typeText() {
-      //   if (lineIndex < textLines.length) {
-      //     const currentLine = textLines[lineIndex];
-      //     const targetEl = lineIndex === 0 ? line1El : line2El;
-
-      //     if (charIndex < currentLine.length) {
-      //       targetEl.textContent += currentLine.charAt(charIndex);
-      //       charIndex++;
-      //       setTimeout(typeText, 100); // Speed of typing
-      //     } else {
-      //       // Move to the next line
-      //       lineIndex++;
-      //       charIndex = 0;
-      //       setTimeout(typeText, 100); // Small delay before starting next line
-      //     }
-      //   }
-      // }
-
-      // window.addEventListener("DOMContentLoaded", typeText);
 
       const textLines = ["YOUR", "IMPLEMENTATION PARTNER"];
       const NewtextLines = ["YOUR", "IMPLEMENTATION", "PARTNER"];

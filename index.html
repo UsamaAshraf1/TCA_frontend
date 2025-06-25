@@ -151,15 +151,14 @@
                   class="fixed bottom-4 right-4 w-[300px] md:w-[350px] bg-white rounded-[15px] shadow-xl p-6 z-[200] hidden"
                 >
                   <h1>Join Our Newsletter</h1>
-                  <a   href="index.html#Sunscribe">
-                  <button
-                    id="popup-change-agent-button"
-                    type="submit"
-                    class="mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[126px] h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
-                  
-                  >
-                    Subscribe
-                  </button>
+                  <a href="index.html#Sunscribe">
+                    <button
+                      id="popup-change-agent-button"
+                      type="submit"
+                      class="mt-2 md:mt-0 bg-[#EC5C35] hover:bg-white flex justify-center items-center md:ml-[160px] mt-10 h-[44px] px-8 rounded-lg text-white hover:text-black border-4 border-[#FFFFFF1F] hover:border-[#ECECEC] shadow-xl font-[600] text-[16px]"
+                    >
+                      Subscribe
+                    </button>
                   </a>
                 </div>
               </div>
@@ -2547,7 +2546,7 @@
         const popup = document.getElementById("popup");
         const button = document.getElementById("popup-change-agent-button");
         const LocalData = localStorage.getItem("ModalClicked");
-        console.log(LocalData)
+        console.log(LocalData);
 
         if (LocalData) {
           popup.classList.add("");
@@ -2555,7 +2554,6 @@
           popup.classList.remove("hidden");
         }
         button.addEventListener("click", () => {
-          
           popup.classList.add("hidden");
           localStorage.setItem("ModalClicked", true);
         });
